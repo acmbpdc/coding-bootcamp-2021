@@ -1,0 +1,7 @@
+site_name: ACMBPDC
+repo_url: https://github.com/acmbpdc/coding-bootcamp-2021
+theme: readthedocs
+nav:
+  - Home: 'index.md'
+  - Sessions:
+    - '1: Command Line Interface': './01-command-line-interface/README.md'
