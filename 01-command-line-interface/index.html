@@ -148,6 +148,50 @@
     </li>
         </ul>
     </li>
+    <li class="toctree-l3"><a class="reference internal" href="#extract">Extract</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#wc">wc</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#grep">grep</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#piping">Piping</a>
+    </li>
+        </ul>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#security">Security</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#chmod">chmod</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#whoami">whoami</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#sudo">sudo</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#history">history</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#test-yourself">Test Yourself</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#whats-next">What's next?</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#upgrade-your-terminal">Upgrade your Terminal</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#resources">Resources</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#documentation">Documentation</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#courses">Courses</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#books">Books</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#websites">Websites</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#channels">Channels</a>
+    </li>
         </ul>
     </li>
     </ul>
@@ -207,7 +251,7 @@
 <h2 id="installationenvironment">Installation/Environment</h2>
 <p>Please visit the links provided below for instructions in how to get started.</p>
 <ul>
-<li>https://www.sublimetext.com/docs/command_line.html</li>
+<li>[https://www.sublimetext.com/docs/command_line.html</li>
 <li>https://developer.here.com/documentation/open-location-platform-cli/user_guide/index.html</li>
 <li>https://missing.csail.mit.edu/</li>
 <li>https://ryanstutorials.net/bash-scripting-tutorial/</li>
@@ -412,12 +456,11 @@ cd Week1
 <pre><code class="language-bash">rmdir myDir
 </code></pre>
 <blockquote>
-<p>You can also delete a directory recursively by using the following command:
-```bash
-rm -rf myDir</p>
-<h1 id="-r-recursion-f-force">-r: recursion, -f: force</h1>
-<p>```</p>
+<p>You can also delete a directory recursively by using the following command:</p>
 </blockquote>
+<pre><code class="language-bash">rm -rf myDir
+# -r: recursion, -f: force
+</code></pre>
 <h3 id="extract">Extract</h3>
 <h4 id="wc"><code>wc</code></h4>
 <p>The <code>wc</code> command or the word count command is used, as its name suggests, to get the counts. It can be used to get the number of lines, word counts, byte and character count. It has a syntax that follows the format:</p>
@@ -484,11 +527,13 @@ To add readable, writable and executable permissions to a directory, we use 'r'(
 <li><code>chmod o-rwx foldername</code></li>
 </ul>
 </blockquote>
-<p>How to Change Permissions in Numeric Code in Linux?
-* 0 = <code>No Permission</code>
-* 1 = <code>Execute</code>
-* 2 = <code>Write</code>
-* 4 = <code>Read</code></p>
+<p>How to Change Permissions in Numeric Code in Linux?</p>
+<ul>
+<li>0 = <code>No Permission</code></li>
+<li>1 = <code>Execute</code></li>
+<li>2 = <code>Write</code></li>
+<li>4 = <code>Read</code></li>
+</ul>
 <p>Basically, you add up the numbers depending on the level of permission you want to give.
 The permission numbers are listed below:</p>
 <ul>
@@ -519,27 +564,17 @@ The permission numbers are listed below:</p>
 <pre><code class="language-bash">history 3 # displays last 3 commands
 </code></pre>
 <h2 id="test-yourself">Test Yourself</h2>
-<ol>
-<li>Enter the command cd blah
--&gt; What happens?</li>
-<li>Enter the command cd ..
-Mind the space between "cd" and ".."! Use the pwd command.
--&gt; What happens?</li>
-<li>List the directory contents with the ls command.
--&gt; What do you see?
--&gt; What do you think these are?
--&gt; Check using the pwd command.</li>
-<li>Enter the cd command.
--&gt; What happens?</li>
-<li>Repeat step 2 two times.
--&gt; What happens?</li>
-<li>Display the content of this directory.</li>
-<li>Try the command cd root
--&gt; What happens?
--&gt; To which directories do you have access?</li>
-<li>Repeat step 4.
-Do you know another possibility to get where you are now?</li>
-</ol>
+<ul>
+<li>Let's start creating a directory to store blogs! But first, I'll need a directory to store my files (<em>Let's call the directory <code>MyAmazingJourneyThroughTheCB</code></em>) 🤔</li>
+<li>Woohoo! We are done creating the directory to store our <code>text file</code> blogs. How do I go into the directory now? </li>
+<li>Oops.You know what, let's just call our <code>ACMOP</code> 🔥. How do I go back to where I came from and rename my directory?</li>
+<li>Okay, we are good to go now folks! Let's start by creating our first blog file. How do I create a <code>text file</code> named <code>About.txt</code>? How do I write into this file?</li>
+<li>Let's check the first 3 lines in the file. Hmm, I wonder how would I do that?</li>
+<li>OKAY, I'M HAVING A CRISIS RIGHT NOW! WHO AM I? WHERE AM I?</li>
+<li>Phew, it's all cool. Just to check, what all files do I have in my directory now?</li>
+<li></li>
+<li></li>
+</ul>
 <h2 id="whats-next">What's next?</h2>
 <p>Here are some Github repositories that you can make use of for additional information.</p>
 <h3 id="upgrade-your-terminal">Upgrade your Terminal</h3>
