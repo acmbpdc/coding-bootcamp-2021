@@ -73,38 +73,18 @@
     <li class="toctree-l3"><a class="reference internal" href="#man">man</a>
     </li>
     <li class="toctree-l3"><a class="reference internal" href="#cat">cat</a>
-        <ul>
-    <li class="toctree-l4"><a class="reference internal" href="#cat_1">cat</a>
-    </li>
-    <li class="toctree-l4"><a class="reference internal" href="#head">head</a>
-    </li>
-    <li class="toctree-l4"><a class="reference internal" href="#tail">tail</a>
     </li>
         </ul>
     </li>
-    <li class="toctree-l3"><a class="reference internal" href="#navigation">Navigation</a>
+    <li class="toctree-l2"><a class="reference internal" href="#navigation">Navigation</a>
         <ul>
-    <li class="toctree-l4"><a class="reference internal" href="#pwd">pwd</a>
+    <li class="toctree-l3"><a class="reference internal" href="#pwd">pwd</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#directory">Directory</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#path">Path</a>
     </li>
     <li class="toctree-l4"><a class="reference internal" href="#home-directory">HOME Directory</a>
-    </li>
-        </ul>
-    </li>
-    <li class="toctree-l3"><a class="reference internal" href="#head_1">head</a>
-    </li>
-    <li class="toctree-l3"><a class="reference internal" href="#tail_1">tail</a>
-    </li>
-        </ul>
-    </li>
-    <li class="toctree-l2"><a class="reference internal" href="#navigation_1">Navigation</a>
-        <ul>
-    <li class="toctree-l3"><a class="reference internal" href="#pwd_1">pwd</a>
-        <ul>
-    <li class="toctree-l4"><a class="reference internal" href="#directory_1">Directory</a>
-    </li>
-    <li class="toctree-l4"><a class="reference internal" href="#path_1">Path</a>
-    </li>
-    <li class="toctree-l4"><a class="reference internal" href="#home-directory_1">HOME Directory</a>
     </li>
         </ul>
     </li>
@@ -276,63 +256,15 @@
 <p>The <code>cat</code> command can be used to display the contents of the file</p>
 <pre><code class="language-bash">cat hello_world.txt
 </code></pre>
-<h4 id="cat_1"><code>cat</code></h4>
-<p>The <code>cat</code> command can be used to display the contents of the file</p>
-<pre><code class="language-bash">cat hello_world.txt
-</code></pre>
-<h4 id="head"><code>head</code></h4>
-<p>The <code>head</code> command can be used to display the first few lines of the file</p>
-<pre><code class="language-bash">head hello_world.txt -n 3 # prints the first 3 lines
-</code></pre>
-<h4 id="tail"><code>tail</code></h4>
-<p>Similarly, the 'tail' command can be used display the last few lines</p>
-<pre><code class="language-bash">tail hello_world.txt -n 3 # prints the last 3 lines of the file
-</code></pre>
-<h3 id="navigation">Navigation</h3>
-<h4 id="pwd"><code>pwd</code></h4>
+<h2 id="navigation">Navigation</h2>
+<h3 id="pwd"><code>pwd</code></h3>
 <p>The <code>pwd</code> command is used to find the present working directory.</p>
 <pre><code class="language-bash">pwd # Find out where you are, anytime!
 </code></pre>
-<h5 id="directory">Directory</h5>
+<h4 id="directory">Directory</h4>
 <p>A directory is a location for storing files on your computer.</p>
 <p>Basically, a folder.</p>
-<h5 id="path">Path</h5>
-<p>The <em>path</em> of a file or a directory describes their location on a computer.</p>
-<p>There are two types of paths:</p>
-<ul>
-<li>
-<p><strong>Relative Path</strong>: It refers to the location of a file or directory, <em>relative</em> to the <em>current</em> directory (or <em>present working directory</em>).</p>
-</li>
-<li>
-<p><strong>Absolute Path</strong>: It is the location of a file or a directory, <em>relative</em> to the <em>root</em> directory.</p>
-</li>
-</ul>
-<p>Some important shorthand notations:
-- <code>.</code> refers to the <em>current</em> directory
-- <code>..</code> refers to the <em>parent</em> of the <em>current</em> directory
-- <code>~</code> refers to the <code>HOME</code> directory
-- <code>/</code> refers to the <em>root</em> directory</p>
-<blockquote>
-<h4 id="home-directory"><code>HOME</code> Directory</h4>
-<p>Basically, the equivalent of <em>Desktop</em>.</p>
-</blockquote>
-<h3 id="head_1"><code>head</code></h3>
-<p>The <code>head</code> command can be used to display the first few lines of the file</p>
-<pre><code class="language-bash">head hello_world.txt -n 3 # prints the first 3 lines
-</code></pre>
-<h3 id="tail_1"><code>tail</code></h3>
-<p>Similarly, the 'tail' command can be used display the last few lines</p>
-<pre><code class="language-bash">tail hello_world.txt -n 3 # prints the last 3 lines of the file
-</code></pre>
-<h2 id="navigation_1">Navigation</h2>
-<h3 id="pwd_1"><code>pwd</code></h3>
-<p>The <code>pwd</code> command is used to find the present working directory.</p>
-<pre><code class="language-bash">pwd # Find out where you are, anytime!
-</code></pre>
-<h4 id="directory_1">Directory</h4>
-<p>A directory is a location for storing files on your computer.</p>
-<p>Basically, a folder.</p>
-<h4 id="path_1">Path</h4>
+<h4 id="path">Path</h4>
 <p>The <em>path</em> of a file or a directory describes their location on a computer.</p>
 <p>There are two types of paths:
 - <strong>Relative Path</strong>: It refers to the location of a file or directory, <em>relative</em> to the <em>current</em> directory (or <em>present working directory</em>).
@@ -343,7 +275,7 @@
 - <code>~</code> refers to the <code>HOME</code> directory
 - <code>/</code> refers to the <em>root</em> directory</p>
 <blockquote>
-<h4 id="home-directory_1"><code>HOME</code> Directory</h4>
+<h4 id="home-directory"><code>HOME</code> Directory</h4>
 <p>Basically, the equivalent of <em>Desktop</em>.</p>
 </blockquote>
 <h3 id="ls"><code>ls</code></h3>
