@@ -19,7 +19,7 @@ Most developers navigate through their system and run the program they build thr
 ## Installation/Environment
 Please visit the links provided below for instructions in how to get started.
 
-* https://www.sublimetext.com/docs/command_line.html
+* [https://www.sublimetext.com/docs/command_line.html
 * https://developer.here.com/documentation/open-location-platform-cli/user_guide/index.html
 * https://missing.csail.mit.edu/
 * https://ryanstutorials.net/bash-scripting-tutorial/
@@ -371,10 +371,10 @@ rmdir myDir
 ```
 
 > You can also delete a directory recursively by using the following command:
-> ```bash
-> rm -rf myDir
-> # -r: recursion, -f: force
-> ```
+```bash
+rm -rf myDir
+# -r: recursion, -f: force
+```
 
 ### Extract
 
@@ -469,6 +469,7 @@ The command for changing directory permissions for group owners is similar, but 
 > * `chmod o-rwx foldername`
 
 How to Change Permissions in Numeric Code in Linux?
+
 * 0 = `No Permission`
 * 1 = `Execute`
 * 2 = `Write`
@@ -515,25 +516,15 @@ history 3 # displays last 3 commands
 ```
 
 ## Test Yourself
-1. Enter the command cd blah
--> What happens?
-2. Enter the command cd ..
-Mind the space between "cd" and ".."! Use the pwd command.
--> What happens?
-3. List the directory contents with the ls command.
--> What do you see?
--> What do you think these are?
--> Check using the pwd command.
-4. Enter the cd command.
--> What happens?
-5. Repeat step 2 two times.
--> What happens?
-6. Display the content of this directory.
-7. Try the command cd root
--> What happens?
--> To which directories do you have access?
-8. Repeat step 4.
-Do you know another possibility to get where you are now?
+* Let's start creating a directory to store blogs! But first, I'll need a directory to store my files (*Let's call the directory `MyAmazingJourneyThroughTheCB`*) 🤔
+* Woohoo! We are done creating the directory to store our `text file` blogs. How do I go into the directory now? 
+* Oops.You know what, let's just call our `ACMOP` 🔥. How do I go back to where I came from and rename my directory?
+* Okay, we are good to go now folks! Let's start by creating our first blog file. How do I create a `text file` named `About.txt`? How do I write into this file?
+* Let's check the first 3 lines in the file. Hmm, I wonder how would I do that?
+* OKAY, I'M HAVING A CRISIS RIGHT NOW! WHO AM I? WHERE AM I?
+* Phew, it's all cool. Just to check, what all files do I have in my directory now?
+* 
+* 
 
 ## What's next?
 Here are some Github repositories that you can make use of for additional information.

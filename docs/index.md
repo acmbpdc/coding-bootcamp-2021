@@ -1,17 +1,29 @@
-# Welcome to Coding Bootcamp 2021
+# Coding Bootcamp - 2021
 
-For full documentation visit [mkdocs.org](https://www.mkdocs.org).
+This repository contains the resources for the *Coding Bootcamp - 2021* organized by [ACM](https://www.acmbpdc.org/).
 
-## Commands
+## Overview
 
-* `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs -h` - Print help message and exit.
+This bootcamp will provide its audience the core foundation in this amazing field of programming.
 
-## Project layout
+## Sessions
 
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
+| Session | Topic |
+| :-----: |:-------------:|
+| 1 | [**Command Line Interface**](01-command-line-interface/README.md) |
+| 2 | **Overview of Programming Languages** |
+| 3 | **Data Structures** |
+| 4 | **Algorithms** |
+| 5 | **Python - 1** |
+| 6 | **Python - 2** |
+| 7 | **Git & GitHub - 1** |
+| 8 | **Git & GitHub - 2** |
+
+## Instructors
+
+This workshop is conducted by:
+
+* [Abshar Mohammed Aslam](https://github.com/abxhr)
+* [Ashish Kumar Jha](https://github.com/Ashish-BITS)
+* [Areeb Pasha](https://github.com/areeb1501)
+* [Samuel David](https://github.com/samueldavid1994)
