@@ -117,6 +117,7 @@ The *path* of a file or a directory describes their location on a computer.
 There are two types of paths:
 
 - **Relative Path**: It refers to the location of a file or directory, *relative* to the *current* directory (or *present working directory*).
+
 - **Absolute Path**: It is the location of a file or a directory, *relative* to the *root* directory.
 
 Some important shorthand notations:
