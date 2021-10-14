@@ -12,20 +12,19 @@ The Command Line Interface (or *CLI*), is a program on your device, that lets yo
 
 Although *GUI* (Graphical User Interface) stands out to be visually attractive and easy to navigate, *CLI* stands out to be way more powerful for alot more tasks.
 
-Most developers navigate through their system and run the program they build through the Command Line. Through *CLI*, you have full control over your system. Operating Systems such as *Windows* and *MacOS* have system protection im place, which will not allow you to perform certain tasks which are system protected.
+Most developers navigate through their system and run the program they build through the Command Line. Through *CLI*, you have full control over your system. Operating Systems such as *Windows* and *MacOS* have system protection in place, which will not allow you to perform certain tasks which are system protected.
 
 *CLI* also uses lesser additional system resources (as compared to a *GUI*), which allows it to be faster than a *GUI*.
 
 ## Installation/Environment
 Please visit the links provided below for instructions in how to get started.
 
-* [https://www.sublimetext.com/docs/command_line.html
-* https://developer.here.com/documentation/open-location-platform-cli/user_guide/index.html
-* https://missing.csail.mit.edu/
-* https://ryanstutorials.net/bash-scripting-tutorial/
-* https://linuxhint.com/bash_scripting_tutorial_beginners/
-* https://gitlab.com/TheOuterLinux/Command-Line
-
+* [`https://www.sublimetext.com/docs/command_line.html`](https://www.sublimetext.com/docs/command_line.html)
+* [`https://developer.here.com/documentation/open-location-platform-cli/user_guide/index.html`](https://developer.here.com/documentation/open-location-platform-cli/user_guide/index.html)
+* [`https://missing.csail.mit.edu/`](https://missing.csail.mit.edu/)
+* [`https://ryanstutorials.net/bash-scripting-tutorial/`](https://ryanstutorials.net/bash-scripting-tutorial/)
+* [`https://linuxhint.com/bash_scripting_tutorial_beginners/`](https://linuxhint.com/bash_scripting_tutorial_beginners/)
+* [`https://gitlab.com/TheOuterLinux/Command-Line`](https://gitlab.com/TheOuterLinux/Command-Line)
 
 ## Basics
 
@@ -116,6 +115,7 @@ Basically, a folder.
 The *path* of a file or a directory describes their location on a computer.
 
 There are two types of paths:
+
 - **Relative Path**: It refers to the location of a file or directory, *relative* to the *current* directory (or *present working directory*).
 - **Absolute Path**: It is the location of a file or a directory, *relative* to the *root* directory.
 
@@ -518,13 +518,13 @@ history 3 # displays last 3 commands
 ## Test Yourself
 * Let's start creating a directory to store blogs! But first, I'll need a directory to store my files (*Let's call the directory `MyAmazingJourneyThroughTheCB`*) 🤔
 * Woohoo! We are done creating the directory to store our `text file` blogs. How do I go into the directory now? 
-* Oops.You know what, let's just call our `ACMOP` 🔥. How do I go back to where I came from and rename my directory?
+* Oops. You know what, let's just call our `ACMOP` 🔥. How do I go back to where I came from and rename my directory?
 * Okay, we are good to go now folks! Let's start by creating our first blog file. How do I create a `text file` named `About.txt`? How do I write into this file?
 * Let's check the first 3 lines in the file. Hmm, I wonder how would I do that?
 * OKAY, I'M HAVING A CRISIS RIGHT NOW! WHO AM I? WHERE AM I?
 * Phew, it's all cool. Just to check, what all files do I have in my directory now?
-* 
-* 
+* Let's try to analyse the blog we just wrote. The (*weird*) blog website only accepts files of maximum 5 lines, 1000 words, and 5000 characters. How would I check this?
+* Let's look at the number times `ACM` was mentioned in the file. 
 
 ## What's next?
 Here are some Github repositories that you can make use of for additional information.
@@ -544,14 +544,9 @@ Here are some Github repositories that you can make use of for additional inform
 ### Courses
 * [CLI Crash Course - *freeCodeCamp*](https://www.youtube.com/watch?v=yz7nYlnXLfE)
 
-### Books
-
 ### Websites
 * [What is CLI? - *W3Schools*](https://www.w3schools.com/whatis/whatis_cli.asp)
 
 * [CLI Cheatsheet - *Git Tower*](https://www.git-tower.com/blog/command-line-cheat-sheet/)
 
 * [Command Line Reference - *Microsoft*](https://docs.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/cc754340(v=ws.11))
-
-### Channels
-
