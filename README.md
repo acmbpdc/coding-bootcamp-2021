@@ -23,8 +23,6 @@ This bootcamp will provide its audience the core foundation in this amazing fiel
 
 This workshop is conducted by:
 
-This workshop is conducted by:
-
 * [Abshar Mohammed Aslam](https://github.com/abxhr)
 * [Ashish Kumar Jha](https://github.com/Ashish-BITS)
 * [Areeb Pasha](https://github.com/areeb1501)
