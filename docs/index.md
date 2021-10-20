@@ -11,7 +11,7 @@ This bootcamp will provide its audience the core foundation in this amazing fiel
 | Session | Topic |
 | :-----: |:-------------:|
 | 1 | [**Command Line Interface**](01-command-line-interface/README.md) |
-| 2 | **Overview of Programming Languages** |
+| 2 | [**Overview of Programming Languages**](02-overview-of-programming-languages/README.md) |
 | 3 | **Data Structures** |
 | 4 | **Algorithms** |
 | 5 | **Python - 1** |
