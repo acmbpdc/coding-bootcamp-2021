@@ -76,6 +76,14 @@
     </li>
     <li class="toctree-l3"><a class="reference internal" href="#linking-css">Linking CSS:</a>
         <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#css-resources">CSS Resources:</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#javascript">Javascript</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#example_1">Example</a>
+    </li>
     <li class="toctree-l4"><a class="reference internal" href="#resources-to-learn-javascript">Resources to learn Javascript :</a>
     </li>
         </ul>
@@ -145,6 +153,18 @@
     <li class="toctree-l3"><a class="reference internal" href="#creating-a-function">Creating A Function</a>
     </li>
     <li class="toctree-l3"><a class="reference internal" href="#calling-a-function">Calling A Function</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#arrays">Arrays</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#declaration-of-arrays">Declaration of Arrays</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#accessing-the-elements">Accessing the elements</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#strings">Strings</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#multi-dimensional-arrays">Multi-dimensional Arrays</a>
     </li>
         </ul>
     </li>
@@ -379,11 +399,9 @@ element.</li>
         &lt;p&gt;This is a paragraph.&lt;/p&gt;
     &lt;/body&gt;
 &lt;/html&gt;
- ```
-
-  *styles.css :* 
-  ```css
-  body {
+</code></pre>
+<p><em>styles.css :</em> </p>
+<pre><code class="language-css">  body {
     background-color: powderblue;
   }
   h1 {
@@ -392,21 +410,17 @@ element.</li>
   p {
     color: red;
   }
-  ```
-Any styles added to this will reflect in the webpage.
-
-#### CSS Resources:
-
-- [CSS Crash Course](https://www.youtube.com/watch?v=1Rs2ND1ryYc)
-- [CSS Documentation](https://www.w3schools.com/css/default.asp)
-
-### Javascript
-
-Javascript is used to add functionality to websites. 
-
-#### Example
-```javascript
-// the hello world program
+</code></pre>
+<p>Any styles added to this will reflect in the webpage.</p>
+<h4 id="css-resources">CSS Resources:</h4>
+<ul>
+<li><a href="https://www.youtube.com/watch?v=1Rs2ND1ryYc">CSS Crash Course</a></li>
+<li><a href="https://www.w3schools.com/css/default.asp">CSS Documentation</a></li>
+</ul>
+<h3 id="javascript">Javascript</h3>
+<p>Javascript is used to add functionality to websites. </p>
+<h4 id="example_1">Example</h4>
+<pre><code class="language-javascript">// the hello world program
 console.log('Hello World');
 </code></pre>
 <h4 id="resources-to-learn-javascript">Resources to learn Javascript :</h4>
@@ -441,15 +455,21 @@ console.log('Hello World');
 &lt;/html&gt;
 </code></pre>
 <h4 id="frameworks">Frameworks</h4>
-<p>Frameworks make web development easy and quick. Here are some of the most popular web frameworks for HTML, CSS and JS.
-- CSS
-    - <a href="https://tailwindcss.com/">Tailwind CSS</a>
-    - <a href="https://getbootstrap.com/">Bootstrap</a>
-    - <a href="https://bulma.io/">Bulma</a>
-    - <a href="https://purecss.io/">Purecss</a>
-    - <a href="https://semantic-ui.com/">Semantic UI</a></p>
+<p>Frameworks make web development easy and quick. Here are some of the most popular web frameworks for HTML, CSS and JS.</p>
 <ul>
-<li>JavaScript   <ul>
+<li>
+<p>CSS</p>
+<ul>
+<li><a href="https://tailwindcss.com/">Tailwind CSS</a></li>
+<li><a href="https://getbootstrap.com/">Bootstrap</a></li>
+<li><a href="https://bulma.io/">Bulma</a></li>
+<li><a href="https://purecss.io/">Purecss</a></li>
+<li><a href="https://semantic-ui.com/">Semantic UI</a></li>
+</ul>
+</li>
+<li>
+<p>JavaScript   </p>
+<ul>
 <li><a href="https://reactjs.org/">React</a>  </li>
 <li><a href="https://angular.io/">Angular</a>  </li>
 <li><a href="https://vuejs.org/">Vue</a>  </li>
@@ -631,11 +651,11 @@ int main(){
 <p>Let's see a simple example of c language that gets input from the user and prints the cube of the given number.</p>
 <pre><code class="language-c">#include&lt;stdio.h&gt;    
 int main(){    
-int number;    
-printf(&quot;enter a number:&quot;);    
-scanf(&quot;%d&quot;,&amp;number);    
-printf(&quot;cube of number is:%d &quot;,number*number*number);    
-return 0;  
+  int number;    
+  printf(&quot;enter a number:&quot;);    
+  scanf(&quot;%d&quot;,&amp;number);    
+  printf(&quot;cube of number is:%d &quot;,number*number*number);    
+  return 0;  
 }   
 </code></pre>
 <h3 id="c-operators">C Operators</h3>
@@ -875,7 +895,7 @@ while (i &lt; 5);
 }
 </code></pre>
 <h2 id="functions">Functions</h2>
-<p>A <b>functio</b> is a block of code which only runs when it is called.</p>
+<p>A <b>function</b> is a block of code which only runs when it is called.</p>
 <p>You can pass data, known as parameters, into a function.</p>
 <p align = "center"><img src = "./assets/functions.png"></p>
 
@@ -892,14 +912,14 @@ while (i &lt; 5);
 Let's see a simple example of C function that doesn't return any value from the function.</p>
 <p>Example without return value:</p>
 <pre><code class="language-C">void hello(){  
-printf(&quot;hello c&quot;);  
+  printf(&quot;hello c&quot;);  
 }  
 </code></pre>
 <p>If you want to return any value from the function, you need to use any data type such as int, long, char, etc. The return type depends on the value to be returned from the function.</p>
 <p>Let's see a simple example of C function that returns int value from the function.</p>
 <p>Example with return value:</p>
 <pre><code class="language-C">int get(){  
-return 10;  
+  return 10;  
 }  
 </code></pre>
 <p>In the above example, we have to return 10 as a value, so the return type is int. If you want to return floating-point value (e.g., 10.2, 3.1, 54.5, etc), you need to use float as the return type of the method.</p>
@@ -920,6 +940,59 @@ void average(int a, int b, int c, int d, int e)
     avg = (a+b+c+d+e)/5;   
     printf(&quot;The average of given five numbers : %f&quot;,avg);  
 }  
+</code></pre>
+<h2 id="arrays">Arrays</h2>
+<p>Think about a situation where you want to store the names of every student in your batch? Don't you think it is a little too much work in assigning a name to one variable? That is where arrays come!</p>
+<p>An array (in any programming language) is collection of similar data types, stored at continuous memory locations, under one variable name.</p>
+<h3 id="declaration-of-arrays">Declaration of Arrays</h3>
+<p>There are three main ways how you could declare an array:</p>
+<ul>
+<li><strong>By size</strong>: You could declare an array by mentioning just the size of elements you want in an array.</li>
+</ul>
+<pre><code class="language-c">int marks[5];
+int items = 10
+int price_canteen[items];
+</code></pre>
+<ul>
+<li><strong>By initialising the elements</strong>: You could declare an array by initialising the elements in the array (without the size).</li>
+</ul>
+<pre><code class="language-c">int marks[] = {90, 84, 68, 71, 45};
+</code></pre>
+<ul>
+<li><strong>By initialising the elements (with size)</strong>: You could otherwise declare an array by initialising the elements in the array (with size).</li>
+</ul>
+<pre><code class="language-c">float price_canteen[4] = {4, 12.5, 11, 6}; 
+</code></pre>
+<h3 id="accessing-the-elements">Accessing the elements</h3>
+<p>The elements in the array are accessed using its <code>index</code> position. The <code>index</code> of the elements in the array go from <code>0</code> (<em>first element</em>) to <code>n-1</code> (<em>last element</em>).</p>
+<pre><code class="language-c">char vowels[] = {'a', 'e', 'i', 'o', 'u'};
+printf(&quot;%c&quot;, vowels[1]);
+</code></pre>
+<h3 id="strings">Strings</h3>
+<p>As we don't have a predefined data type in <code>C</code> which we could use to initialise strings, we use character arrays which acts the same any string would do.</p>
+<pre><code class="language-c">char strongest_avenger[] = {'s','h','a','k','t','i','m','a','n'};
+char name[] = &quot;Karen&quot;;
+printf(&quot;%s&quot;, name);
+
+char str[50];
+scanf(&quot;%s&quot;, str);
+</code></pre>
+<h3 id="multi-dimensional-arrays">Multi-dimensional Arrays</h3>
+<p>What about a table? What about a matrix? How do I store that in C? Yep, <code>multi-dimensional arrays</code>.</p>
+<pre><code class="language-c">int height_weight [2][2];
+</code></pre>
+<p>In the above example, we create an multi-dimensional array called <code>height_weight</code>, which has <code>2</code> rows and <code>2</code> columns.</p>
+<p>You could declare the multi-dimensional array, the same way you do with normal (<code>1-D</code>) arrays as well.</p>
+<pre><code class="language-c">int height_weight [2][2] = {{3, 60}, {2, 80}};
+</code></pre>
+<p>You could create an array of strings using multi-dimensional arrays.</p>
+<pre><code class="language-c">  char cool_people[5][10] = {
+    &quot;Bheem&quot;,
+    &quot;Raju&quot;,
+    &quot;Chutki&quot;,
+    &quot;Dolu&quot;,
+    &quot;Bolu&quot;
+  };
 </code></pre>
 <hr />
 <h2 id="object-oriented-programming-system">Object Oriented Programming System</h2>
