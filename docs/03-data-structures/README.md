@@ -6,11 +6,14 @@ To structure the data in memory, 'n' number of algorithms were proposed, and all
 
 ## Types Of Data Structures 
 The Data Structures can be divided as follows:
+
 * <b><i>Primitive</b> 
 * <b>Non-Primitive</i></b>
+
 <p align = "center"><img src = "./assets/DSA-2.png"></p>
 
 Another Classification for Data Structures can be as follows:
+
 * <b><i>Static Data Structure</i></b> :
 It is a type of data structure where the size is allocated at the compile time. Therefore, the maximum size is fixed.
 * <b><i>Dynamic Data Structure</i></b> :
@@ -75,7 +78,8 @@ for ( int i=0; i<n ;i++)
     }  
 }  
 ```
-<b> Visit : </b> <i>https://www.geeksforgeeks.org/array-data-structure/</i>
+
+**Visit** : [*https://www.geeksforgeeks.org/array-data-structure*](https://www.geeksforgeeks.org/array-data-structure)
 
 ## Queue
 
@@ -212,54 +216,73 @@ int main()
 
 ### Types of Queue
 
-* Linear Queue
+* **Linear Queue**:
+
 In Linear Queue, an insertion takes place from one end while the deletion occurs from another end. The end at which the insertion takes place is known as the rear end, and the end at which the deletion takes place is known as front end. It strictly follows the FIFO rule. The linear Queue can be represented, as shown in the below figure:
+
 <p align = "center"><img src = "./assets/DSA-6.png"></p>
 
-* Circular Queue
+* **Circular Queue**:
+
 In Circular Queue, all the nodes are represented as circular. It is similar to the linear Queue except that the last element of the queue is connected to the first element. It is also known as Ring Buffer as all the ends are connected to another end. The circular queue can be represented as:
+
 <p align = "center"><img src = "./assets/DSA-7.png"></p>
 
-* Priority Queue
+* **Priority Queue**:
+
 A priority queue is another special type of Queue data structure in which each element has some priority associated with it. Based on the priority of the element, the elements are arranged in a priority queue. If the elements occur with the same priority, then they are served according to the FIFO principle.
-* Deque (Double Ended Queue)
+
+* **Deque** (Double Ended Queue):
+
 Both the Linear Queue and Deque are different as the linear queue follows the FIFO principle whereas, deque does not follow the FIFO principle. In Deque, the insertion and deletion can occur from both ends.
 
-<b> Visit : </b> <i>https://www.geeksforgeeks.org/queue-data-structure/</i>
+**Visit**: [*https://www.geeksforgeeks.org/queue-data-structure*](https://www.geeksforgeeks.org/queue-data-structure)
 
 ## Stack
 
 A Stack is a linear data structure that follows the <b>LIFO (Last-In-First-Out)</b> principle. Stack has one end, whereas the Queue has two ends <b>(front and rear)</b>. It contains only one pointer top pointer pointing to the topmost element of the stack. Whenever an element is added in the stack, it is added on the top of the stack, and the element can be deleted only from the stack. In other words,<b> a stack can be defined as a container in which insertion and deletion can be done from the one end known as the top of the stack.</b>
 
-Some key points related to stack
+Some key points related to stack:
+
 - It is called as stack because it behaves like a real-world stack, piles of books, etc.
 - A Stack is an abstract data type with a pre-defined capacity, which means that it can store the elements of a limited size.
 - It is a data structure that follows some order to insert and delete the elements, and that order can be LIFO or FILO.
+
 <p align = "center"><img src = "./assets/DSA-8.png"></p>
 
 ### Standard Stack Operations
 The following are some common operations implemented on the stack:
 
-- <b>push()</b>: When we insert an element in a stack then the operation is known as a push. If the stack is full then the overflow condition occurs.
-- <b>pop()</b>: When we delete an element from the stack, the operation is known as a pop. If the stack is empty means that no element exists in the stack, this state is known as an underflow state.
-- <b>isEmpty()</b>: It determines whether the stack is empty or not.
-- <b>isFull()</b>: It determines whether the stack is full or not.'
-- <b>peek()</b>: It returns the element at the given position.
-- <b>count()</b>: It returns the total number of elements available in a stack.
-- <b>change()</b>: It changes the element at the given position.
-- <b>display()</b>: It prints all the elements available in the stack.
+- `push()`: When we insert an element in a stack then the operation is known as a push. If the stack is full then the overflow condition occurs.
+- `pop()`: When we delete an element from the stack, the operation is known as a pop. If the stack is empty means that no element exists in the stack, this state is known as an underflow state.
+- `isEmpty()`: It determines whether the stack is empty or not.
+- `isFull()`: It determines whether the stack is full or not.
+- `peek()`: It returns the element at the given position.
+- `count()`: It returns the total number of elements available in a stack.
+- `change()`: It changes the element at the given position.
+- `display()`: It prints all the elements available in the stack.
 
 ### Applications of Stack
 - <b>Balancing of symbols :</b> Stack is used for balancing a symbol. As we know, each program has an opening and closing braces; when the opening braces come, we push the braces in a stack, and when the closing braces appear, we pop the opening braces from the stack. Therefore, the net value comes out to be zero. If any symbol is left in the stack, it means that some syntax occurs in a program.
-- <b>String reversal: </b>Stack is also used for reversing a string. For example, we want to reverse a "javaTpoint" string, so we can achieve this with the help of a stack.
+
+- <b>String reversal: </b>Stack is also used for reversing a string. For example, we want to reverse a "*javaTpoint*" string, so we can achieve this with the help of a stack.
+
 First, we push all the characters of the string in a stack until we reach the null character.
+
 After pushing all the characters, we start taking out the character one by one until we reach the bottom of the stack.
+
 - <b>UNDO/REDO: </b>It can also be used for performing UNDO/REDO operations. For example, we have an editor in which we write 'a', then 'b', and then 'c'; therefore, the text written in an editor is abc. So, there are three states, a, ab, and abc, which are stored in a stack. There would be two stacks in which one stack shows UNDO state, and the other shows REDO state.
+
 If we want to perform UNDO operation, and want to achieve 'ab' state, then we implement pop operation.
+
 - <b>Recursion:</b> The recursion means that the function is calling itself again. To maintain the previous states, the compiler creates a system stack in which all the previous records of the function are maintained.
+
 - <b>DFS(Depth First Search): </b> This search is implemented on a Graph, and Graph uses the stack data structure.
+
 - <b>Backtracking: </b>Suppose we have to create a path to solve a maze problem. If we are moving in a particular path, and we realize that we come on the wrong way. In order to come at the beginning of the path to create a new path, we have to use the stack data structure.
+
 - <b>Expression conversion:</b>Stack can also be used for expression conversion. This is one of the most important applications of stack. 
+
 - <b>Memory management: </b> The stack manages the memory. The memory is assigned in the contiguous memory blocks. The memory is known as stack memory as all the variables are assigned in a function call stack memory. The memory size assigned to the program is known to the compiler. When the function is created, all its variables are assigned in the stack memory. When the function completed its execution, all the variables assigned in the stack are released.
 
 ```c
@@ -338,7 +361,7 @@ int main()
 }
 ```
 
-<b> Visit : </b> <i>https://www.geeksforgeeks.org/stack-data-structure/</i>
+**Visit**: [*https://www.geeksforgeeks.org/stack-data-structure*](https://www.geeksforgeeks.org/stack-data-structure)
 
 ## Linked List
 
@@ -351,7 +374,7 @@ int main()
 ### Uses of Linked List
 
 * The list is not required to be contiguously present in the memory. The node can reside any where in the memory and linked together to make a list. This achieves optimized utilization of space.
-* list size is limited to the memory size and doesn't need to be declared in advance.
+* List size is limited to the memory size and doesn't need to be declared in advance.
 * Empty node can not be present in the linked list.
 * We can store values of primitive types or objects in the singly linked list.
 
@@ -634,7 +657,7 @@ void display()
 }   
 ```
 
-<b> Visit : </b> <i>https://www.geeksforgeeks.org/data-structures/linked-list/</i>
+**Visit**: [*https://www.geeksforgeeks.org/data-structures/linked-list/*](https://www.geeksforgeeks.org/data-structures/linked-list/)
 
 ## Graphs
 
@@ -656,7 +679,7 @@ A directed graph is shown in the following figure.
 
 
 
-<b> Visit : </b> <i>https://www.geeksforgeeks.org/graph-data-structure-and-algorithms/</i>
+**Visit**: [*https://www.geeksforgeeks.org/graph-data-structure-and-algorithms/*](https://www.geeksforgeeks.org/graph-data-structure-and-algorithms/)
 
 ## Trees
 
@@ -679,4 +702,4 @@ A tree is also one of the data structures that represent hierarchical data. Supp
 
 <p align = "center"><img src = "./assets/DSA-13.png"></p>
 
-<b> Visit : </b> <i>https://www.geeksforgeeks.org/binary-tree-data-structure/</i>
+**Visit**: [*https://www.geeksforgeeks.org/binary-tree-data-structure/*](https://www.geeksforgeeks.org/binary-tree-data-structure/)
