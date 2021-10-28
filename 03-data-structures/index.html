@@ -154,16 +154,20 @@
 <p align = "center"><img src = "./assets/DSA-1.png"></p>
 
 <h2 id="types-of-data-structures">Types Of Data Structures</h2>
-<p>The Data Structures can be divided as follows:
-* <b><i>Primitive</b> 
-* <b>Non-Primitive</i></b></p>
+<p>The Data Structures can be divided as follows:</p>
+<ul>
+<li><b><i>Primitive</b> </li>
+<li><b>Non-Primitive</i></b></li>
+</ul>
 <p align = "center"><img src = "./assets/DSA-2.png"></p>
 
-<p>Another Classification for Data Structures can be as follows:
-* <b><i>Static Data Structure</i></b> :
-It is a type of data structure where the size is allocated at the compile time. Therefore, the maximum size is fixed.
-* <b><i>Dynamic Data Structure</i></b> :
-It is a type of data structure where the size is allocated at the run time. Therefore, the maximum size is flexible.</p>
+<p>Another Classification for Data Structures can be as follows:</p>
+<ul>
+<li><b><i>Static Data Structure</i></b> :
+It is a type of data structure where the size is allocated at the compile time. Therefore, the maximum size is fixed.</li>
+<li><b><i>Dynamic Data Structure</i></b> :
+It is a type of data structure where the size is allocated at the run time. Therefore, the maximum size is flexible.</li>
+</ul>
 <h2 id="operations-on-a-data-structure">Operations On A Data Structure</h2>
 <ul>
 <li><b><i>Searching</i></b> : We can search for any element in a data structure.</li>
@@ -224,7 +228,7 @@ for ( int i=0; i&lt;n ;i++)
     }  
 }  
 </code></pre>
-<p><b> Visit : </b> <i>https://www.geeksforgeeks.org/array-data-structure/</i></p>
+<p><strong>Visit</strong> : <a href="https://www.geeksforgeeks.org/array-data-structure"><em>https://www.geeksforgeeks.org/array-data-structure</em></a></p>
 <h2 id="queue">Queue</h2>
 <ul>
 <li>
@@ -361,57 +365,79 @@ int main()
 </code></pre>
 <h3 id="types-of-queue">Types of Queue</h3>
 <ul>
-<li>Linear Queue
-In Linear Queue, an insertion takes place from one end while the deletion occurs from another end. The end at which the insertion takes place is known as the rear end, and the end at which the deletion takes place is known as front end. It strictly follows the FIFO rule. The linear Queue can be represented, as shown in the below figure:</li>
+<li><strong>Linear Queue</strong>:</li>
 </ul>
+<p>In Linear Queue, an insertion takes place from one end while the deletion occurs from another end. The end at which the insertion takes place is known as the rear end, and the end at which the deletion takes place is known as front end. It strictly follows the FIFO rule. The linear Queue can be represented, as shown in the below figure:</p>
 <p align = "center"><img src = "./assets/DSA-6.png"></p>
 
 <ul>
-<li>Circular Queue
-In Circular Queue, all the nodes are represented as circular. It is similar to the linear Queue except that the last element of the queue is connected to the first element. It is also known as Ring Buffer as all the ends are connected to another end. The circular queue can be represented as:</li>
+<li><strong>Circular Queue</strong>:</li>
 </ul>
+<p>In Circular Queue, all the nodes are represented as circular. It is similar to the linear Queue except that the last element of the queue is connected to the first element. It is also known as Ring Buffer as all the ends are connected to another end. The circular queue can be represented as:</p>
 <p align = "center"><img src = "./assets/DSA-7.png"></p>
 
 <ul>
-<li>Priority Queue
-A priority queue is another special type of Queue data structure in which each element has some priority associated with it. Based on the priority of the element, the elements are arranged in a priority queue. If the elements occur with the same priority, then they are served according to the FIFO principle.</li>
-<li>Deque (Double Ended Queue)
-Both the Linear Queue and Deque are different as the linear queue follows the FIFO principle whereas, deque does not follow the FIFO principle. In Deque, the insertion and deletion can occur from both ends.</li>
+<li><strong>Priority Queue</strong>:</li>
 </ul>
-<p><b> Visit : </b> <i>https://www.geeksforgeeks.org/queue-data-structure/</i></p>
+<p>A priority queue is another special type of Queue data structure in which each element has some priority associated with it. Based on the priority of the element, the elements are arranged in a priority queue. If the elements occur with the same priority, then they are served according to the FIFO principle.</p>
+<ul>
+<li><strong>Deque</strong> (Double Ended Queue):</li>
+</ul>
+<p>Both the Linear Queue and Deque are different as the linear queue follows the FIFO principle whereas, deque does not follow the FIFO principle. In Deque, the insertion and deletion can occur from both ends.</p>
+<p><strong>Visit</strong>: <a href="https://www.geeksforgeeks.org/queue-data-structure"><em>https://www.geeksforgeeks.org/queue-data-structure</em></a></p>
 <h2 id="stack">Stack</h2>
 <p>A Stack is a linear data structure that follows the <b>LIFO (Last-In-First-Out)</b> principle. Stack has one end, whereas the Queue has two ends <b>(front and rear)</b>. It contains only one pointer top pointer pointing to the topmost element of the stack. Whenever an element is added in the stack, it is added on the top of the stack, and the element can be deleted only from the stack. In other words,<b> a stack can be defined as a container in which insertion and deletion can be done from the one end known as the top of the stack.</b></p>
-<p>Some key points related to stack
-- It is called as stack because it behaves like a real-world stack, piles of books, etc.
-- A Stack is an abstract data type with a pre-defined capacity, which means that it can store the elements of a limited size.
-- It is a data structure that follows some order to insert and delete the elements, and that order can be LIFO or FILO.</p>
+<p>Some key points related to stack:</p>
+<ul>
+<li>It is called as stack because it behaves like a real-world stack, piles of books, etc.</li>
+<li>A Stack is an abstract data type with a pre-defined capacity, which means that it can store the elements of a limited size.</li>
+<li>It is a data structure that follows some order to insert and delete the elements, and that order can be LIFO or FILO.</li>
+</ul>
 <p align = "center"><img src = "./assets/DSA-8.png"></p>
 
 <h3 id="standard-stack-operations">Standard Stack Operations</h3>
 <p>The following are some common operations implemented on the stack:</p>
 <ul>
-<li><b>push()</b>: When we insert an element in a stack then the operation is known as a push. If the stack is full then the overflow condition occurs.</li>
-<li><b>pop()</b>: When we delete an element from the stack, the operation is known as a pop. If the stack is empty means that no element exists in the stack, this state is known as an underflow state.</li>
-<li><b>isEmpty()</b>: It determines whether the stack is empty or not.</li>
-<li><b>isFull()</b>: It determines whether the stack is full or not.'</li>
-<li><b>peek()</b>: It returns the element at the given position.</li>
-<li><b>count()</b>: It returns the total number of elements available in a stack.</li>
-<li><b>change()</b>: It changes the element at the given position.</li>
-<li><b>display()</b>: It prints all the elements available in the stack.</li>
+<li><code>push()</code>: When we insert an element in a stack then the operation is known as a push. If the stack is full then the overflow condition occurs.</li>
+<li><code>pop()</code>: When we delete an element from the stack, the operation is known as a pop. If the stack is empty means that no element exists in the stack, this state is known as an underflow state.</li>
+<li><code>isEmpty()</code>: It determines whether the stack is empty or not.</li>
+<li><code>isFull()</code>: It determines whether the stack is full or not.</li>
+<li><code>peek()</code>: It returns the element at the given position.</li>
+<li><code>count()</code>: It returns the total number of elements available in a stack.</li>
+<li><code>change()</code>: It changes the element at the given position.</li>
+<li><code>display()</code>: It prints all the elements available in the stack.</li>
 </ul>
 <h3 id="applications-of-stack">Applications of Stack</h3>
 <ul>
-<li><b>Balancing of symbols :</b> Stack is used for balancing a symbol. As we know, each program has an opening and closing braces; when the opening braces come, we push the braces in a stack, and when the closing braces appear, we pop the opening braces from the stack. Therefore, the net value comes out to be zero. If any symbol is left in the stack, it means that some syntax occurs in a program.</li>
-<li><b>String reversal: </b>Stack is also used for reversing a string. For example, we want to reverse a "javaTpoint" string, so we can achieve this with the help of a stack.
-First, we push all the characters of the string in a stack until we reach the null character.
-After pushing all the characters, we start taking out the character one by one until we reach the bottom of the stack.</li>
-<li><b>UNDO/REDO: </b>It can also be used for performing UNDO/REDO operations. For example, we have an editor in which we write 'a', then 'b', and then 'c'; therefore, the text written in an editor is abc. So, there are three states, a, ab, and abc, which are stored in a stack. There would be two stacks in which one stack shows UNDO state, and the other shows REDO state.
-If we want to perform UNDO operation, and want to achieve 'ab' state, then we implement pop operation.</li>
-<li><b>Recursion:</b> The recursion means that the function is calling itself again. To maintain the previous states, the compiler creates a system stack in which all the previous records of the function are maintained.</li>
-<li><b>DFS(Depth First Search): </b> This search is implemented on a Graph, and Graph uses the stack data structure.</li>
-<li><b>Backtracking: </b>Suppose we have to create a path to solve a maze problem. If we are moving in a particular path, and we realize that we come on the wrong way. In order to come at the beginning of the path to create a new path, we have to use the stack data structure.</li>
-<li><b>Expression conversion:</b>Stack can also be used for expression conversion. This is one of the most important applications of stack. </li>
-<li><b>Memory management: </b> The stack manages the memory. The memory is assigned in the contiguous memory blocks. The memory is known as stack memory as all the variables are assigned in a function call stack memory. The memory size assigned to the program is known to the compiler. When the function is created, all its variables are assigned in the stack memory. When the function completed its execution, all the variables assigned in the stack are released.</li>
+<li>
+<p><b>Balancing of symbols :</b> Stack is used for balancing a symbol. As we know, each program has an opening and closing braces; when the opening braces come, we push the braces in a stack, and when the closing braces appear, we pop the opening braces from the stack. Therefore, the net value comes out to be zero. If any symbol is left in the stack, it means that some syntax occurs in a program.</p>
+</li>
+<li>
+<p><b>String reversal: </b>Stack is also used for reversing a string. For example, we want to reverse a "<em>javaTpoint</em>" string, so we can achieve this with the help of a stack.</p>
+</li>
+</ul>
+<p>First, we push all the characters of the string in a stack until we reach the null character.</p>
+<p>After pushing all the characters, we start taking out the character one by one until we reach the bottom of the stack.</p>
+<ul>
+<li><b>UNDO/REDO: </b>It can also be used for performing UNDO/REDO operations. For example, we have an editor in which we write 'a', then 'b', and then 'c'; therefore, the text written in an editor is abc. So, there are three states, a, ab, and abc, which are stored in a stack. There would be two stacks in which one stack shows UNDO state, and the other shows REDO state.</li>
+</ul>
+<p>If we want to perform UNDO operation, and want to achieve 'ab' state, then we implement pop operation.</p>
+<ul>
+<li>
+<p><b>Recursion:</b> The recursion means that the function is calling itself again. To maintain the previous states, the compiler creates a system stack in which all the previous records of the function are maintained.</p>
+</li>
+<li>
+<p><b>DFS(Depth First Search): </b> This search is implemented on a Graph, and Graph uses the stack data structure.</p>
+</li>
+<li>
+<p><b>Backtracking: </b>Suppose we have to create a path to solve a maze problem. If we are moving in a particular path, and we realize that we come on the wrong way. In order to come at the beginning of the path to create a new path, we have to use the stack data structure.</p>
+</li>
+<li>
+<p><b>Expression conversion:</b>Stack can also be used for expression conversion. This is one of the most important applications of stack. </p>
+</li>
+<li>
+<p><b>Memory management: </b> The stack manages the memory. The memory is assigned in the contiguous memory blocks. The memory is known as stack memory as all the variables are assigned in a function call stack memory. The memory size assigned to the program is known to the compiler. When the function is created, all its variables are assigned in the stack memory. When the function completed its execution, all the variables assigned in the stack are released.</p>
+</li>
 </ul>
 <pre><code class="language-c">// C program for array implementation of stack
 #include &lt;limits.h&gt;
@@ -487,7 +513,7 @@ int main()
     return 0;
 }
 </code></pre>
-<p><b> Visit : </b> <i>https://www.geeksforgeeks.org/stack-data-structure/</i></p>
+<p><strong>Visit</strong>: <a href="https://www.geeksforgeeks.org/stack-data-structure"><em>https://www.geeksforgeeks.org/stack-data-structure</em></a></p>
 <h2 id="linked-list">Linked List</h2>
 <ul>
 <li>Linked List can be defined as collection of objects called <b>nodes</b> that are randomly stored in the memory.</li>
@@ -499,7 +525,7 @@ int main()
 <h3 id="uses-of-linked-list">Uses of Linked List</h3>
 <ul>
 <li>The list is not required to be contiguously present in the memory. The node can reside any where in the memory and linked together to make a list. This achieves optimized utilization of space.</li>
-<li>list size is limited to the memory size and doesn't need to be declared in advance.</li>
+<li>List size is limited to the memory size and doesn't need to be declared in advance.</li>
 <li>Empty node can not be present in the linked list.</li>
 <li>We can store values of primitive types or objects in the singly linked list.</li>
 </ul>
@@ -779,7 +805,7 @@ void display()
     }  
 }   
 </code></pre>
-<p><b> Visit : </b> <i>https://www.geeksforgeeks.org/data-structures/linked-list/</i></p>
+<p><strong>Visit</strong>: <a href="https://www.geeksforgeeks.org/data-structures/linked-list/"><em>https://www.geeksforgeeks.org/data-structures/linked-list/</em></a></p>
 <h2 id="graphs">Graphs</h2>
 <p>A graph can be defined as group of vertices and edges that are used to connect these vertices. A graph can be seen as a cyclic tree, where the vertices (Nodes) maintain any complex relationship among them instead of having parent child relationship.</p>
 <h3 id="definition">Definition</h3>
@@ -792,7 +818,7 @@ void display()
 <p align = "center"><img src = "./assets/DSA-11.png"></p>
 <p>In a directed graph, edges form an ordered pair. Edges represent a specific path from some vertex A to another vertex B. Node A is called initial node while node B is called terminal node.</p>
 <p>A directed graph is shown in the following figure.</p>
-<p><b> Visit : </b> <i>https://www.geeksforgeeks.org/graph-data-structure-and-algorithms/</i></p>
+<p><strong>Visit</strong>: <a href="https://www.geeksforgeeks.org/graph-data-structure-and-algorithms/"><em>https://www.geeksforgeeks.org/graph-data-structure-and-algorithms/</em></a></p>
 <h2 id="trees">Trees</h2>
 <p>We read the linear data structures like an array, linked list, stack and queue in which all the elements are arranged in a sequential manner. The different data structures are used for different kinds of data.
 A tree is also one of the data structures that represent hierarchical data. Suppose we want to show the employees and their positions in the hierarchical form then it can be represented as shown below:</p>
@@ -811,7 +837,7 @@ A tree is also one of the data structures that represent hierarchical data. Supp
 </ul>
 <p align = "center"><img src = "./assets/DSA-13.png"></p>
 
-<p><b> Visit : </b> <i>https://www.geeksforgeeks.org/binary-tree-data-structure/</i></p>
+<p><strong>Visit</strong>: <a href="https://www.geeksforgeeks.org/binary-tree-data-structure/"><em>https://www.geeksforgeeks.org/binary-tree-data-structure/</em></a></p>
               
             </div>
           </div>
