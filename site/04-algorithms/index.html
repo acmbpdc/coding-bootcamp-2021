@@ -9,7 +9,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>4: Algorithms: - ACMBPDC</title>
+  <title>4: Algorithms - ACMBPDC</title>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700" />
 
   <link rel="stylesheet" href="../css/theme.css" />
@@ -18,7 +18,7 @@
   
   <script>
     // Current page data
-    var mkdocs_page_name = "4: Algorithms:";
+    var mkdocs_page_name = "4: Algorithms";
     var mkdocs_page_input_path = "04-algorithms\\README.md";
     var mkdocs_page_url = null;
   </script>
@@ -58,11 +58,47 @@
                     </li>
                     <li class="toctree-l1"><a class="reference internal" href="../03-data-structures/">3: Data Structures</a>
                     </li>
-                    <li class="toctree-l1 current"><a class="reference internal current" href="./">4: Algorithms:</a>
+                    <li class="toctree-l1 current"><a class="reference internal current" href="./">4: Algorithms</a>
     <ul class="current">
-    <li class="toctree-l2"><a class="reference internal" href="#algorithms-introduction">Algorithms Introduction</a>
+    <li class="toctree-l2"><a class="reference internal" href="#introduction">Introduction</a>
         <ul>
     <li class="toctree-l3"><a class="reference internal" href="#an-algorithm-is-a-list-of-instructions-given-to-a-computer-to-complete-a-particular-task">An Algorithm is a list of instructions given to a computer to complete a particular task.</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#algorithms-in-computers">Algorithms in Computers</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#essential-algorithms">Essential Algorithms</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#searching-algorithms">Searching Algorithms</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#linear-search">Linear Search</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#binary-search">Binary Search</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#sorting-algorithms">Sorting Algorithms</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#selection-sort">Selection Sort</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#bubble-sort">Bubble Sort</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#insertion-sort">Insertion Sort</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#pathfinding-algorithms">Pathfinding Algorithms</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#breadth-first-search">Breadth First Search</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#depth-first-search">Depth First Search</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#time-complexity">Time Complexity</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#types-of-time-complexity">Types of time complexity</a>
     </li>
         </ul>
     </li>
@@ -94,7 +130,7 @@
         
       
     
-    <li>4: Algorithms:</li>
+    <li>4: Algorithms</li>
     <li class="wy-breadcrumbs-aside">
       
     </li>
@@ -107,15 +143,14 @@
             <div class="section">
               
                 <h1 id="algorithms">Algorithms</h1>
-<h2 id="algorithms-introduction">Algorithms Introduction</h2>
+<h2 id="introduction">Introduction</h2>
 <p><strong>What is an algorithm?</strong></p>
 <blockquote>
 <h4 id="an-algorithm-is-a-list-of-instructions-given-to-a-computer-to-complete-a-particular-task"><em>An Algorithm is a list of instructions given to a computer to complete a particular task.</em></h4>
 </blockquote>
 <p>It is a set of steps that the computer must follow to reach a goal. An example of this would be baking a cake. The recipe would look something like:</p>
 <ul>
-<li><strong>Step 1:</strong> Gather the ingredients (Flour, Eggs, Sugar, Butter,
-       Milk).</li>
+<li><strong>Step 1:</strong> Gather the ingredients (Flour, Eggs, Sugar, Butter, Milk).</li>
 <li><strong>Step 2:</strong> Measure the ingredients to exact quantities.</li>
 <li><strong>Step 3:</strong> Mix the ingredients to make the batter.</li>
 <li><strong>Step 4:</strong> Put the batter in the oven and bake.</li>
@@ -124,7 +159,7 @@
 </ul>
 <p><img alt="" src="https://static.toiimg.com/thumb/76401667.cms?width=630&amp;height=420" /></p>
 <p>Algorithms are mini-instruction manuals given to computers to solve a problem or manipulate data.</p>
-<h1 id="algorithms-in-computers">Algorithms in Computers</h1>
+<h2 id="algorithms-in-computers">Algorithms in Computers</h2>
 <p>Algorithms in computers are often take an input, executes a series of steps in the order we specify and provide an output. </p>
 <p>An example would be a finding the <strong>n-th power of a number</strong>.
 Lets say we take an input from the user and calculate and give the output.
@@ -135,15 +170,114 @@ Next we multiply the first number <em>n</em> (4) by itself the <em>p</em> times 
 <pre><code>  4 * 4 * 4 = 64
 </code></pre>
 <p>We finally submit the following output back to the  user.</p>
-<h1 id="essential-algorithms">Essential Algorithms</h1>
+<h2 id="essential-algorithms">Essential Algorithms</h2>
 <p>The first steps to understanding algorithms comes from learning about two specific types of algorithms.</p>
-<ol>
-<li>Sorting Algorithms</li>
+<ul>
 <li>Searching Algorithms</li>
-</ol>
-<p>## Sorting Algorithms</p>
+<li>Sorting Algorithms</li>
+</ul>
+<h2 id="searching-algorithms">Searching Algorithms</h2>
+<p><img alt="" src="assets/searching.gif" /></p>
+<p>Key Searching algorithms are:</p>
+<ul>
+<li>Linear Search</li>
+<li>Binary Search</li>
+</ul>
+<h3 id="linear-search">Linear Search</h3>
+<p><img alt="" src="assets/linearsearch.gif" /></p>
+<p>Linear Search is a simple algorithm used to find an location or index of a number in an array.</p>
 <blockquote>
-<h4 id="sorting-is-any-process-of-arranging-items-systematically-in-sequence-ordered-by-according-to-some-criteria"><em>Sorting is any process of arranging items systematically in sequence ordered by according to some criteria</em></h4>
+<p>It works by looping over an array, checking each element if it matches the element to be searched. We use a flag variable to track wheter we have found the number. The flag value is set to 0 initially. If the element is found, it breaks the loop and sets the flag to 1. Outside the loop we check if the flag is 0 or 1. If the flag is true, we print the index.</p>
+</blockquote>
+<p>For this example, we'll be using the following array:
+<strong>14 73 36 11 33</strong></p>
+<p>The element to be searched: <strong>11</strong></p>
+<pre><code>&gt; **14** 74 36 11 33 -- Isn't the number
+&gt; 
+&gt; 14 **74** 36 11 33 -- Not the number, go to next
+&gt; 
+&gt; 14 74 **36** 11 33 -- Skip, not the number
+&gt;  
+&gt; 14 74 36 **11** 33 -- Found the number, break the loop and return
+</code></pre>
+<p><strong>C Program:</strong></p>
+<pre><code>int main()
+{
+    int nums[] = {14,73,36,11,33};
+    int array_size = sizeof(nums)/sizeof(nums[0]);
+    int search_key = 11;
+    int flag = 0;
+    int i; //NOTE that integer i is declared outside the for loop, if it is defined in the for loop, the value cannot be accesed outside the loop in the if statement
+
+    for(i=0;i&lt;array_size;i++) {
+        if(nums[i]==search_key) {
+            flag = 1;
+            break;
+        }
+    }
+
+    if(flag==1) {
+        printf(&quot;Number found at index: %d&quot;, i);
+    }
+    else {
+        printf(&quot;Number not found&quot;);
+    }
+
+    return 0;
+}
+</code></pre>
+<h3 id="binary-search">Binary Search</h3>
+<p><img alt="" src="assets/binarysearch.gif" /></p>
+<p>Binary search looks for a particular item by comparing the middle most item of the collection. If a match occurs, then the index of item is returned. If the middle item is greater than the item, then the item is searched in the sub-array to the left of the middle item. Otherwise, the item is searched for in the sub-array to the right of the middle item. This process continues on the sub-array as well until the size of the subarray reduces to zero</p>
+<p>Binary search is done in <strong>4</strong> steps:</p>
+<ol>
+<li>Compare key with the middle element.</li>
+<li>If key matches with the middle element, we return the mid index.</li>
+<li>Else If key is greater than the mid element, then key can only lie in the right half subarray after the mid element. So we recur for the right half.</li>
+<li>Else (key is smaller) recur for the left half.</li>
+</ol>
+<blockquote>
+<p><strong>NOTE</strong>: Binary Search has a prerequisite that before searching the array must be sorted.</p>
+</blockquote>
+<p><strong>C Program:</strong></p>
+<pre><code>int main()
+{
+    int nums[] = {11,14,33,36,73}; //We're using an already sorted array 
+    int array_size = sizeof(nums)/sizeof(nums[0]);
+    int search_key = 14;
+    int flag = 0;
+    int high = array_size;
+    int low = 0;
+    int mid = 0; //Mid also variable outside while loop, so can be accessed 
+
+    while(low&lt;=high) {
+        mid = (low + high) / 2;
+        printf(&quot;%d &quot;,mid);
+        if (nums[mid]==search_key) {
+            flag = 1;
+            break;
+        }
+        if(nums[mid]&gt;search_key) {
+            high = mid - 1;
+        }
+        else if(nums[mid]&lt;search_key) {
+            low = mid + 1;
+        }
+    }
+
+    if(flag==1) {
+        printf(&quot;Number found at index: %d&quot;, mid);
+    }
+    else {
+        printf(&quot;Number not found&quot;);
+    }
+
+    return 0;
+}
+</code></pre>
+<h2 id="sorting-algorithms">Sorting Algorithms</h2>
+<blockquote>
+<p><em>Sorting is any process of arranging items systematically in sequence ordered by according to some criteria</em></p>
 </blockquote>
 <p>A sorting algorithm is an important first step in learning to solve more complex problems. It often involves an algorithm that puts elements in a numerical or lexicographical order. </p>
 <p>An example would be sorting a list of nums of people in ascending order or descending order. Another example would be sorting a list of names, alphabetically.</p>
@@ -154,114 +288,140 @@ Next we multiply the first number <em>n</em> (4) by itself the <em>p</em> times 
 <li>Insertion Sort</li>
 </ul>
 <h3 id="selection-sort">Selection Sort</h3>
+<p><img alt="" src="assets/selectionsort.gif" /></p>
 <p>The selection sort algorithm sorts an array by repeatedly finding the minimum element (considering ascending order) from unsorted part and putting it at the beginning. The algorithm uses a single array data structure to store the values. </p>
 <p>The array gets divided into two halves, the sorted subarray and the unsorted subarray. In the case of sorting number in ascending order, during each iteration, a number from the unsorted half is moved to the sorted half.</p>
 <p>The algorithm iterates past each element one by one, for <strong>each iteration it finds the smallest element in the next half and swaps it with the current element</strong>. The following example illustrates this.</p>
 <p>We'll be sorting the following list in ascending order:
         <strong>43 28 84 19 64</strong></p>
-<blockquote>
-<p>arr[] = 43 28 84 19 64</p>
-<p>Find the minimum element in arr[0...4]  and swap it with the first element</p>
-<p><strong><em>43</em><em> 28 84 19 64</em> --&gt; </strong>19** 28 84 43 64</p>
-<p>Go to the next element
- Find the minimum element in arr[1...4]  and swap it with the first element of arr[1...4] </p>
-<p>19 <strong><em>28</em><em> 84 43 64</em> --&gt; 19 </strong>28** 84 43 64</p>
-<p>Go to the next element
-Find the minimum element in arr[2...4] and swap it with the first element of arr[2...4] </p>
-<p>19 28 <strong><em>84</em><em> 43 64</em> --&gt; 19 28 </strong>43** 84 64</p>
-<p>Go to the next element
-Find the minimum element in arr[3...4] and swap it with the first element of arr[3...4] </p>
-<p>19 28 43 <strong><em>84</em><em> 64</em> --&gt; 19 28 28 </strong>64** 84</p>
-</blockquote>
+<pre><code>&gt; arr[] = 43 28 84 19 64
+&gt; 
+&gt; # Find the minimum element in arr[0...4]  and swap it with the first element
+&gt; 
+&gt;  ***43** 28 84 19 64* --&gt; **19** 28 84 43 64
+&gt; 
+&gt; # Go to the next element
+&gt; # Find the minimum element in arr[1...4]  and swap it with the first element of arr[1...4] 
+&gt; 
+&gt;  19 ***28** 84 43 64* --&gt; 19 **28** 84 43 64
+&gt; 
+&gt; # Go to the next element
+&gt; # Find the minimum element in arr[2...4] and swap it with the first element of arr[2...4] 
+&gt; 
+&gt; 19 28 ***84** 43 64* --&gt; 19 28 **43** 84 64
+&gt; 
+&gt; # Go to the next element
+&gt; # Find the minimum element in arr[3...4] and swap it with the first element of arr[3...4] 
+&gt; 
+&gt; 19 28 43 ***84** 64* --&gt; 19 28 28 **64** 84
+</code></pre>
 <p><strong>C Program:</strong></p>
 <pre><code>int main()
-    {
-        int nums[] = {43,28,84,19,64};
-        int array_size = sizeof(nums)/sizeof(nums[0]);
-        int temp,min_ind;
+{
+    int nums[] = {43,28,84,19,64};
+    int array_size = sizeof(nums)/sizeof(nums[0]);
+    int temp,min_ind;
 
-        for(int i=0;i&lt;array_size;i++) {
+    for(int i=0;i&lt;array_size;i++) {
 
-            min_ind = i;
-            for(int j=i+1;j&lt;array_size;j++) {
-                if(nums[j]&lt;nums[min_ind]) {
-                    min_ind = j;
-
-                }
-
+        min_ind = i;
+        for(int j=i+1;j&lt;array_size;j++) {
+            if(nums[j]&lt;nums[min_ind]) {
+                min_ind = j;
             }
-            //Swap the two elements
-            temp = nums[i];
-            nums[i] = nums[min_ind];
-            nums[min_ind] = temp;
-        }
 
-        for(int i=0;i&lt;array_size;i++) {
-            printf(&quot;%d &quot;, nums[i]);
         }
-
-        return 0;
+        //Swap the two elements
+        temp = nums[i];
+        nums[i] = nums[min_ind];
+        nums[min_ind] = temp;
     }
+
+    for(int i=0;i&lt;array_size;i++) {
+        printf(&quot;%d &quot;, nums[i]);
+    }
+
+    return 0;
+}
 </code></pre>
 <h3 id="bubble-sort">Bubble Sort</h3>
+<p><img alt="" src="assets/bubblesort.gif" /></p>
 <p>Bubble Sort is the simplest sorting algorithm that works by repeatedly swapping the adjacent elements if they are in wrong order.</p>
 <p>It sorts in multiple passes(or iteration), repeating until it undergoes no swaps. At the <strong>end of each swap the largest element of each pass is gets pushed to the right of the array</strong>. We'll be taking the same array as before and sorting it in ascending order.
 <strong>43 28 84 19 64</strong></p>
-<blockquote>
-<p>arr[] = 43 28 84 19 64</p>
-<p><em>First Pass:</em></p>
-<p><strong>43 28</strong> 84 19 64 --&gt; <strong>28 43</strong> 84 19 64  //Each 2 elements are compared and swapped if the first is smaller than the second</p>
-<p>28 <strong>43 84</strong> 19 64 --&gt; 28 <strong>43 84</strong> 19 64</p>
-<p>28 43 <strong>84 19</strong> 64 --&gt; 28 43 <strong>19 84</strong> 64\</p>
-<p>28 43 19 <strong>84 64</strong> --&gt; 28 43 19 <strong>64 84</strong> //84 Being the biggest element is pushed to the end and fixed</p>
-<p><em>Second Pass:</em></p>
-<p><strong>28 43</strong> 19 64 84 --&gt; <strong>28 43</strong> 19 64 84 </p>
-<p>28 <strong>43 19</strong> 64 84 --&gt; 28 <strong>19 43</strong> 64 84</p>
-<p>28 19 <strong>43 64</strong> 84 --&gt; 28 19 <strong>43 64</strong> 84</p>
-<p>28 19 43 <strong>64 84</strong> --&gt; 28 19 43 <strong>64 84</strong> //64 being the next biggest is pushed to the right most</p>
-<p><em>Third Pass:</em></p>
-<p><strong>28 19</strong> 43 64 84 --&gt; <strong>19 28</strong> 43 64 84</p>
-<p>19 <strong>28 43</strong> 64 84 --&gt; 19 <strong>28 43</strong> 64 84</p>
-<p>19 28 <strong>43 64</strong> 84 --&gt; 19 28 <strong>43 64</strong> 84</p>
-<p>19 28 43 <strong>64 84</strong> --&gt; 19 28 43 <strong>64 84</strong></p>
-</blockquote>
+<pre><code>&gt; arr[] = 43 28 84 19 64
+&gt;
+&gt; # First Pass:
+&gt;
+&gt; **43 28** 84 19 64 --&gt; **28 43** 84 19 64    // Each 2 elements are compared and swapped if the first is smaller than the second
+&gt;
+&gt; 28 **43 84** 19 64 --&gt; 28 **43 84** 19 64
+&gt;
+&gt; 28 43 **84 19** 64 --&gt; 28 43 **19 84** 64
+&gt;
+&gt; 28 43 19 **84 64** --&gt; 28 43 19 **64 84**    // 84 Being the biggest element is pushed to the end and fixed
+&gt; 
+&gt; # Second Pass:
+&gt; 
+&gt; **28 43** 19 64 84 --&gt; **28 43** 19 64 84 
+&gt; 
+&gt; 28 **43 19** 64 84 --&gt; 28 **19 43** 64 84
+&gt; 
+&gt; 28 19 **43 64** 84 --&gt; 28 19 **43 64** 84
+&gt; 
+&gt; 28 19 43 **64 84** --&gt; 28 19 43 **64 84**    // 64 being the next biggest is pushed to the right most
+&gt; 
+&gt; Third Pass:
+&gt; 
+&gt; **28 19** 43 64 84 --&gt; **19 28** 43 64 84
+&gt; 
+&gt; 19 **28 43** 64 84 --&gt; 19 **28 43** 64 84
+&gt; 
+&gt; 19 28 **43 64** 84 --&gt; 19 28 **43 64** 84
+&gt; 
+&gt; 19 28 43 **64 84** --&gt; 19 28 43 **64 84**
+</code></pre>
 <p><strong>C Program:</strong></p>
 <pre><code>int main()
-    {
-        int nums[] = {43,28,84,19,64};
-        int array_size = sizeof(nums)/sizeof(nums[0]);
-        int temp;
+{
+    int nums[] = {43,28,84,19,64};
+    int array_size = sizeof(nums)/sizeof(nums[0]);
+    int temp;
 
-        for(int i=0;i&lt;array_size-1;i++) {
-            for(int j=0;j&lt;array_size-i-1;j++) {
-                if(nums[j]&gt;nums[j+1]) {
-                    //Swap the two elements
-                    temp = nums[j];
-                    nums[j] = nums[j+1];
-                    nums[j+1] = temp;
-                }
+    for(int i=0;i&lt;array_size-1;i++) {
+        for(int j=0;j&lt;array_size-i-1;j++) {
+            if(nums[j]&gt;nums[j+1]) {
+                //Swap the two elements
+                temp = nums[j];
+                nums[j] = nums[j+1];
+                nums[j+1] = temp;
             }
         }
-
-        for(int i=0;i&lt;array_size;i++) {
-            printf(&quot;%d &quot;, nums[i]);
-        }
-
-        return 0;
     }
+
+    for(int i=0;i&lt;array_size;i++) {
+        printf(&quot;%d &quot;, nums[i]);
+    }
+
+    return 0;
+}
 
 </code></pre>
 <h3 id="insertion-sort">Insertion Sort</h3>
+<p><img alt="" src="assets/insertionsort.gif" /></p>
 <p>Insertion Sort similar to Selection Sort splits the array into a sorted and unsorted part. Elements in the unsorted part are selected and placed in the correct position in the sorted part.</p>
 <p>Once again we use the same array and sort it in ascending order:
 <strong>43 28 84 19 64</strong></p>
-<blockquote>
-<p>arr[] = 43 28 84 19 64</p>
-<p><strong>43</strong> 28 84 19 64 --&gt; <strong>28 43</strong> 84 19 64 //28 being smaller than 48 is placed before it</p>
-<p><strong>28 43</strong> 84 19 64 --&gt; <strong>28 43 84</strong> 19 64 // 84 being bigger than 43 and being sorted doesn't change its position</p>
-<p><strong>28 43 84</strong> 19 64 --&gt; <strong>19 28 43 84</strong> 64  //19 being the smallest element gets pushed to the beginning</p>
-<p><strong>19 28 43 84</strong> 64 --&gt; <strong>19 28 43 64 84</strong> //64 being smaller than 84 but being bigger than other gets pushed to the middle</p>
-</blockquote>
+<pre><code>&gt; arr[] = 43 28 84 19 64
+&gt;  
+&gt;  **43** 28 84 19 64 --&gt; **28 43** 84 19 64    // 28 being smaller than 48 is placed before it
+&gt;  
+&gt; **28 43** 84 19 64 --&gt; **28 43 84** 19 64    // 84 being bigger than 43 and being sorted doesn't change its position
+&gt;  
+&gt; **28 43 84** 19 64 --&gt; **19 28 43 84** 64    // 19 being the smallest element gets pushed to the beginning
+&gt;  
+&gt; **19 28 43 84** 64 --&gt; **19 28 43 64 84**    // 64 being smaller than 84 but being bigger than other gets pushed to the middle
+</code></pre>
 <p><strong>C Program:</strong></p>
 <pre><code>int main()
 {
@@ -287,95 +447,7 @@ Find the minimum element in arr[3...4] and swap it with the first element of arr
     return 0;
 }
 </code></pre>
-<h2 id="searching-algorithms">Searching Algorithms</h2>
-<p>Key Searching algorithms are:
-- Linear Search
-- Binary Search</p>
-<h3 id="linear-search">Linear Search</h3>
-<p>Linear Search is a simple algorithm used to find an location or index of a number in an array.</p>
-<p>It works by looping over an array, checking each element if it matches the element to be searched. We use a flag variable to track wheter we have found the number. The flag value is set to 0 initially. If the element is found, it breaks the loop and sets the flag to 1. Outside the loop we check if the flag is 0 or 1. If the flag is true, we print the index.</p>
-<p>For this example, we'll be using the following array:
-<strong>14 73 36 11 33</strong></p>
-<p>The element to be searched: <strong>11</strong></p>
-<blockquote>
-<p><strong>14</strong> 74 36 11 33 -- Isn't the number</p>
-<p>14 <strong>74</strong> 36 11 33 -- Not the number, go to next</p>
-<p>14 74 <strong>36</strong> 11 33 -- Skip, not the number</p>
-<p>14 74 36 <strong>11</strong> 33 -- Found the number, break the loop and return</p>
-</blockquote>
-<p><strong>C Program:</strong></p>
-<pre><code>int main()
-    {
-        int nums[] = {14,73,36,11,33};
-        int array_size = sizeof(nums)/sizeof(nums[0]);
-        int search_key = 11;
-        int flag = 0;
-        int i; //NOTE that integer i is declared outside the for loop, if it is defined in the for loop, the value cannot be accesed outside the loop in the if statement
-
-        for(i=0;i&lt;array_size;i++) {
-            if(nums[i]==search_key) {
-                flag = 1;
-                break;
-            }
-        }
-
-        if(flag==1) {
-            printf(&quot;Number found at index: %d&quot;, i);
-        }
-        else {
-            printf(&quot;Number not found&quot;);
-        }
-
-        return 0;
-    }
-</code></pre>
-<h3 id="binary-search">Binary Search</h3>
-<p>Binary search looks for a particular item by comparing the middle most item of the collection. If a match occurs, then the index of item is returned. If the middle item is greater than the item, then the item is searched in the sub-array to the left of the middle item. Otherwise, the item is searched for in the sub-array to the right of the middle item. This process continues on the sub-array as well until the size of the subarray reduces to zero</p>
-<p>Binary search is done in 4 steps:
-1. Compare key with the middle element.
-2. If key matches with the middle element, we return the mid index.
-3. Else If key is greater than the mid element, then key can only lie in the right half subarray after the mid element. So we recur for the right half.
-4. Else (key is smaller) recur for the left half.</p>
-<blockquote>
-<p>Binary Search has a prerequisite that before searching the array must be sorted.</p>
-</blockquote>
-<p><strong>C Program:</strong></p>
-<pre><code>int main()
-    {
-        int nums[] = {11,14,33,36,73}; //We're using an already sorted array 
-        int array_size = sizeof(nums)/sizeof(nums[0]);
-        int search_key = 14;
-        int flag = 0;
-        int high = array_size;
-        int low = 0;
-        int mid = 0; //Mid also variable outside while loop, so can be accessed 
-
-        while(low&lt;=high) {
-            mid = (low + high) / 2;
-            printf(&quot;%d &quot;,mid);
-            if (nums[mid]==search_key) {
-                flag = 1;
-                break;
-            }
-            if(nums[mid]&gt;search_key) {
-                high = mid - 1;
-            }
-            else if(nums[mid]&lt;search_key) {
-                low = mid + 1;
-            }
-        }
-
-        if(flag==1) {
-            printf(&quot;Number found at index: %d&quot;, mid);
-        }
-        else {
-            printf(&quot;Number not found&quot;);
-        }
-
-        return 0;
-    }
-</code></pre>
-<h2 id="pathfinding-algorithms">Pathfinding Algorithms:</h2>
+<h2 id="pathfinding-algorithms">Pathfinding Algorithms</h2>
 <h3 id="breadth-first-search">Breadth First Search</h3>
 <p>Breadth First Search or BFS is a vertex based technique for finding a shortest path in graph.</p>
 <p>It uses a <strong>Queue</strong> data structure which follows first in first out. In BFS, one vertex is selected at a time when it is visited and marked then its adjacent are visited and stored in the queue. It is slower than DFS.</p>
@@ -387,12 +459,14 @@ Find the minimum element in arr[3...4] and swap it with the first element of arr
 <p>To elaborate, Time complexity measures the time taken to execute each statement of code in an algorithm. If a statement is set to execute repeatedly then the number of times that statement gets executed is equal to N multiplied by the time required to run that function each time. </p>
 <h3 id="types-of-time-complexity">Types of time complexity</h3>
 <p>Most widely used notation is the Big-O notation.</p>
-<p>The Big-O Time Complexities of the algorithms discussed earlier:
-1. Selection Sort: O(n^2)
-2. Bubble Sort: O(n^2)
-3. Insertion Sort: O(n^2)
-4. Linear Search: O(n)
-5. Binary Search: O(log n)</p>
+<p>The Big-O Time Complexities of the algorithms discussed earlier:</p>
+<ul>
+<li>Selection Sort: <img alt="formula" src="https://render.githubusercontent.com/render/math?math=O(n^2)" /></li>
+<li>Bubble Sort: <img alt="formula" src="https://render.githubusercontent.com/render/math?math=O(n^2)" /></li>
+<li>Insertion Sort: <img alt="formula" src="https://render.githubusercontent.com/render/math?math=O(n^2)" /></li>
+<li>Linear Search: <img alt="formula" src="https://render.githubusercontent.com/render/math?math=O(n)" /></li>
+<li>Binary Search: <img alt="formula" src="https://render.githubusercontent.com/render/math?math=O(log(n))" /></li>
+</ul>
 <p><img alt="" src="https://miro.medium.com/max/742/1*WBYUz6Lh2Z21DQnEk-MWFQ.png" /></p>
 <p><img alt="" src="https://miro.medium.com/max/1400/1*FkQzWqqIMlAHZ_xNrEPKeA.png" /></p>
               
