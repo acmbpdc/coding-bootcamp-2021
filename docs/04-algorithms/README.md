@@ -155,6 +155,8 @@ int main()
 
 ## Sorting Algorithms
 
+![](./assets/sorting.gif)
+
 > *Sorting is any process of arranging items systematically in sequence ordered by according to some criteria*
 
 A sorting algorithm is an important first step in learning to solve more complex problems. It often involves an algorithm that puts elements in a numerical or lexicographical order. 
