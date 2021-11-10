@@ -7,3 +7,4 @@ nav:
     - '2: Overview of Programming Languages': './02-overview-of-programming-languages/README.md'
     - '3: Data Structures' : './03-data-structures/README.md'
     - '4: Algorithms': './04-algorithms/README.md'
+    - '5: Python - 1': './05-python/README.md'

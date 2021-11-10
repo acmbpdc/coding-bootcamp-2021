@@ -14,7 +14,7 @@ This bootcamp will provide its audience the core foundation in this amazing fiel
 | 2 | [**Overview of Programming Languages**](02-overview-of-programming-languages/README.md) |
 | 3 | [**Data Structures**](03-data-structures/README.md) |
 | 4 | [**Algorithms**](04-algorithms/README.md) |
-| 5 | **Python - 1** |
+| 5 | [**Python - 1**](05-python-1/README.md)|
 | 6 | **Python - 2** |
 | 7 | **Git & GitHub - 1** |
 | 8 | **Git & GitHub - 2** |
@@ -27,3 +27,4 @@ This workshop is conducted by:
 * [Ashish Kumar Jha](https://github.com/Ashish-BITS)
 * [Vignesh Bhat](https://github.com/Viggyz)
 * [Areeb Pasha](https://github.com/areeb1501)
+* [Aditya Saxena](https://github.com/aditya-saxena-7)
