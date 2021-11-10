@@ -9,7 +9,7 @@
   
   
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>Python - ACMBPDC</title>
+  <title>5: Python - 1 - ACMBPDC</title>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700" />
 
   <link rel="stylesheet" href="../css/theme.css" />
@@ -18,7 +18,7 @@
   
   <script>
     // Current page data
-    var mkdocs_page_name = "Python";
+    var mkdocs_page_name = "5: Python - 1";
     var mkdocs_page_input_path = "05-python-1\\README.md";
     var mkdocs_page_url = null;
   </script>
@@ -51,7 +51,7 @@
                     </li>
                 </ul>
                 <p class="caption"><span class="caption-text">Sessions</span></p>
-                <ul>
+                <ul class="current">
                     <li class="toctree-l1"><a class="reference internal" href="../01-command-line-interface/">1: Command Line Interface</a>
                     </li>
                     <li class="toctree-l1"><a class="reference internal" href="../02-overview-of-programming-languages/">2: Overview of Programming Languages</a>
@@ -60,7 +60,183 @@
                     </li>
                     <li class="toctree-l1"><a class="reference internal" href="../04-algorithms/">4: Algorithms</a>
                     </li>
-                    <li class="toctree-l1"><a class="" href="../05-python/README.md">5: Python - 1</a>
+                    <li class="toctree-l1 current"><a class="reference internal current" href="./">5: Python - 1</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#what-is-python-capable-of">What is Python capable of?</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#first-python-program">First Python Program</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#introduction-to-python-data-types">Introduction to Python Data Types</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#getting-the-data-type">Getting the Data type</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#setting-a-specific-data-type">Setting a Specific Data Type</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#variable-assignment">Variable Assignment</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#operators">Operators</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#arithmetic-operators">Arithmetic Operators</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#assignment-operators">Assignment Operators</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#logical-operators">Logical operators</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#conditionals">Conditionals</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#if-condition">If Condition</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#if-else">If Else</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#if-elif-else">If Elif Else</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#short-hand">Short Hand</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#nested-conditions">Nested Conditions</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#if-condition-and-logical-operators">If Condition and Logical Operators</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#if-and-or-logical-operators">If and Or Logical Operators</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#python-numbers">Python Numbers</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#input-statements">Input statements</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#strings-and-string-methods">Strings and string methods</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#creating-a-string">Creating a String</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#string-concatenation">String Concatenation</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#escape-sequences">Escape Sequences</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#formatted-strings">Formatted strings</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#slicing-strings">Slicing Strings</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#skipping-characters-while-slicing">Skipping Characters While Slicing</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#string-methods">String Methods</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#error-types">Error Types</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#syntaxerror">SyntaxError</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#nameerror">NameError</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#indexerror">IndexError</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#modulenotfounderror">ModuleNotFoundError</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#attributeerror">AttributeError</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#keyerror">KeyError</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#typeerror">TypeError</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#importerror">ImportError</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#valueerror">ValueError</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#zerodivisionerror">ZeroDivisionError</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#exception-handling">Exception Handling</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#loops">Loops</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#for-loop">For Loop</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#while-loop">While Loop</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#break-and-continue-using-while">Break and Continue - Using while</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#break-and-continue-using-for">Break and Continue - Using for</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#the-range-function">The Range Function</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#nested-for-loop">Nested For Loop</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#pass">Pass</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#lists">Lists</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#creating-a-list">Creating a list</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#accessing-list-items-using-indexing">Accessing List Items Using Indexing</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#positive-indexing">Positive indexing</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#negative-indexing">Negative Indexing</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#unpacking-list-items">Unpacking List Items</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#slicing-items-from-a-list">Slicing Items from a List</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#modifying-lists">Modifying Lists</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#checking-items-in-a-list">Checking Items in a List</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#adding-items-to-a-list">Adding Items to a List</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#inserting-items-into-a-list">Inserting Items into a List</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#removing-items-from-a-list">Removing Items from a List</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#removing-items-using-pop">Removing Items Using Pop</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#removing-items-using-del">Removing Items Using Del</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#clearing-list-items">Clearing List Items</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#copying-a-list">Copying a List</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#counting-items-in-a-list">Counting Items in a List</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#finding-index-of-an-item">Finding Index of an Item</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#reversing-a-list">Reversing a List</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#sorting-list-items">Sorting List Items</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#tuples">Tuples</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#creating-a-tuple">Creating a Tuple</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#tuple-length">Tuple length</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#accessing-tuple-items">Accessing Tuple Items</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#slicing-tuples">Slicing tuples</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#changing-tuples-to-lists">Changing Tuples to Lists</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#checking-an-item-in-a-tuple">Checking an Item in a Tuple</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#joining-tuples">Joining Tuples</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#deleting-tuples">Deleting Tuples</a>
+    </li>
+        </ul>
+    </li>
+    </ul>
                     </li>
                 </ul>
       </div>
@@ -83,8 +259,12 @@
     <li><a href="..">Docs</a> &raquo;</li>
     
       
+        
+          <li>Sessions &raquo;</li>
+        
+      
     
-    <li>Python</li>
+    <li>5: Python - 1</li>
     <li class="wy-breadcrumbs-aside">
       
     </li>
@@ -1630,6 +1810,13 @@ del fruits
           </div>
           <footer>
   
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+      
+        <a href="../04-algorithms/" class="btn btn-neutral" title="4: Algorithms"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
 
   <hr/>
 
@@ -1651,6 +1838,8 @@ del fruits
   <div class="rst-versions" role="note" aria-label="versions">
   <span class="rst-current-version" data-toggle="rst-current-version">
     
+    
+      <span><a href="../04-algorithms/" style="color: #fcfcfc">&laquo; Previous</a></span>
     
     
   </span>
