@@ -82,6 +82,8 @@
     </li>
     <li class="toctree-l3"><a class="reference internal" href="#assignment-operators">Assignment Operators</a>
     </li>
+    <li class="toctree-l3"><a class="reference internal" href="#comparison-operators">Comparison Operators</a>
+    </li>
     <li class="toctree-l3"><a class="reference internal" href="#logical-operators">Logical operators</a>
     </li>
         </ul>
@@ -127,32 +129,6 @@
     <li class="toctree-l3"><a class="reference internal" href="#string-methods">String Methods</a>
     </li>
         </ul>
-    </li>
-    <li class="toctree-l2"><a class="reference internal" href="#error-types">Error Types</a>
-        <ul>
-    <li class="toctree-l3"><a class="reference internal" href="#syntaxerror">SyntaxError</a>
-    </li>
-    <li class="toctree-l3"><a class="reference internal" href="#nameerror">NameError</a>
-    </li>
-    <li class="toctree-l3"><a class="reference internal" href="#indexerror">IndexError</a>
-    </li>
-    <li class="toctree-l3"><a class="reference internal" href="#modulenotfounderror">ModuleNotFoundError</a>
-    </li>
-    <li class="toctree-l3"><a class="reference internal" href="#attributeerror">AttributeError</a>
-    </li>
-    <li class="toctree-l3"><a class="reference internal" href="#keyerror">KeyError</a>
-    </li>
-    <li class="toctree-l3"><a class="reference internal" href="#typeerror">TypeError</a>
-    </li>
-    <li class="toctree-l3"><a class="reference internal" href="#importerror">ImportError</a>
-    </li>
-    <li class="toctree-l3"><a class="reference internal" href="#valueerror">ValueError</a>
-    </li>
-    <li class="toctree-l3"><a class="reference internal" href="#zerodivisionerror">ZeroDivisionError</a>
-    </li>
-        </ul>
-    </li>
-    <li class="toctree-l2"><a class="reference internal" href="#exception-handling">Exception Handling</a>
     </li>
     <li class="toctree-l2"><a class="reference internal" href="#loops">Loops</a>
         <ul>
@@ -236,6 +212,32 @@
     </li>
         </ul>
     </li>
+    <li class="toctree-l2"><a class="reference internal" href="#error-types">Error Types</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#syntaxerror">SyntaxError</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#nameerror">NameError</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#indexerror">IndexError</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#modulenotfounderror">ModuleNotFoundError</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#attributeerror">AttributeError</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#keyerror">KeyError</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#typeerror">TypeError</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#importerror">ImportError</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#valueerror">ValueError</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#zerodivisionerror">ZeroDivisionError</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#exception-handling">Exception Handling</a>
+    </li>
     </ul>
                     </li>
                 </ul>
@@ -277,13 +279,15 @@
             <div class="section">
               
                 <h1 id="python">Python</h1>
-<p>Python is a popular programming language. It was created by Guido van Rossum, and released in 1991.</p>
+<p><img alt="" src="assets/python.png" /></p>
+<p>Python is a popular programming language. It was created by <em>Guido van Rossum</em>, and released in <em>1991</em>.</p>
 <p>It is used for:</p>
 <ul>
-<li>web development (server-side),</li>
-<li>software development,</li>
-<li>mathematics,</li>
-<li>system scripting.</li>
+<li>Web Development,</li>
+<li>Software Development,</li>
+<li>Mathematics,</li>
+<li>System Scripting.</li>
+<li>And so much more!</li>
 </ul>
 <p>The Python interpreter is free to download from <a href="http://python.org/">the official website</a>, and there are versions for Linux, OS X, and Windows.</p>
 <h2 id="what-is-python-capable-of">What is Python capable of?</h2>
@@ -294,6 +298,12 @@
 <li>Python can be used for rapid prototyping as well as full-fledged software development.</li>
 </ul>
 <h2 id="first-python-program">First Python Program</h2>
+<div align="center">
+    <img src="./assets/excited.gif" width=350 length=600>
+</div>
+<p></br>
+Let's get started already! </p>
+<p>For your first Python program, let's not break tradition. </p>
 <pre><code class="language-python">print(&quot;Hello world&quot;)
 </code></pre>
 <h2 id="introduction-to-python-data-types">Introduction to Python Data Types</h2>
@@ -313,52 +323,74 @@
 print(type(x))
 </code></pre>
 <h3 id="setting-a-specific-data-type">Setting a Specific Data Type</h3>
-<table>
-<thead>
-<tr>
-<th>Example</th>
-<th>Data Type</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>x = str("Hello World")</td>
-<td>str</td>
-</tr>
-</tbody>
-</table>
+<pre><code class="language-py">x = str(&quot;Hello World&quot;)
+</code></pre>
 <h2 id="variable-assignment">Variable Assignment</h2>
 <p>Python has no command for declaring a variable. A variable is created the moment you first assign a value to it.</p>
 <pre><code class="language-python">x = 5
 y = &quot;John&quot;
-print(x)  #5
-print(y) #John
+print(x)
+print(y)
 </code></pre>
 <p>If you want to assign the same value to more than one variable then you can use the chained assignment:</p>
 <pre><code class="language-python">myFirstVariable = mySecondVariable = 1
 </code></pre>
 <p><strong>Note:</strong> Strings are immutable. Once they are created, they cannot be changed.</p>
-<pre><code class="language-python">a = 'me' #Updating it will fail:
-a[1]='y'
-#It will throw a Type Error
+<pre><code class="language-python">a = 'me'    # Updating it will fail:
+a[1]='y'    # It will throw a Type Error
 </code></pre>
 <h2 id="operators">Operators</h2>
-<p>There are plenty of operators you can use in python expressions. There are many types of operators in python. Here are some of them:
-- Arithmetic Operators
-- Assignment Operators
-- Comparison Operators
-- Logical Operators</p>
+<div align="center">
+    <img src="./assets/operator.gif">
+</div>
+<p></br>
+There are plenty of operators you can use in python expressions. There are many types of operators in python. Here are some of them:</p>
+<ul>
+<li>Arithmetic Operators</li>
+<li>Assignment Operators</li>
+<li>Comparison Operators</li>
+<li>Logical Operators</li>
+</ul>
 <h3 id="arithmetic-operators">Arithmetic Operators</h3>
-<p>Here are the math operators from highest to lowest precedence:
-| Operator      | Operation |
-| ----------- | ----------- |
-| <code>**</code>      | Exponent       |
-| <code>%</code>   | Modulus/remainder        |
-| <code>//</code>   | Integer division/floored quotient        |
-| <code>/</code>   | Division        |
-| <code>*</code>  | Multiplication        |
-| <code>-</code>   | Subtraction        |
-| <code>+</code>   | Addition|</p>
+<p>Here are the math operators from highest to lowest precedence:</p>
+<table>
+<thead>
+<tr>
+<th>Operator</th>
+<th>Operation</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>**</code></td>
+<td>Exponent</td>
+</tr>
+<tr>
+<td><code>%</code></td>
+<td>Modulus/remainder</td>
+</tr>
+<tr>
+<td><code>//</code></td>
+<td>Integer division/floored quotient</td>
+</tr>
+<tr>
+<td><code>/</code></td>
+<td>Division</td>
+</tr>
+<tr>
+<td><code>*</code></td>
+<td>Multiplication</td>
+</tr>
+<tr>
+<td><code>-</code></td>
+<td>Subtraction</td>
+</tr>
+<tr>
+<td><code>+</code></td>
+<td>Addition</td>
+</tr>
+</tbody>
+</table>
 <pre><code class="language-python">&gt;&gt;&gt; 2 + 3 * 6
 20
 </code></pre>
@@ -375,106 +407,124 @@ a[1]='y'
 <tbody>
 <tr>
 <td><code>=</code></td>
-<td>x = 5</td>
-<td>x = 5</td>
+<td><code>x = 5</code></td>
+<td><code>x = 5</code></td>
 </tr>
 <tr>
 <td><code>+=</code></td>
-<td>x += 3</td>
-<td>x = x + 3</td>
+<td><code>x += 3</code></td>
+<td><code>x = x + 3</code></td>
 </tr>
 <tr>
 <td><code>-+</code></td>
-<td>x -= 5</td>
-<td>x = x - 3</td>
+<td><code>x -= 5</code></td>
+<td><code>x = x - 3</code></td>
 </tr>
 <tr>
 <td><code>*=</code></td>
-<td>x *= 5</td>
-<td>x = x * 3</td>
+<td><code>x *= 5</code></td>
+<td><code>x = x * 3</code></td>
 </tr>
 <tr>
 <td><code>/=</code></td>
-<td>x /= 8</td>
-<td>x = x / 8</td>
+<td><code>x /= 8</code></td>
+<td><code>x = x / 8</code></td>
 </tr>
 <tr>
 <td><code>%=</code></td>
-<td>x %= 3</td>
-<td>x = x % 3</td>
+<td><code>x %= 3</code></td>
+<td><code>x = x % 3</code></td>
 </tr>
 <tr>
 <td><code>//=</code></td>
-<td>x //= 3</td>
-<td>x = x // 3</td>
+<td><code>x //= 3</code></td>
+<td><code>x = x // 3</code></td>
 </tr>
+</tbody>
+</table>
+<h3 id="comparison-operators">Comparison Operators</h3>
+<p>Comparison operators are used to compare two values:</p>
+<table>
+<thead>
 <tr>
-<td>### Comparison Operators</td>
-<td></td>
-<td></td>
+<th>Operator</th>
+<th>Name</th>
+<th>Same As</th>
 </tr>
-<tr>
-<td>Comparison operators are used to compare two values:</td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>Operator</td>
-<td>Name</td>
-<td>Same As</td>
-</tr>
-<tr>
-<td>----------</td>
-<td>-----------------------</td>
-<td>---------</td>
-</tr>
+</thead>
+<tbody>
 <tr>
 <td><code>==</code></td>
 <td>Equal</td>
-<td>x == y</td>
+<td><code>x == y</code></td>
 </tr>
 <tr>
 <td><code>!=</code></td>
 <td>Not equal</td>
-<td>x != y</td>
+<td><code>x != y</code></td>
 </tr>
 <tr>
 <td><code>&gt;</code></td>
 <td>Greater than</td>
-<td>x &gt; y</td>
+<td><code>x &gt; y</code></td>
 </tr>
 <tr>
 <td><code>&lt;</code></td>
 <td>Less than</td>
-<td>x &lt; y</td>
+<td><code>x &lt; y</code></td>
 </tr>
 <tr>
 <td><code>&gt;=</code></td>
 <td>Greater than equal to</td>
-<td>x &gt;= y</td>
+<td><code>x &gt;= y</code></td>
 </tr>
 <tr>
 <td><code>&lt;=</code></td>
 <td>Less than or equal to</td>
-<td>x &lt;= y</td>
+<td><code>x &lt;= y</code></td>
 </tr>
 </tbody>
 </table>
 <h3 id="logical-operators">Logical operators</h3>
-<p>Logical operators are used to combine conditional statements:
-| Operator | Description                                             | Example               |
-|----------|---------------------------------------------------------|-----------------------|
-| <code>and</code>      | Returns True if both statements are true                | <code>x &lt; 5 and  x &lt; 10</code>     |
-| <code>or</code>       | Returns True if one of the statements is true           | <code>x &lt; 5 or x &lt; 4</code>        |
-| <code>not</code>      | Reverse the result, returns False if the result is true | <code>not(x &lt; 5 and x &lt; 10)</code> |</p>
+<p>Logical operators are used to combine conditional statements:</p>
+<table>
+<thead>
+<tr>
+<th>Operator</th>
+<th>Description</th>
+<th>Example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>and</code></td>
+<td>Returns True if both statements are true</td>
+<td><code>x &lt; 5 and  x &lt; 10</code></td>
+</tr>
+<tr>
+<td><code>or</code></td>
+<td>Returns True if one of the statements is true</td>
+<td><code>x &lt; 5 or x &lt; 4</code></td>
+</tr>
+<tr>
+<td><code>not</code></td>
+<td>Reverse the result, returns False if the result is true</td>
+<td><code>not(x &lt; 5 and x &lt; 10)</code></td>
+</tr>
+</tbody>
+</table>
 <h2 id="conditionals">Conditionals</h2>
-<p>By default, statements in Python script are executed sequentially from top to bottom. If the processing logic require so, the sequential flow of execution can be altered in two way:</p>
+<div align="center">
+    <img src="./assets/check.gif">
+</div>
+<p></br>
+By default, statements in Python script are executed sequentially from top to bottom. If the processing logic require so, the sequential flow of execution can be altered in two way:</p>
 <ul>
-<li><strong>Conditional execution</strong> : a block of one or more statements will be executed if a certain expression is true</li>
+<li><strong>Conditional execution</strong> : a block of one or more statements will be executed if a certain expression is true.</li>
 <li><strong>Repetitive execution</strong> : a block of one or more statements will be repetitively executed as long as a certain expression is true. In this section, we will cover <em>if</em>, <em>else</em>, <em>elif</em> statements. The comparison and logical operators we learned in previous sections will be useful here.</li>
 </ul>
 <h3 id="if-condition">If Condition</h3>
-<p>An "if statement" is written by using the  <code>if</code>  keyword. Remember the indentation after the colon.</p>
+<p>An "<em>if statement</em>" is written by using the  <code>if</code>  keyword. Remember the indentation after the colon.</p>
 <pre><code class="language-py"># syntax
 if condition:
     this part of code runs for truthy conditions
@@ -485,7 +535,7 @@ if a &gt; 0:
     print('A is a positive number')
 # A is a positive number
 </code></pre>
-<p>As you can see in the example above, 3 is greater than 0. The condition was true and the block code was executed. However, the  else  keyword catches anything which isn't caught by the preceding conditions.</p>
+<p>As you can see in the example above, 3 is greater than 0. The condition was true and the block code was executed. </p>
 <h3 id="if-else">If Else</h3>
 <p>If condition is true the first block will be executed, if not the else condition will run.</p>
 <pre><code class="language-py"># syntax
@@ -501,7 +551,8 @@ if a &lt; 0:
 else:
     print('A is a positive number')
 </code></pre>
-<p>The condition above proves false, therefore the else block was executed. If we have more than 2 conditions to check, We could use _ elif_.</p>
+<p>The condition above proves false, therefore the else block was executed. However, the  else  keyword catches anything which isn't caught by the preceding conditions. </p>
+<p>If we have more than 2 conditions to check, We could use <em>elif</em>.</p>
 <h3 id="if-elif-else">If Elif Else</h3>
 <p>In our daily life, we make decisions on daily basis. We make decisions not by checking one or two conditions but multiple conditions. As similar to life, programming is also full of conditions. We use <em>elif</em> when we have multiple conditions.</p>
 <pre><code class="language-py"># syntax
@@ -531,7 +582,7 @@ code if condition else code
 print('A is positive') if a &gt; 0 else print('A is negative') # first condition met, 'A is positive' will be printed
 </code></pre>
 <h3 id="nested-conditions">Nested Conditions</h3>
-<p>Conditions can be nested</p>
+<p>Conditions can be nested.</p>
 <pre><code class="language-py"># syntax
 if condition:
     code
@@ -582,7 +633,11 @@ else:
     print('Access denied!')
 </code></pre>
 <h2 id="python-numbers">Python Numbers</h2>
-<p>Number data types in Python:</p>
+<div align="center">
+    <img src="./assets/numbers.gif">
+</div>
+<p></br>
+Number data types in Python:</p>
 <ul>
 <li>
 <p><strong>Integers</strong>: <code>... -3, -2, -1, 0, 1, 2, 3 ...</code></p>
@@ -591,7 +646,7 @@ else:
 <p><strong>Floating Point</strong> : <code>... -3.5, -2.25, -1.0, 0.0, 1.1, 2.2, 3.5 ...</code></p>
 </li>
 <li>
-<p><strong>Complex Numbers Example</strong> : <code>1 + j, 2 + 4j, 1 - 1j</code></p>
+<p><strong>Complex Numbers</strong> : <code>1 + j, 2 + 4j, 1 - 1j</code></p>
 </li>
 </ul>
 <h2 id="input-statements">Input statements</h2>
@@ -625,9 +680,9 @@ print(len(first_name) &gt; len(last_name)) # True
 print(len(full_name)) # 16
 </code></pre>
 <h3 id="escape-sequences">Escape Sequences</h3>
-<p>In Python and other programming languages \ followed by a character is an escape sequence. Let us see the most common escape characters:</p>
+<p>In Python and other programming languages <code>\</code> followed by a character is an escape sequence. Let us see the most common escape characters:</p>
 <ul>
-<li><code>\n</code>: new line</li>
+<li><code>\n</code>: New line</li>
 <li><code>\t</code>: Tab</li>
 <li><code>\\\\</code>: Back slash</li>
 <li><code>\\'</code>: Single quote (')</li>
@@ -683,7 +738,7 @@ print(f'{a} - {b} = {a - b}')
 print(f'{a} / {b} = {a / b:.2f}')
 </code></pre>
 <h4 id="slicing-strings">Slicing Strings</h4>
-<p>In python we can slice strings into substrings.</p>
+<p>In Python, we can slice strings into substrings.</p>
 <pre><code class="language-py">language = 'Python'
 first_three = language[0:3] # starts at zero index and up to 3 but not include 3
 print(first_three) #Pyt
@@ -877,8 +932,642 @@ print(challenge.swapcase())  # CODING BOOTCAMP
 <pre><code class="language-py">challenge = 'coding bootcamp'
 print(challenge.startswith('coding')) # True
 </code></pre>
+<h2 id="loops">Loops</h2>
+<div align="center">
+    <img src="./assets/again.gif">
+</div>
+<p></br>
+Life is full of routines. In programming we also do lots of repetitive tasks. In order to handle repetitive task programming languages use loops. Python programming language also provides the following types of two loops:</p>
+<ul>
+<li>While Loop</li>
+<li>For Loop</li>
+</ul>
+<h3 id="for-loop">For Loop</h3>
+<p>A <em>for</em> keyword is used to make a for loop, similar with other programming languages, but with some syntax differences. Loop is used for iterating over a sequence (that is either a list, a tuple, a dictionary, a set, or a string).</p>
+<ul>
+<li>For loop with list</li>
+</ul>
+<pre><code class="language-py"># syntax
+for iterator in lst:
+    code goes here
+</code></pre>
+<p><strong>Example:</strong></p>
+<pre><code class="language-py">numbers = [0, 1, 2, 3, 4, 5]
+for number in numbers: # number is temporary name to refer to the list's items, valid only inside this loop
+    print(number)       # the numbers will be printed line by line, from 0 to 5
+</code></pre>
+<ul>
+<li>For loop with string</li>
+</ul>
+<pre><code class="language-py"># syntax
+for iterator in string:
+    code goes here
+</code></pre>
+<p><strong>Example:</strong></p>
+<pre><code class="language-py">language = 'Python'
+for letter in language:
+    print(letter)
+
+
+for i in range(len(language)):
+    print(language[i])
+</code></pre>
+<ul>
+<li>For loop with tuple</li>
+</ul>
+<pre><code class="language-py"># syntax
+for iterator in tpl:
+    code goes here
+</code></pre>
+<p><strong>Example:</strong></p>
+<pre><code class="language-py">numbers = (0, 1, 2, 3, 4, 5)
+for number in numbers:
+    print(number)
+</code></pre>
+<ul>
+<li>Loops in set</li>
+</ul>
+<pre><code class="language-py"># syntax
+for iterator in st:
+    code goes here
+</code></pre>
+<p><strong>Example:</strong></p>
+<pre><code class="language-py">it_companies = {'Facebook', 'Google', 'Microsoft', 'Apple', 'IBM', 'Oracle', 'Amazon'}
+for company in it_companies:
+    print(company)
+</code></pre>
+<h3 id="while-loop">While Loop</h3>
+<p>We use the reserved word <em>while</em> to make a while loop. It is used to execute a block of statements repeatedly until a given condition is satisfied. When the condition becomes false, the lines of code after the loop will be continued to be executed.</p>
+<pre><code class="language-py">  # syntax
+while condition:
+    code goes here
+</code></pre>
+<p><strong>Example:</strong></p>
+<pre><code class="language-py">count = 0
+while count &lt; 5:
+    print(count)
+    count = count + 1
+#prints from 0 to 4
+</code></pre>
+<p>In the above while loop, the condition becomes false when count is 5. That is when the loop stops.
+If we are interested to run block of code once the condition is no longer true, we can use <em>else</em>.</p>
+<pre><code class="language-py">  # syntax
+while condition:
+    code goes here
+else:
+    code goes here
+</code></pre>
+<p><strong>Example:</strong></p>
+<pre><code class="language-py">count = 0
+while count &lt; 5:
+    print(count)
+    count = count + 1
+else:
+    print(count)
+</code></pre>
+<p>The above loop condition will be false when count is 5 and the loop stops, and execution starts the else statement. As a result 5 will be printed.</p>
+<h3 id="break-and-continue-using-while">Break and Continue - Using while</h3>
+<ul>
+<li>Break: We use break when we want to get out of or stop the loop.</li>
+</ul>
+<pre><code class="language-py"># syntax
+while condition:
+    code goes here
+    if another_condition:
+        break
+</code></pre>
+<p><strong>Example:</strong></p>
+<pre><code class="language-py">count = 0
+while count &lt; 5:
+    print(count)
+    count = count + 1
+    if count == 3:
+        break
+</code></pre>
+<p>The above while loop only prints 0, 1, 2, but when it reaches 3 it stops.</p>
+<ul>
+<li>Continue: With the continue statement we can skip the current iteration, and continue with the next:</li>
+</ul>
+<pre><code class="language-py">  # syntax
+while condition:
+    code goes here
+    if another_condition:
+        continue
+</code></pre>
+<p><strong>Example:</strong></p>
+<pre><code class="language-py">count = 0
+while count &lt; 5:
+    if count == 3:
+        continue
+    print(count)
+    count = count + 1
+</code></pre>
+<p>The above while loop only prints 0, 1, 2 and 4 (skips 3).</p>
+<h3 id="break-and-continue-using-for">Break and Continue - Using for</h3>
+<p>Short reminder: <em>Break</em>: We use break when we like to stop our loop before it is completed.</p>
+<pre><code class="language-py"># syntax
+for iterator in sequence:
+    code goes here
+    if condition:
+        break
+</code></pre>
+<p><strong>Example:</strong></p>
+<pre><code class="language-py">numbers = (0,1,2,3,4,5)
+for number in numbers:
+    print(number)
+    if number == 3:
+        break
+</code></pre>
+<p>In the above example, the loop stops when it reaches 3.</p>
+<p>Continue: We use continue when we like to skip some of the steps in the iteration of the loop.</p>
+<pre><code class="language-py">  # syntax
+for iterator in sequence:
+    code goes here
+    if condition:
+        continue
+</code></pre>
+<p><strong>Example:</strong></p>
+<pre><code class="language-py">numbers = (0,1,2,3,4,5)
+for number in numbers:
+    print(number)
+    if number == 3:
+        continue
+    print('Next number should be ', number + 1) if number != 5 else print(&quot;loop's end&quot;) # for short hand conditions need both if and else statements
+print('outside the loop')
+</code></pre>
+<p>In the example above, if the number equals 3, the step <em>after</em> the condition (but inside the loop) is skipped and the execution of the loop continues if there are any iterations left.</p>
+<h3 id="the-range-function">The Range Function</h3>
+<p>The <em>range()</em> function is used list of numbers. The <em>range(start, end, step)</em> takes three parameters: starting, ending and increment. By default it starts from 0 and the increment is 1. The range sequence needs at least 1 argument (end).
+Creating sequences using range</p>
+<pre><code class="language-py">lst = list(range(11))
+print(lst) # [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+st = set(range(1, 11))    # 2 arguments indicate start and end of the sequence, step set to default 1
+print(st) # {1, 2, 3, 4, 5, 6, 7, 8, 9, 10}
+
+lst = list(range(0,11,2))
+print(lst) # [0, 2, 4, 6, 8, 10]
+st = set(range(0,11,2))
+print(st) #  {0, 2, 4, 6, 8, 10}
+</code></pre>
+<pre><code class="language-py"># syntax
+for iterator in range(start, end, step):
+</code></pre>
+<p><strong>Example:</strong></p>
+<pre><code class="language-py">for number in range(11):
+    print(number)   # prints 0 to 10, not including 11
+</code></pre>
+<h3 id="nested-for-loop">Nested For Loop</h3>
+<p>We can write loops inside a loop.</p>
+<pre><code class="language-py"># syntax
+for x in y:
+    for t in x:
+        print(t)
+</code></pre>
+<p><strong>Example:</strong></p>
+<pre><code class="language-py">adj = [&quot;red&quot;, &quot;big&quot;, &quot;tasty&quot;]
+fruits = [&quot;apple&quot;, &quot;banana&quot;, &quot;cherry&quot;]
+
+for x in adj:
+  for y in fruits:
+    print(x, y)
+</code></pre>
+<h3 id="pass">Pass</h3>
+<p>In python when statement is required (after semicolon), but we don't like to execute any code there, we can write the word <em>pass</em> to avoid errors. Also we can use it as a placeholder, for future statements.</p>
+<p><strong>Example:</strong></p>
+<pre><code class="language-py">for number in range(6):
+    pass
+</code></pre>
+<h2 id="lists">Lists</h2>
+<div align="center">
+    <img src="./assets/list.gif">
+</div>
+<p></br>
+List: is a collection which is ordered and changeable(modifiable). Allows duplicate members. A list is collection of different data types which is ordered and modifiable(mutable). A list can be empty or it may have different data type items.</p>
+<h3 id="creating-a-list">Creating a list</h3>
+<p>In Python we can create lists in two ways:</p>
+<ul>
+<li>Using list built-in function</li>
+</ul>
+<pre><code class="language-py">empty_list = list() # this is an empty list, no item in the list
+print(len(empty_list)) # 0
+</code></pre>
+<ul>
+<li>Using square brackets (<code>[]</code>)</li>
+</ul>
+<pre><code class="language-py">empty_list = [] # this is an empty list, no item in the list
+print(len(empty_list)) # 0
+</code></pre>
+<pre><code class="language-py">fruits = ['banana', 'orange', 'mango', 'lemon']                     # list of fruits
+vegetables = ['Tomato', 'Potato', 'Cabbage','Onion', 'https://www.youtube.com/watch?v=dQw4w9WgXcQ']      # list of vegetables
+
+# Print the lists and its length
+print('Fruits:', fruits) # Fruits: ['banana', 'orange', 'mango', 'lemon']
+print('Number of fruits:', len(fruits)) # 4
+
+print('Vegetables:', vegetables) #['Tomato', 'Potato', 'Cabbage', 'Onion', 'Carrot']
+print('Number of vegetables:', len(vegetables)) # 5
+</code></pre>
+<ul>
+<li>Lists can have items of different data types</li>
+</ul>
+<pre><code class="language-py"> lst = ['ACM', 250, True, {'country':'UAE', 'city':'Dubai'}] # list containing different data types
+</code></pre>
+<h3 id="accessing-list-items-using-indexing">Accessing List Items Using Indexing</h3>
+<p>We can access list items using positive and negative indexing.</p>
+<h4 id="positive-indexing">Positive indexing</h4>
+<p>We access each item in a list using their index. A list index starts from 0. The picture below shows clearly where the index starts.</p>
+<p><img alt="List index" src="assets/positive_index.png" /></p>
+<pre><code class="language-py">fruits = ['banana', 'orange', 'mango', 'lemon']
+first_fruit = fruits[0] # we are accessing the first item using its index
+print(first_fruit)      # banana
+second_fruit = fruits[1]
+print(second_fruit)     # orange
+last_fruit = fruits[3]
+print(last_fruit) # lemon
+# Last index
+last_index = len(fruits) - 1
+last_fruit = fruits[last_index]
+</code></pre>
+<h4 id="negative-indexing">Negative Indexing</h4>
+<p>Negative indexing means beginning from the end, -1 refers to the last item, -2 refers to the second last item.</p>
+<p><img alt="List negative indexing" src="assets/negative_index.png" /></p>
+<pre><code class="language-py">fruits = ['banana', 'orange', 'mango', 'lemon']
+first_fruit = fruits[-4]
+last_fruit = fruits[-1]
+second_last = fruits[-2]
+print(first_fruit)      # banana
+print(last_fruit)       # lemon
+print(second_last)      # mango
+</code></pre>
+<h3 id="unpacking-list-items">Unpacking List Items</h3>
+<pre><code class="language-py">lst = ['item','item2','item3', 'item4', 'item5']
+first_item, second_item, third_item, *rest = lst
+print(first_item)     # item1
+print(second_item)    # item2
+print(third_item)     # item3
+print(rest)           # ['item4', 'item5']
+</code></pre>
+<pre><code class="language-py"># First Example
+fruits = ['banana', 'orange', 'mango', 'lemon','lime','apple']
+first_fruit, second_fruit, third_fruit, *rest = lst
+print(first_fruit)     # banana
+print(second_fruit)    # orange
+print(third_fruit)     # mango
+print(rest)           # ['lemon','lime','apple']
+
+# Second Example about unpacking list
+first, second, third,*rest, tenth = [1,2,3,4,5,6,7,8,9,10]
+print(first)          # 1
+print(second)         # 2
+print(third)          # 3
+print(rest)           # [4,5,6,7,8,9]
+print(tenth)          # 10
+
+# Third Example about unpacking list
+countries = ['Germany', 'France','Belgium','Sweden','Denmark','Finland','Norway','Iceland','Estonia']
+gr, fr, bg, sw, *scandic, es = countries
+print(gr)
+print(fr)
+print(bg)
+print(sw)
+print(scandic)
+print(es)
+</code></pre>
+<h3 id="slicing-items-from-a-list">Slicing Items from a List</h3>
+<ul>
+<li><strong>Positive Indexing</strong> : We can specify a range of positive indexes by specifying the start, end and step, the return value will be a new list. (default values for start = 0, end = len(lst) - 1 (last item), step = 1)</li>
+</ul>
+<pre><code class="language-py">fruits = ['banana', 'orange', 'mango', 'lemon']
+all_fruits = fruits[0:4] # it returns all the fruits
+# this will also give the same result as the one above
+all_fruits = fruits[0:] # if we don't set where to stop it takes all the rest
+orange_and_mango = fruits[1:3] # it does not include the first index
+orange_mango_lemon = fruits[1:]
+orange_and_lemon = fruits[::2] # here we used a 3rd argument, step. It will take every 2cnd item - ['banana', 'mango']
+</code></pre>
+<ul>
+<li><strong>Negative Indexing</strong> : We can specify a range of negative indexes by specifying the start, end and step, the return value will be a new list.</li>
+</ul>
+<pre><code class="language-py">fruits = ['banana', 'orange', 'mango', 'lemon']
+all_fruits = fruits[-4:] # it returns all the fruits
+orange_and_mango = fruits[-3:-1] # it does not include the last index,['orange', 'mango']
+orange_mango_lemon = fruits[-3:] # this will give starting from -3 to the end,['orange', 'mango', 'lemon']
+reverse_fruits = fruits[::-1] # a negative step will take the list in reverse order,['lemon', 'mango', 'orange', 'banana']
+</code></pre>
+<h3 id="modifying-lists">Modifying Lists</h3>
+<p>List is a mutable or modifiable ordered collection of items. Lets modify the fruit list.</p>
+<pre><code class="language-py">fruits = ['banana', 'orange', 'mango', 'lemon']
+fruits[0] = 'avocado'
+print(fruits)       #  ['avocado', 'orange', 'mango', 'lemon']
+fruits[1] = 'apple'
+print(fruits)       #  ['avocado', 'apple', 'mango', 'lemon']
+last_index = len(fruits) - 1
+fruits[last_index] = 'lime'
+print(fruits)        #  ['avocado', 'apple', 'mango', 'lime']
+</code></pre>
+<h3 id="checking-items-in-a-list">Checking Items in a List</h3>
+<p>Checking an item if it is a member of a list using <em>in</em> operator. See the example below.</p>
+<pre><code class="language-py">fruits = ['banana', 'orange', 'mango', 'lemon']
+does_exist = 'banana' in fruits
+print(does_exist)  # True
+does_exist = 'lime' in fruits
+print(does_exist)  # False
+</code></pre>
+<h3 id="adding-items-to-a-list">Adding Items to a List</h3>
+<p>To add item to the end of an existing list we use the method <em><code>append()</code></em>.</p>
+<pre><code class="language-py"># syntax
+lst = list()
+lst.append(item)
+</code></pre>
+<pre><code class="language-py">fruits = ['banana', 'orange', 'mango', 'lemon']
+fruits.append('apple')
+print(fruits)           # ['banana', 'orange', 'mango', 'lemon', 'apple']
+fruits.append('lime')   # ['banana', 'orange', 'mango', 'lemon', 'apple', 'lime']
+print(fruits)
+</code></pre>
+<h3 id="inserting-items-into-a-list">Inserting Items into a List</h3>
+<p>We can use <em>insert()</em> method to insert a single item at a specified index in a list. Note that other items are shifted to the right. The <em><code>insert()</code></em> methods takes two arguments:index and an item to insert.</p>
+<pre><code class="language-py"># syntax
+lst = ['item1', 'item2']
+lst.insert(index, item)
+</code></pre>
+<pre><code class="language-py">fruits = ['banana', 'orange', 'mango', 'lemon']
+fruits.insert(2, 'apple') # insert apple between orange and mango
+print(fruits)           # ['banana', 'orange', 'apple', 'mango', 'lemon']
+fruits.insert(3, 'lime')   # ['banana', 'orange', 'apple', 'lime', 'mango', 'lemon']
+print(fruits)
+</code></pre>
+<h3 id="removing-items-from-a-list">Removing Items from a List</h3>
+<p>The <code>remove()</code> method removes a specified item from a list</p>
+<pre><code class="language-py"># syntax
+lst = ['item1', 'item2']
+lst.remove(item)
+</code></pre>
+<pre><code class="language-py">fruits = ['banana', 'orange', 'mango', 'lemon', 'banana']
+fruits.remove('banana')
+print(fruits)  # ['orange', 'mango', 'lemon', 'banana'] - this method removes the first occurrence of the item in the list
+fruits.remove('lemon')
+print(fruits)  # ['orange', 'mango', 'banana']
+</code></pre>
+<h3 id="removing-items-using-pop">Removing Items Using Pop</h3>
+<p>The <em><code>pop()</code></em> method removes the specified index, (or the last item if index is not specified):</p>
+<pre><code class="language-py"># syntax
+lst = ['item1', 'item2']
+lst.pop()       # last item
+lst.pop(index)
+</code></pre>
+<pre><code class="language-py">fruits = ['banana', 'orange', 'mango', 'lemon']
+fruits.pop()
+print(fruits)       # ['banana', 'orange', 'mango']
+
+fruits.pop(0)
+print(fruits)       # ['orange', 'mango']
+</code></pre>
+<h3 id="removing-items-using-del">Removing Items Using Del</h3>
+<p>The <em><code>del</code></em> keyword removes the specified index and it can also be used to delete items within index range. It can also delete the list completely</p>
+<pre><code class="language-py"># syntax
+lst = ['item1', 'item2']
+del lst[index] # only a single item
+del lst        # to delete the list completely
+</code></pre>
+<pre><code class="language-py">fruits = ['banana', 'orange', 'mango', 'lemon', 'kiwi', 'lime']
+del fruits[0]
+print(fruits)       # ['orange', 'mango', 'lemon', 'kiwi', 'lime']
+del fruits[1]
+print(fruits)       # ['orange', 'lemon', 'kiwi', 'lime']
+del fruits[1:3]     # this deletes items between given indexes, so it does not delete the item with index 3!
+print(fruits)       # ['orange', 'lime']
+del fruits
+print(fruits)       # This should give: NameError: name 'fruits' is not defined
+</code></pre>
+<h3 id="clearing-list-items">Clearing List Items</h3>
+<p>The <em><code>clear()</code></em> method empties the list:</p>
+<pre><code class="language-py"># syntax
+lst = ['item1', 'item2']
+lst.clear()
+</code></pre>
+<pre><code class="language-py">fruits = ['banana', 'orange', 'mango', 'lemon']
+fruits.clear()
+print(fruits)       # []
+</code></pre>
+<h3 id="copying-a-list">Copying a List</h3>
+<p>It is possible to copy a list by reassigning it to a new variable in the following way: list2 = list1. Now, list2 is a reference of list1, any changes we make in list2 will also modify the original, list2. But there are lots of case in which we do not like to modify the original instead we like to have a different copy. One of way of avoiding the problem above is using <strong><code>copy()</code></strong>.</p>
+<pre><code class="language-py"># syntax
+lst = ['item1', 'item2']
+lst_copy = lst.copy()
+</code></pre>
+<pre><code class="language-py">fruits = ['banana', 'orange', 'mango', 'lemon']
+fruits_copy = fruits.copy()
+print(fruits_copy)       # ['banana', 'orange', 'mango', 'lemon']
+</code></pre>
+<h3 id="counting-items-in-a-list">Counting Items in a List</h3>
+<p>The <em><code>count()</code></em> method returns the number of times an item appears in a list:</p>
+<pre><code class="language-py"># syntax
+lst = ['item1', 'item2']
+lst.count(item)
+</code></pre>
+<pre><code class="language-py">fruits = ['banana', 'orange', 'mango', 'lemon']
+print(fruits.count('orange'))   # 1
+ages = [22, 19, 24, 25, 26, 24, 25, 24]
+print(ages.count(24))           # 3
+</code></pre>
+<h3 id="finding-index-of-an-item">Finding Index of an Item</h3>
+<p>The <em><code>index()</code></em> method returns the index of an item in the list:</p>
+<pre><code class="language-py"># syntax
+lst = ['item1', 'item2']
+lst.index(item)
+</code></pre>
+<pre><code class="language-py">fruits = ['banana', 'orange', 'mango', 'lemon']
+print(fruits.index('orange'))   # 1
+ages = [22, 19, 24, 25, 26, 24, 25, 24]
+print(ages.index(24))           # 2, the first occurrence
+</code></pre>
+<h3 id="reversing-a-list">Reversing a List</h3>
+<p>The <em><code>reverse()</code></em> method reverses the order of a list.</p>
+<pre><code class="language-py"># syntax
+lst = ['item1', 'item2']
+lst.reverse()
+</code></pre>
+<pre><code class="language-py">fruits = ['banana', 'orange', 'mango', 'lemon']
+fruits.reverse()
+print(fruits) # ['lemon', 'mango', 'orange', 'banana']
+ages = [22, 19, 24, 25, 26, 24, 25, 24]
+ages.reverse()
+print(ages) # [24, 25, 24, 26, 25, 24, 19, 22]
+</code></pre>
+<h3 id="sorting-list-items">Sorting List Items</h3>
+<p>To sort lists we can use <em><code>sort()</code></em> method or <em><code>sorted()</code></em> built-in functions. The <em>sort()</em> method reorders the list items in ascending order and modifies the original list. If an argument of <em><code>sort()</code></em> method reverse is equal to true, it will arrange the list in descending order.</p>
+<ul>
+<li><code>sort()</code>: this method modifies the original list</li>
+</ul>
+<pre><code class="language-py">#syntax
+lst = ['item1', 'item2']
+lst.sort()                # ascending
+lst.sort(reverse=True)    # descending
+</code></pre>
+<p><strong>Example:</strong></p>
+<pre><code class="language-py">fruits = ['banana', 'orange', 'mango', 'lemon']
+fruits.sort()
+print(fruits)             # sorted in alphabetical order, ['banana', 'lemon', 'mango', 'orange']
+fruits.sort(reverse=True)
+print(fruits) # ['orange', 'mango', 'lemon', 'banana']
+ages = [22, 19, 24, 25, 26, 24, 25, 24]
+ages.sort()
+print(ages) #  [19, 22, 24, 24, 24, 25, 25, 26]
+
+ages.sort(reverse=True)
+print(ages) #  [26, 25, 25, 24, 24, 24, 22, 19]
+</code></pre>
+<p><code>sorted()</code>: returns the ordered list without modifying the original list</p>
+<p><strong>Example:</strong></p>
+<pre><code class="language-py">fruits = ['banana', 'orange', 'mango', 'lemon']
+print(sorted(fruits))   # ['banana', 'lemon', 'mango', 'orange']
+# Reverse order
+fruits = ['banana', 'orange', 'mango', 'lemon']
+fruits = sorted(fruits,reverse=True)
+print(fruits)     # ['orange', 'mango', 'lemon', 'banana']
+</code></pre>
+<h2 id="tuples">Tuples</h2>
+<p>A tuple is a collection of different data types which is ordered and unchangeable (immutable). Tuples are written with round brackets, <code>()</code>. Once a tuple is created, we cannot change its values.</p>
+<p>We cannot use add, insert, remove methods in a tuple because it is not modifiable (mutable). Unlike list, tuple has few methods. Methods related to tuples:</p>
+<ul>
+<li><code>tuple()</code>: to create an empty tuple</li>
+<li><code>count()</code>: to count the number of a specified item in a tuple</li>
+<li><code>index()</code>: to find the index of a specified item in a tuple</li>
+<li>operator: to join two or more tuples and to create a new tuple</li>
+</ul>
+<h3 id="creating-a-tuple">Creating a Tuple</h3>
+<ul>
+<li>Empty tuple: Creating an empty tuple</li>
+</ul>
+<pre><code class="language-py"># syntax
+empty_tuple = ()
+# or using the tuple constructor
+empty_tuple = tuple()
+</code></pre>
+<ul>
+<li>Tuple with initial values</li>
+</ul>
+<pre><code class="language-py"># syntax
+tpl = ('item1', 'item2','item3')
+</code></pre>
+<pre><code class="language-py">fruits = ('banana', 'orange', 'mango', 'lemon')
+</code></pre>
+<h3 id="tuple-length">Tuple length</h3>
+<p>We use the <em><code>len()</code></em> method to get the length of a tuple.</p>
+<pre><code class="language-py"># syntax
+tpl = ('item1', 'item2', 'item3')
+print(len(tpl))
+</code></pre>
+<h3 id="accessing-tuple-items">Accessing Tuple Items</h3>
+<ul>
+<li><strong>Positive Indexing</strong>: Similar to the list data type we use positive or negative indexing to access tuple items.</li>
+</ul>
+<pre><code class="language-py"># Syntax
+tpl = ('item1', 'item2', 'item3')
+first_item = tpl[0]
+second_item = tpl[1]
+</code></pre>
+<pre><code class="language-py">fruits = ('banana', 'orange', 'mango', 'lemon')
+first_fruit = fruits[0]
+second_fruit = fruits[1]
+last_index =len(fruits) - 1
+last_fruit = fruits[last_index]
+</code></pre>
+<ul>
+<li><strong>Negative indexing</strong>: Negative indexing means beginning from the end, -1 refers to the last item, -2 refers to the second last and the negative of the list/tuple length refers to the first item.</li>
+</ul>
+<pre><code class="language-py"># Syntax
+tpl = ('item1', 'item2', 'item3','item4')
+first_item = tpl[-4]
+second_item = tpl[-3]
+</code></pre>
+<pre><code class="language-py">fruits = ('banana', 'orange', 'mango', 'lemon')
+first_fruit = fruits[-4]
+second_fruit = fruits[-3]
+last_fruit = fruits[-1]
+</code></pre>
+<h3 id="slicing-tuples">Slicing tuples</h3>
+<p>We can slice out a sub-tuple by specifying a range of indexes where to start and where to end in the tuple, the return value will be a new tuple with the specified items.</p>
+<ul>
+<li>Range of Positive Indexes:</li>
+</ul>
+<pre><code class="language-py"># Syntax
+tpl = ('item1', 'item2', 'item3','item4')
+all_items = tpl[0:4]         # all items
+all_items = tpl[0:]         # all items
+middle_two_items = tpl[1:3]  # does not include item at index 3
+</code></pre>
+<pre><code class="language-py">fruits = ('banana', 'orange', 'mango', 'lemon')
+all_fruits = fruits[0:4]    # all items
+all_fruits= fruits[0:]      # all items
+orange_mango = fruits[1:3]  # doesn't include item at index 3
+orange_to_the_rest = fruits[1:]
+</code></pre>
+<ul>
+<li>Range of Negative Indexes:</li>
+</ul>
+<pre><code class="language-py"># Syntax
+tpl = ('item1', 'item2', 'item3','item4')
+all_items = tpl[-4:]         # all items
+middle_two_items = tpl[-3:-1]  # does not include item at index 3 (-1)
+</code></pre>
+<pre><code class="language-py">fruits = ('banana', 'orange', 'mango', 'lemon')
+all_fruits = fruits[-4:]    # all items
+orange_mango = fruits[-3:-1]  # doesn't include item at index 3
+orange_to_the_rest = fruits[-3:]
+</code></pre>
+<h3 id="changing-tuples-to-lists">Changing Tuples to Lists</h3>
+<p>We can change tuples to lists and lists to tuples. Tuple is immutable if we want to modify a tuple we should change it to a list.</p>
+<pre><code class="language-py"># Syntax
+tpl = ('item1', 'item2', 'item3','item4')
+lst = list(tpl)
+</code></pre>
+<pre><code class="language-py">fruits = ('banana', 'orange', 'mango', 'lemon')
+fruits = list(fruits)
+fruits[0] = 'apple'
+print(fruits)     # ['apple', 'orange', 'mango', 'lemon']
+fruits = tuple(fruits)
+print(fruits)     # ('apple', 'orange', 'mango', 'lemon')
+</code></pre>
+<h3 id="checking-an-item-in-a-tuple">Checking an Item in a Tuple</h3>
+<p>We can check if an item exists or not in a tuple using <em><code>in</code></em>, it returns a boolean.</p>
+<pre><code class="language-py"># Syntax
+tpl = ('item1', 'item2', 'item3','item4')
+'item2' in tpl # True
+</code></pre>
+<pre><code class="language-py">fruits = ('banana', 'orange', 'mango', 'lemon')
+print('orange' in fruits) # True
+print('apple' in fruits) # False
+fruits[0] = 'apple' # TypeError: 'tuple' object does not support item assignment
+</code></pre>
+<h3 id="joining-tuples">Joining Tuples</h3>
+<p>We can join two or more tuples using + operator</p>
+<pre><code class="language-py"># syntax
+tpl1 = ('item1', 'item2', 'item3')
+tpl2 = ('item4', 'item5','item6')
+tpl3 = tpl1 + tpl2
+</code></pre>
+<pre><code class="language-py">fruits = ('banana', 'orange', 'mango', 'lemon')
+vegetables = ('Tomato', 'Potato', 'Cabbage','Onion', 'Carrot')
+fruits_and_vegetables = fruits + vegetables
+</code></pre>
+<h3 id="deleting-tuples">Deleting Tuples</h3>
+<p>It is not possible to remove a single item in a tuple but it is possible to delete the tuple itself using <em><code>del</code></em>.</p>
+<pre><code class="language-py"># syntax
+tpl1 = ('item1', 'item2', 'item3')
+del tpl1
+
+</code></pre>
+<pre><code class="language-py">fruits = ('banana', 'orange', 'mango', 'lemon')
+del fruits
+</code></pre>
 <h2 id="error-types">Error Types</h2>
-<p>When we write code it is common that we make a typo or some other common error. If our code fails to run, the Python interpreter will display a message, containing feedback with information on where the problem occurs and the type of an error. It will also sometimes give us suggestions on a possible fix. Here are some of the types of errors :</p>
+<div align="center">
+    <img src="./assets/error.gif">
+</div>
+<p></br>
+When we write code it is common that we make a typo or some other common error. If our code fails to run, the Python interpreter will display a message, containing feedback with information on where the problem occurs and the type of an error. It will also sometimes give us suggestions on a possible fix. Here are some of the types of errors:</p>
 <h3 id="syntaxerror">SyntaxError</h3>
 <p><strong>Example 1: SyntaxError</strong></p>
 <pre><code class="language-py">Python 3.9.6
@@ -1105,9 +1794,14 @@ ZeroDivisionError: division by zero
 <p>We have covered some of the python error types, if you want to check more about it check the python documentation about python error types.
 If you are good at reading the error types then you will be able to fix your bugs fast and you will also become a better programmer.</p>
 <h2 id="exception-handling">Exception Handling</h2>
+<div align="center">
+    <img src="./assets/handling.gif">
+</div>
+<p></br>
+Stuck with an error? Python has got you covered! </p>
 <p>Python uses <em>try</em> and <em>except</em> to handle errors gracefully. Often the program prints a descriptive error message to a terminal or log as part of the graceful exit, this makes our application more robust. The cause of an exception is often external to the program itself. An example of exceptions could be an incorrect input, wrong file name, unable to find a file, a malfunctioning IO device. Graceful handling of errors prevents our applications from crashing.</p>
-<p>We have covered the different Python <em>error</em> types in the previous section. If we use <em>try</em> and <em>except</em> in our program, then it will not raise errors in those blocks.
-<img alt="Try and Except" src="assets/try_except.png" /></p>
+<p>We have covered the different Python <em>error</em> types in the previous section. If we use <em>try</em> and <em>except</em> in our program, then it will not raise errors in those blocks.</p>
+<p><img alt="Try and Except" src="assets/try_except.png" /></p>
 <pre><code class="language-py">try:
     code in this block if things go well
 except:
@@ -1181,629 +1875,6 @@ I alway run.
     print('You are {name}. And your age is {age}.')
 except Exception as e:
     print(e)
-</code></pre>
-<h2 id="loops">Loops</h2>
-<p>Life is full of routines. In programming we also do lots of repetitive tasks. In order to handle repetitive task programming languages use loops. Python programming language also provides the following types of two loops:</p>
-<ul>
-<li>while loop</li>
-<li>for loop</li>
-</ul>
-<h3 id="for-loop">For Loop</h3>
-<p>A <em>for</em> keyword is used to make a for loop, similar with other programming languages, but with some syntax differences. Loop is used for iterating over a sequence (that is either a list, a tuple, a dictionary, a set, or a string).
-- For loop with list</p>
-<pre><code class="language-py"># syntax
-for iterator in lst:
-    code goes here
-</code></pre>
-<p><strong>Example:</strong></p>
-<pre><code class="language-py">numbers = [0, 1, 2, 3, 4, 5]
-for number in numbers: # number is temporary name to refer to the list's items, valid only inside this loop
-    print(number)       # the numbers will be printed line by line, from 0 to 5
-</code></pre>
-<ul>
-<li>For loop with string</li>
-</ul>
-<pre><code class="language-py"># syntax
-for iterator in string:
-    code goes here
-</code></pre>
-<p><strong>Example:</strong></p>
-<pre><code class="language-py">language = 'Python'
-for letter in language:
-    print(letter)
-
-
-for i in range(len(language)):
-    print(language[i])
-</code></pre>
-<ul>
-<li>For loop with tuple</li>
-</ul>
-<pre><code class="language-py"># syntax
-for iterator in tpl:
-    code goes here
-</code></pre>
-<p><strong>Example:</strong></p>
-<pre><code class="language-py">numbers = (0, 1, 2, 3, 4, 5)
-for number in numbers:
-    print(number)
-</code></pre>
-<ul>
-<li>Loops in set</li>
-</ul>
-<pre><code class="language-py"># syntax
-for iterator in st:
-    code goes here
-</code></pre>
-<p><strong>Example:</strong></p>
-<pre><code class="language-py">it_companies = {'Facebook', 'Google', 'Microsoft', 'Apple', 'IBM', 'Oracle', 'Amazon'}
-for company in it_companies:
-    print(company)
-</code></pre>
-<h3 id="while-loop">While Loop</h3>
-<p>We use the reserved word <em>while</em> to make a while loop. It is used to execute a block of statements repeatedly until a given condition is satisfied. When the condition becomes false, the lines of code after the loop will be continued to be executed.</p>
-<pre><code class="language-py">  # syntax
-while condition:
-    code goes here
-</code></pre>
-<p><strong>Example:</strong></p>
-<pre><code class="language-py">count = 0
-while count &lt; 5:
-    print(count)
-    count = count + 1
-#prints from 0 to 4
-</code></pre>
-<p>In the above while loop, the condition becomes false when count is 5. That is when the loop stops.
-If we are interested to run block of code once the condition is no longer true, we can use <em>else</em>.</p>
-<pre><code class="language-py">  # syntax
-while condition:
-    code goes here
-else:
-    code goes here
-</code></pre>
-<p><strong>Example:</strong></p>
-<pre><code class="language-py">count = 0
-while count &lt; 5:
-    print(count)
-    count = count + 1
-else:
-    print(count)
-</code></pre>
-<p>The above loop condition will be false when count is 5 and the loop stops, and execution starts the else statement. As a result 5 will be printed.</p>
-<h3 id="break-and-continue-using-while">Break and Continue - Using while</h3>
-<ul>
-<li>Break: We use break when we want to get out of or stop the loop.</li>
-</ul>
-<pre><code class="language-py"># syntax
-while condition:
-    code goes here
-    if another_condition:
-        break
-</code></pre>
-<p><strong>Example:</strong></p>
-<pre><code class="language-py">count = 0
-while count &lt; 5:
-    print(count)
-    count = count + 1
-    if count == 3:
-        break
-</code></pre>
-<p>The above while loop only prints 0, 1, 2, but when it reaches 3 it stops.</p>
-<ul>
-<li>Continue: With the continue statement we can skip the current iteration, and continue with the next:</li>
-</ul>
-<pre><code class="language-py">  # syntax
-while condition:
-    code goes here
-    if another_condition:
-        continue
-</code></pre>
-<p><strong>Example:</strong></p>
-<pre><code class="language-py">count = 0
-while count &lt; 5:
-    if count == 3:
-        continue
-    print(count)
-    count = count + 1
-</code></pre>
-<p>The above while loop only prints 0, 1, 2 and 4 (skips 3).</p>
-<h3 id="break-and-continue-using-for">Break and Continue - Using for</h3>
-<p>Short reminder: <em>Break</em>: We use break when we like to stop our loop before it is completed.</p>
-<pre><code class="language-py"># syntax
-for iterator in sequence:
-    code goes here
-    if condition:
-        break
-</code></pre>
-<p><strong>Example:</strong></p>
-<pre><code class="language-py">numbers = (0,1,2,3,4,5)
-for number in numbers:
-    print(number)
-    if number == 3:
-        break
-</code></pre>
-<p>In the above example, the loop stops when it reaches 3.</p>
-<p>Continue: We use continue when we like to skip some of the steps in the iteration of the loop.</p>
-<pre><code class="language-py">  # syntax
-for iterator in sequence:
-    code goes here
-    if condition:
-        continue
-</code></pre>
-<p><strong>Example:</strong></p>
-<pre><code class="language-py">numbers = (0,1,2,3,4,5)
-for number in numbers:
-    print(number)
-    if number == 3:
-        continue
-    print('Next number should be ', number + 1) if number != 5 else print(&quot;loop's end&quot;) # for short hand conditions need both if and else statements
-print('outside the loop')
-</code></pre>
-<p>In the example above, if the number equals 3, the step <em>after</em> the condition (but inside the loop) is skipped and the execution of the loop continues if there are any iterations left.</p>
-<h3 id="the-range-function">The Range Function</h3>
-<p>The <em>range()</em> function is used list of numbers. The <em>range(start, end, step)</em> takes three parameters: starting, ending and increment. By default it starts from 0 and the increment is 1. The range sequence needs at least 1 argument (end).
-Creating sequences using range</p>
-<pre><code class="language-py">lst = list(range(11))
-print(lst) # [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
-st = set(range(1, 11))    # 2 arguments indicate start and end of the sequence, step set to default 1
-print(st) # {1, 2, 3, 4, 5, 6, 7, 8, 9, 10}
-
-lst = list(range(0,11,2))
-print(lst) # [0, 2, 4, 6, 8, 10]
-st = set(range(0,11,2))
-print(st) #  {0, 2, 4, 6, 8, 10}
-</code></pre>
-<pre><code class="language-py"># syntax
-for iterator in range(start, end, step):
-</code></pre>
-<p><strong>Example:</strong></p>
-<pre><code class="language-py">for number in range(11):
-    print(number)   # prints 0 to 10, not including 11
-</code></pre>
-<h3 id="nested-for-loop">Nested For Loop</h3>
-<p>We can write loops inside a loop.</p>
-<pre><code class="language-py"># syntax
-for x in y:
-    for t in x:
-        print(t)
-</code></pre>
-<p><strong>Example:</strong></p>
-<pre><code class="language-py">adj = [&quot;red&quot;, &quot;big&quot;, &quot;tasty&quot;]
-fruits = [&quot;apple&quot;, &quot;banana&quot;, &quot;cherry&quot;]
-
-for x in adj:
-  for y in fruits:
-    print(x, y)
-</code></pre>
-<h3 id="pass">Pass</h3>
-<p>In python when statement is required (after semicolon), but we don't like to execute any code there, we can write the word <em>pass</em> to avoid errors. Also we can use it as a placeholder, for future statements.</p>
-<p><strong>Example:</strong></p>
-<pre><code class="language-py">for number in range(6):
-    pass
-</code></pre>
-<h2 id="lists">Lists</h2>
-<p>List: is a collection which is ordered and changeable(modifiable). Allows duplicate members. A list is collection of different data types which is ordered and modifiable(mutable). A list can be empty or it may have different data type items.</p>
-<h3 id="creating-a-list">Creating a list</h3>
-<p>In Python we can create lists in two ways:
- 1. Using list built-in function</p>
-<pre><code class="language-py">empty_list = list() # this is an empty list, no item in the list
-print(len(empty_list)) # 0
-</code></pre>
-<ol>
-<li>Using square brackets, []</li>
-</ol>
-<pre><code class="language-py">empty_list = [] # this is an empty list, no item in the list
-print(len(empty_list)) # 0
-</code></pre>
-<pre><code class="language-py">fruits = ['banana', 'orange', 'mango', 'lemon']                     # list of fruits
-vegetables = ['Tomato', 'Potato', 'Cabbage','Onion', 'Carrot']      # list of vegetables
-
-# Print the lists and its length
-print('Fruits:', fruits) # Fruits: ['banana', 'orange', 'mango', 'lemon']
-print('Number of fruits:', len(fruits)) # 4
-
-print('Vegetables:', vegetables) #['Tomato', 'Potato', 'Cabbage', 'Onion', 'Carrot']
-print('Number of vegetables:', len(vegetables)) # 5
-</code></pre>
-<ul>
-<li>Lists can have items of different data types</li>
-</ul>
-<pre><code class="language-py"> lst = ['ACM', 250, True, {'country':'UAE', 'city':'Dubai'}] # list containing different data types
-</code></pre>
-<h3 id="accessing-list-items-using-indexing">Accessing List Items Using Indexing</h3>
-<p>We can access list items using positive and negative indexing.</p>
-<h4 id="positive-indexing">Positive indexing</h4>
-<p>We access each item in a list using their index. A list index starts from 0. The picture below shows clearly where the index starts.
-<img alt="List index" src="assets/positive_index.png" /></p>
-<pre><code class="language-py">fruits = ['banana', 'orange', 'mango', 'lemon']
-first_fruit = fruits[0] # we are accessing the first item using its index
-print(first_fruit)      # banana
-second_fruit = fruits[1]
-print(second_fruit)     # orange
-last_fruit = fruits[3]
-print(last_fruit) # lemon
-# Last index
-last_index = len(fruits) - 1
-last_fruit = fruits[last_index]
-</code></pre>
-<h4 id="negative-indexing">Negative Indexing</h4>
-<p>Negative indexing means beginning from the end, -1 refers to the last item, -2 refers to the second last item.</p>
-<p><img alt="List negative indexing" src="assets/negative_index.png" /></p>
-<pre><code class="language-py">fruits = ['banana', 'orange', 'mango', 'lemon']
-first_fruit = fruits[-4]
-last_fruit = fruits[-1]
-second_last = fruits[-2]
-print(first_fruit)      # banana
-print(last_fruit)       # lemon
-print(second_last)      # mango
-</code></pre>
-<h3 id="unpacking-list-items">Unpacking List Items</h3>
-<pre><code class="language-py">lst = ['item','item2','item3', 'item4', 'item5']
-first_item, second_item, third_item, *rest = lst
-print(first_item)     # item1
-print(second_item)    # item2
-print(third_item)     # item3
-print(rest)           # ['item4', 'item5']
-</code></pre>
-<pre><code class="language-py"># First Example
-fruits = ['banana', 'orange', 'mango', 'lemon','lime','apple']
-first_fruit, second_fruit, third_fruit, *rest = lst
-print(first_fruit)     # banana
-print(second_fruit)    # orange
-print(third_fruit)     # mango
-print(rest)           # ['lemon','lime','apple']
-
-# Second Example about unpacking list
-first, second, third,*rest, tenth = [1,2,3,4,5,6,7,8,9,10]
-print(first)          # 1
-print(second)         # 2
-print(third)          # 3
-print(rest)           # [4,5,6,7,8,9]
-print(tenth)          # 10
-
-# Third Example about unpacking list
-countries = ['Germany', 'France','Belgium','Sweden','Denmark','Finland','Norway','Iceland','Estonia']
-gr, fr, bg, sw, *scandic, es = countries
-print(gr)
-print(fr)
-print(bg)
-print(sw)
-print(scandic)
-print(es)
-</code></pre>
-<h3 id="slicing-items-from-a-list">Slicing Items from a List</h3>
-<ul>
-<li><strong>Positive Indexing</strong> : We can specify a range of positive indexes by specifying the start, end and step, the return value will be a new list. (default values for start = 0, end = len(lst) - 1 (last item), step = 1)</li>
-</ul>
-<pre><code class="language-py">fruits = ['banana', 'orange', 'mango', 'lemon']
-all_fruits = fruits[0:4] # it returns all the fruits
-# this will also give the same result as the one above
-all_fruits = fruits[0:] # if we don't set where to stop it takes all the rest
-orange_and_mango = fruits[1:3] # it does not include the first index
-orange_mango_lemon = fruits[1:]
-orange_and_lemon = fruits[::2] # here we used a 3rd argument, step. It will take every 2cnd item - ['banana', 'mango']
-</code></pre>
-<ul>
-<li><strong>Negative Indexing</strong> : We can specify a range of negative indexes by specifying the start, end and step, the return value will be a new list.</li>
-</ul>
-<pre><code class="language-py">fruits = ['banana', 'orange', 'mango', 'lemon']
-all_fruits = fruits[-4:] # it returns all the fruits
-orange_and_mango = fruits[-3:-1] # it does not include the last index,['orange', 'mango']
-orange_mango_lemon = fruits[-3:] # this will give starting from -3 to the end,['orange', 'mango', 'lemon']
-reverse_fruits = fruits[::-1] # a negative step will take the list in reverse order,['lemon', 'mango', 'orange', 'banana']
-</code></pre>
-<h3 id="modifying-lists">Modifying Lists</h3>
-<p>List is a mutable or modifiable ordered collection of items. Lets modify the fruit list.</p>
-<pre><code class="language-py">fruits = ['banana', 'orange', 'mango', 'lemon']
-fruits[0] = 'avocado'
-print(fruits)       #  ['avocado', 'orange', 'mango', 'lemon']
-fruits[1] = 'apple'
-print(fruits)       #  ['avocado', 'apple', 'mango', 'lemon']
-last_index = len(fruits) - 1
-fruits[last_index] = 'lime'
-print(fruits)        #  ['avocado', 'apple', 'mango', 'lime']
-</code></pre>
-<h3 id="checking-items-in-a-list">Checking Items in a List</h3>
-<p>Checking an item if it is a member of a list using <em>in</em> operator. See the example below.</p>
-<pre><code class="language-py">fruits = ['banana', 'orange', 'mango', 'lemon']
-does_exist = 'banana' in fruits
-print(does_exist)  # True
-does_exist = 'lime' in fruits
-print(does_exist)  # False
-</code></pre>
-<h3 id="adding-items-to-a-list">Adding Items to a List</h3>
-<p>To add item to the end of an existing list we use the method <em><code>append()</code></em>.</p>
-<pre><code class="language-py"># syntax
-lst = list()
-lst.append(item)
-</code></pre>
-<pre><code class="language-py">fruits = ['banana', 'orange', 'mango', 'lemon']
-fruits.append('apple')
-print(fruits)           # ['banana', 'orange', 'mango', 'lemon', 'apple']
-fruits.append('lime')   # ['banana', 'orange', 'mango', 'lemon', 'apple', 'lime']
-print(fruits)
-</code></pre>
-<h3 id="inserting-items-into-a-list">Inserting Items into a List</h3>
-<p>We can use <em>insert()</em> method to insert a single item at a specified index in a list. Note that other items are shifted to the right. The <em><code>insert()</code></em> methods takes two arguments:index and an item to insert.</p>
-<pre><code class="language-py"># syntax
-lst = ['item1', 'item2']
-lst.insert(index, item)
-</code></pre>
-<pre><code class="language-py">fruits = ['banana', 'orange', 'mango', 'lemon']
-fruits.insert(2, 'apple') # insert apple between orange and mango
-print(fruits)           # ['banana', 'orange', 'apple', 'mango', 'lemon']
-fruits.insert(3, 'lime')   # ['banana', 'orange', 'apple', 'lime', 'mango', 'lemon']
-print(fruits)
-</code></pre>
-<h3 id="removing-items-from-a-list">Removing Items from a List</h3>
-<p>The <code>remove()</code> method removes a specified item from a list</p>
-<pre><code class="language-py"># syntax
-lst = ['item1', 'item2']
-lst.remove(item)
-</code></pre>
-<pre><code class="language-py">fruits = ['banana', 'orange', 'mango', 'lemon', 'banana']
-fruits.remove('banana')
-print(fruits)  # ['orange', 'mango', 'lemon', 'banana'] - this method removes the first occurrence of the item in the list
-fruits.remove('lemon')
-print(fruits)  # ['orange', 'mango', 'banana']
-</code></pre>
-<h3 id="removing-items-using-pop">Removing Items Using Pop</h3>
-<p>The <em><code>pop()</code></em> method removes the specified index, (or the last item if index is not specified):</p>
-<pre><code class="language-py"># syntax
-lst = ['item1', 'item2']
-lst.pop()       # last item
-lst.pop(index)
-</code></pre>
-<pre><code class="language-py">fruits = ['banana', 'orange', 'mango', 'lemon']
-fruits.pop()
-print(fruits)       # ['banana', 'orange', 'mango']
-
-fruits.pop(0)
-print(fruits)       # ['orange', 'mango']
-</code></pre>
-<h3 id="removing-items-using-del">Removing Items Using Del</h3>
-<p>The <em><code>del</code></em> keyword removes the specified index and it can also be used to delete items within index range. It can also delete the list completely</p>
-<pre><code class="language-py"># syntax
-lst = ['item1', 'item2']
-del lst[index] # only a single item
-del lst        # to delete the list completely
-</code></pre>
-<pre><code class="language-py">fruits = ['banana', 'orange', 'mango', 'lemon', 'kiwi', 'lime']
-del fruits[0]
-print(fruits)       # ['orange', 'mango', 'lemon', 'kiwi', 'lime']
-del fruits[1]
-print(fruits)       # ['orange', 'lemon', 'kiwi', 'lime']
-del fruits[1:3]     # this deletes items between given indexes, so it does not delete the item with index 3!
-print(fruits)       # ['orange', 'lime']
-del fruits
-print(fruits)       # This should give: NameError: name 'fruits' is not defined
-</code></pre>
-<h3 id="clearing-list-items">Clearing List Items</h3>
-<p>The <em><code>clear()</code></em> method empties the list:</p>
-<pre><code class="language-py"># syntax
-lst = ['item1', 'item2']
-lst.clear()
-</code></pre>
-<pre><code class="language-py">fruits = ['banana', 'orange', 'mango', 'lemon']
-fruits.clear()
-print(fruits)       # []
-</code></pre>
-<h3 id="copying-a-list">Copying a List</h3>
-<p>It is possible to copy a list by reassigning it to a new variable in the following way: list2 = list1. Now, list2 is a reference of list1, any changes we make in list2 will also modify the original, list2. But there are lots of case in which we do not like to modify the original instead we like to have a different copy. One of way of avoiding the problem above is using <strong><code>copy()</code></strong>.</p>
-<pre><code class="language-py"># syntax
-lst = ['item1', 'item2']
-lst_copy = lst.copy()
-</code></pre>
-<pre><code class="language-py">fruits = ['banana', 'orange', 'mango', 'lemon']
-fruits_copy = fruits.copy()
-print(fruits_copy)       # ['banana', 'orange', 'mango', 'lemon']
-</code></pre>
-<h3 id="counting-items-in-a-list">Counting Items in a List</h3>
-<p>The <em><code>count()</code></em> method returns the number of times an item appears in a list:</p>
-<pre><code class="language-py"># syntax
-lst = ['item1', 'item2']
-lst.count(item)
-</code></pre>
-<pre><code class="language-py">fruits = ['banana', 'orange', 'mango', 'lemon']
-print(fruits.count('orange'))   # 1
-ages = [22, 19, 24, 25, 26, 24, 25, 24]
-print(ages.count(24))           # 3
-</code></pre>
-<h3 id="finding-index-of-an-item">Finding Index of an Item</h3>
-<p>The <em><code>index()</code></em> method returns the index of an item in the list:</p>
-<pre><code class="language-py"># syntax
-lst = ['item1', 'item2']
-lst.index(item)
-</code></pre>
-<pre><code class="language-py">fruits = ['banana', 'orange', 'mango', 'lemon']
-print(fruits.index('orange'))   # 1
-ages = [22, 19, 24, 25, 26, 24, 25, 24]
-print(ages.index(24))           # 2, the first occurrence
-</code></pre>
-<h3 id="reversing-a-list">Reversing a List</h3>
-<p>The <em><code>reverse()</code></em> method reverses the order of a list.</p>
-<pre><code class="language-py"># syntax
-lst = ['item1', 'item2']
-lst.reverse()
-
-</code></pre>
-<pre><code class="language-py">fruits = ['banana', 'orange', 'mango', 'lemon']
-fruits.reverse()
-print(fruits) # ['lemon', 'mango', 'orange', 'banana']
-ages = [22, 19, 24, 25, 26, 24, 25, 24]
-ages.reverse()
-print(ages) # [24, 25, 24, 26, 25, 24, 19, 22]
-</code></pre>
-<h3 id="sorting-list-items">Sorting List Items</h3>
-<p>To sort lists we can use <em><code>sort()</code></em> method or <em><code>sorted()</code></em> built-in functions. The <em>sort()</em> method reorders the list items in ascending order and modifies the original list. If an argument of <em><code>sort()</code></em> method reverse is equal to true, it will arrange the list in descending order.</p>
-<ul>
-<li><code>sort()</code>: this method modifies the original list</li>
-</ul>
-<pre><code class="language-py">#syntax
-lst = ['item1', 'item2']
-lst.sort()                # ascending
-lst.sort(reverse=True)    # descending
-</code></pre>
-<p><strong>Example:</strong></p>
-<p>```py
-  fruits = ['banana', 'orange', 'mango', 'lemon']
-  fruits.sort()
-  print(fruits)             # sorted in alphabetical order, ['banana', 'lemon', 'mango', 'orange']
-  fruits.sort(reverse=True)
-  print(fruits) # ['orange', 'mango', 'lemon', 'banana']
-  ages = [22, 19, 24, 25, 26, 24, 25, 24]
-  ages.sort()
-  print(ages) #  [19, 22, 24, 24, 24, 25, 25, 26]</p>
-<p>ages.sort(reverse=True)
-  print(ages) #  [26, 25, 25, 24, 24, 24, 22, 19]
-  ```</p>
-<p><code>sorted()</code>: returns the ordered list without modifying the original list
-  <strong>Example:</strong></p>
-<p><code>py
-  fruits = ['banana', 'orange', 'mango', 'lemon']
-  print(sorted(fruits))   # ['banana', 'lemon', 'mango', 'orange']
-  # Reverse order
-  fruits = ['banana', 'orange', 'mango', 'lemon']
-  fruits = sorted(fruits,reverse=True)
-  print(fruits)     # ['orange', 'mango', 'lemon', 'banana']</code></p>
-<h2 id="tuples">Tuples</h2>
-<p>A tuple is a collection of different data types which is ordered and unchangeable (immutable). Tuples are written with round brackets, <code>()</code>. Once a tuple is created, we cannot change its values.</p>
-<p>We cannot use add, insert, remove methods in a tuple because it is not modifiable (mutable). Unlike list, tuple has few methods. Methods related to tuples:</p>
-<ul>
-<li><code>tuple()</code>: to create an empty tuple</li>
-<li><code>count()</code>: to count the number of a specified item in a tuple</li>
-<li><code>index()</code>: to find the index of a specified item in a tuple</li>
-<li>operator: to join two or more tuples and to create a new tuple</li>
-</ul>
-<h3 id="creating-a-tuple">Creating a Tuple</h3>
-<ul>
-<li>Empty tuple: Creating an empty tuple</li>
-</ul>
-<p><code>py
-  # syntax
-  empty_tuple = ()
-  # or using the tuple constructor
-  empty_tuple = tuple()</code></p>
-<ul>
-<li>Tuple with initial values</li>
-</ul>
-<p><code>py
-  # syntax
-  tpl = ('item1', 'item2','item3')</code></p>
-<p><code>py
-  fruits = ('banana', 'orange', 'mango', 'lemon')</code></p>
-<h3 id="tuple-length">Tuple length</h3>
-<p>We use the <em><code>len()</code></em> method to get the length of a tuple.</p>
-<pre><code class="language-py"># syntax
-tpl = ('item1', 'item2', 'item3')
-len(tpl)
-</code></pre>
-<h3 id="accessing-tuple-items">Accessing Tuple Items</h3>
-<ul>
-<li><strong>Positive Indexing</strong>
-  Similar to the list data type we use positive or negative indexing to access tuple items.
-  <img alt="Accessing tuple items" src="../images/tuples_index.png" /></li>
-</ul>
-<p><code>py
-  # Syntax
-  tpl = ('item1', 'item2', 'item3')
-  first_item = tpl[0]
-  second_item = tpl[1]</code></p>
-<p><code>py
-  fruits = ('banana', 'orange', 'mango', 'lemon')
-  first_fruit = fruits[0]
-  second_fruit = fruits[1]
-  last_index =len(fruits) - 1
-  last_fruit = fruits[las_index]</code></p>
-<ul>
-<li><strong>Negative indexing</strong>
-  Negative indexing means beginning from the end, -1 refers to the last item, -2 refers to the second last and the negative of the list/tuple length refers to the first item.
-  <img alt="Tuple Negative indexing" src="../images/tuple_negative_indexing.png" /></li>
-</ul>
-<p><code>py
-  # Syntax
-  tpl = ('item1', 'item2', 'item3','item4')
-  first_item = tpl[-4]
-  second_item = tpl[-3]</code></p>
-<p><code>py
-  fruits = ('banana', 'orange', 'mango', 'lemon')
-  first_fruit = fruits[-4]
-  second_fruit = fruits[-3]
-  last_fruit = fruits[-1]</code></p>
-<h3 id="slicing-tuples">Slicing tuples</h3>
-<p>We can slice out a sub-tuple by specifying a range of indexes where to start and where to end in the tuple, the return value will be a new tuple with the specified items.</p>
-<ul>
-<li>Range of Positive Indexes</li>
-</ul>
-<p><code>py
-  # Syntax
-  tpl = ('item1', 'item2', 'item3','item4')
-  all_items = tpl[0:4]         # all items
-  all_items = tpl[0:]         # all items
-  middle_two_items = tpl[1:3]  # does not include item at index 3</code></p>
-<p><code>py
-  fruits = ('banana', 'orange', 'mango', 'lemon')
-  all_fruits = fruits[0:4]    # all items
-  all_fruits= fruits[0:]      # all items
-  orange_mango = fruits[1:3]  # doesn't include item at index 3
-  orange_to_the_rest = fruits[1:]</code></p>
-<ul>
-<li>Range of Negative Indexes</li>
-</ul>
-<p><code>py
-  # Syntax
-  tpl = ('item1', 'item2', 'item3','item4')
-  all_items = tpl[-4:]         # all items
-  middle_two_items = tpl[-3:-1]  # does not include item at index 3 (-1)</code></p>
-<p><code>py
-  fruits = ('banana', 'orange', 'mango', 'lemon')
-  all_fruits = fruits[-4:]    # all items
-  orange_mango = fruits[-3:-1]  # doesn't include item at index 3
-  orange_to_the_rest = fruits[-3:]</code></p>
-<h3 id="changing-tuples-to-lists">Changing Tuples to Lists</h3>
-<p>We can change tuples to lists and lists to tuples. Tuple is immutable if we want to modify a tuple we should change it to a list.</p>
-<pre><code class="language-py"># Syntax
-tpl = ('item1', 'item2', 'item3','item4')
-lst = list(tpl)
-</code></pre>
-<pre><code class="language-py">fruits = ('banana', 'orange', 'mango', 'lemon')
-fruits = list(fruits)
-fruits[0] = 'apple'
-print(fruits)     # ['apple', 'orange', 'mango', 'lemon']
-fruits = tuple(fruits)
-print(fruits)     # ('apple', 'orange', 'mango', 'lemon')
-</code></pre>
-<h3 id="checking-an-item-in-a-tuple">Checking an Item in a Tuple</h3>
-<p>We can check if an item exists or not in a tuple using <em><code>in</code></em>, it returns a boolean.</p>
-<pre><code class="language-py"># Syntax
-tpl = ('item1', 'item2', 'item3','item4')
-'item2' in tpl # True
-</code></pre>
-<pre><code class="language-py">fruits = ('banana', 'orange', 'mango', 'lemon')
-print('orange' in fruits) # True
-print('apple' in fruits) # False
-fruits[0] = 'apple' # TypeError: 'tuple' object does not support item assignment
-</code></pre>
-<h3 id="joining-tuples">Joining Tuples</h3>
-<p>We can join two or more tuples using + operator</p>
-<pre><code class="language-py"># syntax
-tpl1 = ('item1', 'item2', 'item3')
-tpl2 = ('item4', 'item5','item6')
-tpl3 = tpl1 + tpl2
-</code></pre>
-<pre><code class="language-py">fruits = ('banana', 'orange', 'mango', 'lemon')
-vegetables = ('Tomato', 'Potato', 'Cabbage','Onion', 'Carrot')
-fruits_and_vegetables = fruits + vegetables
-</code></pre>
-<h3 id="deleting-tuples">Deleting Tuples</h3>
-<p>It is not possible to remove a single item in a tuple but it is possible to delete the tuple itself using <em><code>del</code></em>.</p>
-<pre><code class="language-py"># syntax
-tpl1 = ('item1', 'item2', 'item3')
-del tpl1
-
-</code></pre>
-<pre><code class="language-py">fruits = ('banana', 'orange', 'mango', 'lemon')
-del fruits
 </code></pre>
               
             </div>
