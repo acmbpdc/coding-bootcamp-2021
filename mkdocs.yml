@@ -8,3 +8,10 @@ nav:
     - '3: Data Structures' : './03-data-structures/README.md'
     - '4: Algorithms': './04-algorithms/README.md'
     - '5: Python - 1': './05-python-1/README.md'
+    - '6: Python - 2': './06-python-2/README.md'
+  # - '6: Python - 2': './06-python-2/ACM_BPDC_Python_2.ipynb'
+  
+# plugins:
+#   - mkdocs-jupyter:
+#       execute: True
+#       execute_ignore: "./05-python-1/*.ipynb" 
