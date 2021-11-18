@@ -1,0 +1,868 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  
+  <link rel="shortcut icon" href="../img/favicon.ico">
+  <title>6: Python - 2 - ACMBPDC</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700" />
+
+  <link rel="stylesheet" href="../css/theme.css" />
+  <link rel="stylesheet" href="../css/theme_extra.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css" />
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "6: Python - 2";
+    var mkdocs_page_input_path = "06-python-2\\README.md";
+    var mkdocs_page_url = null;
+  </script>
+  
+  <script src="../js/jquery-2.1.1.min.js" defer></script>
+  <script src="../js/modernizr-2.8.3.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+        <a href=".." class="icon icon-home"> ACMBPDC</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="..">Home</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Sessions</span></p>
+                <ul class="current">
+                    <li class="toctree-l1"><a class="reference internal" href="../01-command-line-interface/">1: Command Line Interface</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../02-overview-of-programming-languages/">2: Overview of Programming Languages</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../03-data-structures/">3: Data Structures</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../04-algorithms/">4: Algorithms</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../05-python-1/">5: Python - 1</a>
+                    </li>
+                    <li class="toctree-l1 current"><a class="reference internal current" href="./">6: Python - 2</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#list-comprehension">List Comprehension</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#dictionaries">Dictionaries</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#access-dictionary-items">Access Dictionary Items</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#get-keys">Get Keys</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#get-values">Get Values</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#functions">Functions</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#creating-a-function">Creating a Function</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#functions-with-arguments">Functions with Arguments</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#arbitrary-arguments-args">Arbitrary Arguments, *args</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#keyword-arguments">Keyword Arguments</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#arbitrary-keyword-arguments-kwargs">Arbitrary Keyword Arguments, **kwargs</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#default-parameter-value">Default Parameter Value</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#return-values">Return Values</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#local-and-global-variables">Local and Global Variables</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#the-global-keyword">The global Keyword</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#classes">Classes</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#pypi-packages">Pypi Packages</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#what-is-pip">What is PIP?</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#what-is-a-package">What is a Package?</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#install-pip">Install PIP</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#download-a-package">Download a Package</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#error-types">Error Types</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#syntaxerror">SyntaxError</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#nameerror">NameError</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#indexerror">IndexError</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#modulenotfounderror">ModuleNotFoundError</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#attributeerror">AttributeError</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#keyerror">KeyError</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#typeerror">TypeError</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#importerror">ImportError</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#valueerror">ValueError</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#zerodivisionerror">ZeroDivisionError</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#exception-handling">Exception Handling</a>
+    </li>
+    </ul>
+                    </li>
+                </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="..">ACMBPDC</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="..">Docs</a> &raquo;</li>
+    
+      
+        
+          <li>Sessions &raquo;</li>
+        
+      
+    
+    <li>6: Python - 2</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  
+  <hr/>
+</div>
+
+          <div role="main">
+            <div class="section">
+              
+                <h1 id="python-2">Python - 2</h1>
+<h2 id="list-comprehension">List Comprehension</h2>
+<div align="center">
+    <img src="./assets/lists.gif">
+</div>
+<p></br>
+List Comprehension provides you a shorter and simpler syntax to create a new list, based on the elements prensent in an existing list.</p>
+<p>Say for example, you create a list using the for loop below, which creates a list of Second Year CS Courses:</p>
+<pre><code class="language-python">csCourses = [&quot;CS F111&quot;, &quot;CS F213&quot;, &quot;CS F214&quot;, &quot;CS F215&quot;, &quot;CS F342&quot;]
+secondYearCourses = []
+
+for x in csCourses:
+    if &quot;F2&quot; in x:
+        secondYearCourses.append(x)
+</code></pre>
+<p>Using list comprehension, you could shorten the code to:</p>
+<pre><code class="language-python">csCourses = [&quot;CS F111&quot;, &quot;CS F213&quot;, &quot;CS F214&quot;, &quot;CS F215&quot;, &quot;CS F342&quot;]
+secondYearCourses = [x for x in csCourses if &quot;F2&quot; in x]
+</code></pre>
+<h2 id="dictionaries">Dictionaries</h2>
+<div align="center">
+    <img src="./assets/dictionary.gif">
+</div>
+<p></br>
+Dictionaries are used to store data values in <code>key</code><strong>:</strong><code>value</code> pairs.</p>
+<p>A dictionary is a collection which is ordered*, changeable and does not allow duplicates.</p>
+<p>Here's how a dictionary is declared in python:</p>
+<pre><code class="language-python">thisdict = {
+  &quot;branch&quot;: &quot;CS&quot;,
+  &quot;students&quot;: 100,
+  &quot;year&quot;: 2021,
+    &quot;Marks&quot; : [1,3,2,4,2,3,4]
+}
+print(thisdict) #{'branch': 'CS', 'students': 100, 'year': 2021, 'Marks': [1, 3, 2, 4, 2, 3, 4]}
+</code></pre>
+<p>Here's how we retrieve the values of a dictionary in python:</p>
+<pre><code class="language-python">thisdict = {
+  &quot;branch&quot;: &quot;CS&quot;,
+  &quot;students&quot;: 100,
+  &quot;year&quot;: 2021,
+}
+print(thisdict[&quot;branch&quot;]) #CS 
+</code></pre>
+<h3 id="access-dictionary-items">Access Dictionary Items</h3>
+<p>We can store the values of dictionary items as shown below.</p>
+<pre><code class="language-python">x = thisdict[&quot;model&quot;]
+</code></pre>
+<p>Alternatively we can use the <code>get</code> to get the same result:</p>
+<pre><code class="language-python">x = thisdict.get(&quot;model&quot;)
+</code></pre>
+<h3 id="get-keys">Get Keys</h3>
+<p>The <code>keys()</code> method will return a list of all the keys in the dictionary.</p>
+<pre><code class="language-python">x = thisdict.keys()
+</code></pre>
+<p>We can add new items(keys and values) to a dictionary by assigning them in the following way:</p>
+<pre><code class="language-python">car = {
+&quot;brand&quot;: &quot;Ford&quot;,
+&quot;model&quot;: &quot;Mustang&quot;,
+&quot;year&quot;: 1964
+}
+
+x = car.keys()
+
+print(x) #before the change
+#dict_keys(['brand', 'model', 'year'])
+
+car[&quot;color&quot;] = &quot;white&quot;
+
+print(x) #after the change
+#dict_keys(['brand', 'model', 'year', 'color'])
+</code></pre>
+<h3 id="get-values">Get Values</h3>
+<p>The <code>values()</code> method will return a list of all the values in the dictionary.</p>
+<pre><code class="language-python">x = thisdict.values()
+</code></pre>
+<p>Here's how we modify the values for any of the keys in a dictionary.</p>
+<pre><code class="language-python">car = {
+&quot;brand&quot;: &quot;Ford&quot;,
+&quot;model&quot;: &quot;Mustang&quot;,
+&quot;year&quot;: 1964
+}
+
+x = car.values()
+
+print(x) #before the change
+#dict_values(['Ford', 'Mustang', 1964])
+
+car[&quot;year&quot;] = 2020
+
+print(x) #after the change
+#dict_values(['Ford', 'Mustang', 2020])
+</code></pre>
+<h2 id="functions">Functions</h2>
+<div align="center">
+    <img src="./assets/coffee.gif">
+</div>
+<p></br>
+A function is a block of code which only runs when it is called. You can pass data, known as parameters, into a function. A function can return data as a result.</p>
+<h3 id="creating-a-function">Creating a Function</h3>
+<pre><code class="language-python">def my_function():
+  print(&quot;Hello from a function&quot;)
+</code></pre>
+<p>The above code would not work until it is called. To call a function, use the function name followed by parenthesis:</p>
+<pre><code class="language-python">def my_function():
+  print(&quot;Hello from a function&quot;)
+
+my_function()
+</code></pre>
+<h3 id="functions-with-arguments">Functions with Arguments</h3>
+<p>Information can be passed into functions as arguments.</p>
+<p>Arguments are specified after the function name, inside the parentheses. You can add as many arguments as you want, just separate them with a comma.</p>
+<p>Parameter and arguments can be used as the same thing.</p>
+<pre><code class="language-python">def my_function(fname):
+  print(fname + &quot; Refsnes&quot;)
+
+my_function(&quot;Emil&quot;)
+my_function(&quot;Tobias&quot;)
+my_function(&quot;Linus&quot;)
+</code></pre>
+<p>By default, a function must be called with the correct number of arguments. Meaning that if your function expects 2 arguments, you have to call the function with 2 arguments, not more, and not less.</p>
+<h3 id="arbitrary-arguments-args">Arbitrary Arguments, *args</h3>
+<p>If the number of arguments are not known, then we use <code>*</code> before the argument. This way the function will receive a tuple of arguments, and can access the items accordingly:</p>
+<pre><code class="language-python">def my_function(*kids):
+  for item in kids:
+    print(item)
+
+my_function(&quot;Emil&quot;, &quot;Tobias&quot;, &quot;Linus&quot;)
+</code></pre>
+<h3 id="keyword-arguments">Keyword Arguments</h3>
+<p>You can also send arguments with the <em>key</em> = <em>value</em> syntax.</p>
+<p>This way the order of the arguments does not matter.</p>
+<p>This reduces the number of errors as we do not need to consider the position of the parameters as discussed earlier.</p>
+<pre><code class="language-python">def my_function(child3, child2, child1):
+  print(&quot;The youngest child is &quot; + child3)
+
+my_function(child1 = &quot;Emil&quot;, child2 = &quot;Tobias&quot;, child3 = &quot;Linus&quot;)
+</code></pre>
+<h3 id="arbitrary-keyword-arguments-kwargs">Arbitrary Keyword Arguments, **kwargs</h3>
+<p>If you do not know how many keyword arguments that will be passed into your function, add two asterisk: <code>**</code> before the parameter name in the function definition.</p>
+<pre><code class="language-python">def my_function(**kid):
+  print(&quot;His last name is &quot; + kid[&quot;lname&quot;])
+
+my_function(fname = &quot;Tobias&quot;, lname = &quot;Refsnes&quot;)
+</code></pre>
+<h3 id="default-parameter-value">Default Parameter Value</h3>
+<p>The following example shows how to use a default parameter value.</p>
+<p>If we call the function without argument, it uses the default value:</p>
+<pre><code class="language-python">def my_function(country = &quot;Norway&quot;):
+  print(&quot;I am from &quot; + country)
+
+my_function(&quot;Sweden&quot;) #Sweden
+my_function(&quot;India&quot;) #India
+my_function() #Norway
+my_function(&quot;Brazil&quot;) # Brazil
+</code></pre>
+<p>You can send any data types of argument to a function (string, number, list, dictionary etc.), and it will be treated as the same data type inside the function.</p>
+<p><strong>E.g.:</strong> if you send a List as an argument, it will still be a List when it reaches the function:</p>
+<pre><code class="language-python">def my_function(food):
+  for x in food:
+    print(x)
+
+fruits = [&quot;apple&quot;, &quot;banana&quot;, &quot;cherry&quot;]
+
+my_function(fruits)
+</code></pre>
+<h3 id="return-values">Return Values</h3>
+<p>To let a function <code>return</code> a value, use the return statement:</p>
+<pre><code class="language-python">def my_function(x):
+  return 5 * x
+
+print(my_function(3)) #15
+print(my_function(5)) #25
+print(my_function(9)) #45
+</code></pre>
+<h2 id="local-and-global-variables">Local and Global Variables</h2>
+<p>In most programming languages there is a concept of local and global variables.</p>
+<p><strong>Local variable:</strong> Variables declared inside functions. The scope of these variables is only within body(function) they are used in.  These variables are declared as usual. </p>
+<pre><code class="language-python">x = 5
+</code></pre>
+<p><strong>Global Variables:</strong> Variables that are created outside of a function (as in all of the examples above) are known as global variables.</p>
+<p>Global variables can be used by everyone, both inside of functions and outside.</p>
+<pre><code class="language-python">x = &quot;awesome&quot;
+
+def myfunc():
+  print(&quot;Python is &quot; + x)
+
+myfunc()
+</code></pre>
+<p>If you create a variable with the same name inside a function, this variable will be local, and can only be used inside the function. The global variable with the same name will remain as it was, global and with the original value.</p>
+<pre><code class="language-python">x = &quot;awesome&quot; #global
+
+def myfunc():
+  x = &quot;fantastic&quot; #local
+  print(&quot;Python is &quot; + x)
+
+myfunc()
+
+print(&quot;Python is &quot; + x)
+</code></pre>
+<h3 id="the-global-keyword">The <code>global</code> Keyword</h3>
+<p>Normally, when you create a variable inside a function, that variable is local, and can only be used inside that function.</p>
+<p>To create a global variable inside a function, you can use the <code>global</code> keyword.</p>
+<pre><code class="language-python">def myfunc():
+  global x
+  x = &quot;fantastic&quot;
+
+myfunc()
+
+print(&quot;Python is &quot; + x)
+</code></pre>
+<h2 id="classes">Classes</h2>
+<p>A class is a user-defined blueprint or prototype from which objects are created. It gives you the provision to bundle multiple variables and functionality together. An example would help you understand better what classes are:</p>
+<p>Imagine that you are a Rocket Scientist, and you have to build a rocket which would go all the way to <a href="https://en.wikipedia.org/wiki/Asgard">Asgard</a> (Thor's world), which is so many light-years away. While building the rocket, you would have to consider various "characteristics" and "functionality" of that rocket, such as how many huge thrusters it would have, how many astronauts can it accomodate, find how many more light-years can it travel (based on how much fuel is left), find how much more time would it take to reach the destination (based on how fast we are going currently), and so on. </p>
+<div align="center">
+    <img src="./assets/thor.gif">
+</div>
+<p></br></p>
+<p>To code such a rocket into Python (or any onbject-oriented languages), you could use classes! They help you put whatever "characteristics" and "functionality" you are considering into one unit. Once you have the blueprint of the rocket ready, you could create multiple rockets using the same blueprint. The instances of the blueprint (<em>class</em>) that you create are called as <em>objects</em>.</p>
+<p>Now, let's see how we could code this out:</p>
+<pre><code class="language-python">class Rocket:
+    numberOfThrusters = 10
+    maxAstronauts = 5
+
+    def __init__(self, food):
+        self.foodList = food
+
+    def distanceLeft(fuel):
+        distVal = fuel * 1.1
+        print(dis)
+
+spaceX = Rocket([&quot;Dosa&quot;, &quot;Pani Puri&quot;])
+nasa = Rocket([])
+
+print(spaceX.maxAstronauts)
+spaceX.distanceLeft(15000)
+print(spaceX.foodList)
+</code></pre>
+<h2 id="pypi-packages">Pypi Packages</h2>
+<div align="center">
+    <img src="./assets/package.gif">
+</div>
+<p></br>
+In python there are pre built packages that make development in python easier. Individuals/organizations code out modules and make it available for use to the public for free. </p>
+<h3 id="what-is-pip">What is PIP?</h3>
+<p>PIP is a package manager for Python packages, or modules if you like.</p>
+<h3 id="what-is-a-package">What is a Package?</h3>
+<p>A package contains all the files you need for a module.</p>
+<p>Modules are Python code libraries you can include in your project.</p>
+<h3 id="install-pip">Install PIP</h3>
+<p>In most computers it comes pre-installed. But in some cases it may not. If you do not have PIP installed, you can download and install it from this page: <a href="https://pypi.org/project/pip/">https://pypi.org/project/pip/</a></p>
+<h3 id="download-a-package">Download a Package</h3>
+<p>To look up the various packages in python, checkout <a href="https://pypi.org/">https://pypi.org/</a></p>
+<p>To install any package you can open up the command line and enter the followinwg:</p>
+<p>For windows : <code>pip install package_name</code></p>
+<p>For Mac : <code>pip3 install package_name</code></p>
+<p>There are many packages in python. Here are some packages categorized based on different purposes :</p>
+<ul>
+<li>
+<p>Web Development</p>
+<ul>
+<li><code>django</code></li>
+<li><code>flask</code></li>
+</ul>
+</li>
+<li>
+<p>Machine Learning</p>
+<ul>
+<li><code>scikit-learn</code></li>
+<li><code>Keras</code></li>
+<li><code>Tensorflow</code></li>
+<li><code>PyTorch</code></li>
+</ul>
+</li>
+<li>
+<p>Excel</p>
+<ul>
+<li><code>OpenPyxl</code></li>
+</ul>
+</li>
+<li>
+<p>Web Scraping</p>
+<ul>
+<li><code>beautifulsoup</code></li>
+<li><code>selenium</code></li>
+<li><code>requests</code></li>
+</ul>
+</li>
+<li>
+<p>Emails</p>
+<ul>
+<li><code>smtplib</code></li>
+</ul>
+</li>
+<li>
+<p>Image Reading</p>
+<ul>
+<li><code>opencv</code></li>
+<li><code>pillow</code></li>
+</ul>
+</li>
+<li>
+<p>SMS Sending</p>
+<ul>
+<li><code>twillio</code></li>
+</ul>
+</li>
+<li>
+<p>Graphing</p>
+<ul>
+<li><code>matplotlib</code></li>
+<li><code>seaborn</code></li>
+</ul>
+</li>
+<li>
+<p>Data Science</p>
+<ul>
+<li><code>Pandas</code></li>
+<li><code>numpy</code></li>
+</ul>
+</li>
+</ul>
+<h2 id="error-types">Error Types</h2>
+<div align="center">
+    <img src="./assets/error.gif">
+</div>
+<p></br>
+When we write code it is common that we make a typo or some other common error. If our code fails to run, the Python interpreter will display a message, containing feedback with information on where the problem occurs and the type of an error. It will also sometimes give us suggestions on a possible fix. Here are some of the types of errors:</p>
+<h3 id="syntaxerror">SyntaxError</h3>
+<p><strong>Example 1: SyntaxError</strong></p>
+<pre><code class="language-py">Python 3.9.6
+[Clang 11.0.0 (clang-1100.0.33.8)] on darwin
+Type &quot;help&quot;, &quot;copyright&quot;, &quot;credits&quot; or &quot;license&quot; for more information.
+&gt;&gt;&gt; print 'hello world'
+  File &quot;&lt;stdin&gt;&quot;, line 1
+    print 'hello world'
+                      ^
+SyntaxError: Missing parentheses in call to 'print'. Did you mean print('hello world')?
+&gt;&gt;&gt;
+</code></pre>
+<p>As you can see we made a syntax error because we forgot to enclose the string with parenthesis and Python already suggests the solution. Let us fix it.</p>
+<pre><code class="language-py">Python 3.9.6
+[Clang 11.0.0 (clang-1100.0.33.8)] on darwin
+Type &quot;help&quot;, &quot;copyright&quot;, &quot;credits&quot; or &quot;license&quot; for more information.
+&gt;&gt;&gt; print 'hello world'
+  File &quot;&lt;stdin&gt;&quot;, line 1
+    print 'hello world'
+                      ^
+SyntaxError: Missing parentheses in call to 'print'. Did you mean print('hello world')?
+&gt;&gt;&gt; print('hello world')
+hello world
+&gt;&gt;&gt;
+</code></pre>
+<p>The error was a <em>SyntaxError</em>. After the fix our code was executed without a hitch. Let see more error types.</p>
+<h3 id="nameerror">NameError</h3>
+<p><strong>Example 1: NameError</strong></p>
+<pre><code class="language-py">Python 3.9.6
+[Clang 11.0.0 (clang-1100.0.33.8)] on darwin
+Type &quot;help&quot;, &quot;copyright&quot;, &quot;credits&quot; or &quot;license&quot; for more information.
+&gt;&gt;&gt; print(age)
+Traceback (most recent call last):
+  File &quot;&lt;stdin&gt;&quot;, line 1, in &lt;module&gt;
+NameError: name 'age' is not defined
+&gt;&gt;&gt;
+</code></pre>
+<p>As you can see from the message above, name age is not defined. Yes, it is true that we did not define an age variable but we were trying to print it out as if we had had declared it. Now, lets fix this by declaring it and assigning with a value.</p>
+<pre><code class="language-py">Python 3.9.6
+[Clang 11.0.0 (clang-1100.0.33.8)] on darwin
+Type &quot;help&quot;, &quot;copyright&quot;, &quot;credits&quot; or &quot;license&quot; for more information.
+&gt;&gt;&gt; print(age)
+Traceback (most recent call last):
+  File &quot;&lt;stdin&gt;&quot;, line 1, in &lt;module&gt;
+NameError: name 'age' is not defined
+&gt;&gt;&gt; age = 25
+&gt;&gt;&gt; print(age)
+25
+&gt;&gt;&gt;
+</code></pre>
+<p>The type of error was a <em>NameError</em>. We debugged the error by defining the variable name.</p>
+<h3 id="indexerror">IndexError</h3>
+<p><strong>Example 1: IndexError</strong></p>
+<pre><code class="language-py">Python 3.9.6
+[Clang 11.0.0 (clang-1100.0.33.8)] on darwin
+Type &quot;help&quot;, &quot;copyright&quot;, &quot;credits&quot; or &quot;license&quot; for more information.
+&gt;&gt;&gt; numbers = [1, 2, 3, 4, 5]
+&gt;&gt;&gt; numbers[5]
+Traceback (most recent call last):
+  File &quot;&lt;stdin&gt;&quot;, line 1, in &lt;module&gt;
+IndexError: list index out of range
+&gt;&gt;&gt;
+</code></pre>
+<p>In the example above, Python raised an <em>IndexError</em>, because the list has only indexes from 0 to 4 , so it was out of range.</p>
+<h3 id="modulenotfounderror">ModuleNotFoundError</h3>
+<p><strong>Example 1: ModuleNotFoundError</strong></p>
+<pre><code class="language-py">Python 3.9.6
+[Clang 11.0.0 (clang-1100.0.33.8)] on darwin
+Type &quot;help&quot;, &quot;copyright&quot;, &quot;credits&quot; or &quot;license&quot; for more information.
+&gt;&gt;&gt; import maths
+Traceback (most recent call last):
+  File &quot;&lt;stdin&gt;&quot;, line 1, in &lt;module&gt;
+ModuleNotFoundError: No module named 'maths'
+&gt;&gt;&gt;
+</code></pre>
+<p>In the example above, I added an extra s to math deliberately and <em>ModuleNotFoundError</em> was raised. Lets fix it by removing the extra s from math.</p>
+<pre><code class="language-py">Python 3.9.6
+[Clang 11.0.0 (clang-1100.0.33.8)] on darwin
+Type &quot;help&quot;, &quot;copyright&quot;, &quot;credits&quot; or &quot;license&quot; for more information.
+&gt;&gt;&gt; import maths
+Traceback (most recent call last):
+  File &quot;&lt;stdin&gt;&quot;, line 1, in &lt;module&gt;
+ModuleNotFoundError: No module named 'maths'
+&gt;&gt;&gt; import math
+&gt;&gt;&gt;
+</code></pre>
+<p>We fixed it, so let's use some of the functions from the math module.</p>
+<h3 id="attributeerror">AttributeError</h3>
+<p><strong>Example 1: AttributeError</strong></p>
+<pre><code class="language-py">Python 3.9.6
+[Clang 11.0.0 (clang-1100.0.33.8)] on darwin
+Type &quot;help&quot;, &quot;copyright&quot;, &quot;credits&quot; or &quot;license&quot; for more information.
+&gt;&gt;&gt; import maths
+Traceback (most recent call last):
+  File &quot;&lt;stdin&gt;&quot;, line 1, in &lt;module&gt;
+ModuleNotFoundError: No module named 'maths'
+&gt;&gt;&gt; import math
+&gt;&gt;&gt; math.PI
+Traceback (most recent call last):
+  File &quot;&lt;stdin&gt;&quot;, line 1, in &lt;module&gt;
+AttributeError: module 'math' has no attribute 'PI'
+&gt;&gt;&gt;
+</code></pre>
+<p>As you can see, I made a mistake again! Instead of pi, I tried to call a PI function from maths module. It raised an attribute error, it means, that the function does not exist in the module. Lets fix it by changing from PI to pi.</p>
+<pre><code class="language-py">Python 3.9.6
+[Clang 11.0.0 (clang-1100.0.33.8)] on darwin
+Type &quot;help&quot;, &quot;copyright&quot;, &quot;credits&quot; or &quot;license&quot; for more information.
+&gt;&gt;&gt; import maths
+Traceback (most recent call last):
+  File &quot;&lt;stdin&gt;&quot;, line 1, in &lt;module&gt;
+ModuleNotFoundError: No module named 'maths'
+&gt;&gt;&gt; import math
+&gt;&gt;&gt; math.PI
+Traceback (most recent call last):
+  File &quot;&lt;stdin&gt;&quot;, line 1, in &lt;module&gt;
+AttributeError: module 'math' has no attribute 'PI'
+&gt;&gt;&gt; math.pi
+3.141592653589793
+&gt;&gt;&gt;
+</code></pre>
+<p>Now, when we call pi from the math module we got the result.</p>
+<h3 id="keyerror">KeyError</h3>
+<p><strong>Example 1: KeyError</strong></p>
+<pre><code class="language-py">Python 3.9.6
+[Clang 11.0.0 (clang-1100.0.33.8)] on darwin
+Type &quot;help&quot;, &quot;copyright&quot;, &quot;credits&quot; or &quot;license&quot; for more information.
+&gt;&gt;&gt; users = {'name':'Asab', 'age':250, 'country':'Finland'}
+&gt;&gt;&gt; users['name']
+'Asab'
+&gt;&gt;&gt; users['county']
+Traceback (most recent call last):
+  File &quot;&lt;stdin&gt;&quot;, line 1, in &lt;module&gt;
+KeyError: 'county'
+&gt;&gt;&gt;
+</code></pre>
+<p>As you can see, there was a typo in the key used to get the dictionary value. so, this is a key error and the fix is quite straight forward. Let's do this!</p>
+<pre><code class="language-py">Python 3.9.6
+[Clang 11.0.0 (clang-1100.0.33.8)] on darwin
+Type &quot;help&quot;, &quot;copyright&quot;, &quot;credits&quot; or &quot;license&quot; for more information.
+&gt;&gt;&gt; user = {'name':'Asab', 'age':250, 'country':'Finland'}
+&gt;&gt;&gt; user['name']
+'Asab'
+&gt;&gt;&gt; user['county']
+Traceback (most recent call last):
+  File &quot;&lt;stdin&gt;&quot;, line 1, in &lt;module&gt;
+KeyError: 'county'
+&gt;&gt;&gt; user['country']
+'Finland'
+&gt;&gt;&gt;
+</code></pre>
+<p>We debugged the error, our code ran and we got the value.</p>
+<h3 id="typeerror">TypeError</h3>
+<p><strong>Example 1: TypeError</strong></p>
+<pre><code class="language-py">Python 3.9.6
+[Clang 11.0.0 (clang-1100.0.33.8)] on darwin
+Type &quot;help&quot;, &quot;copyright&quot;, &quot;credits&quot; or &quot;license&quot; for more information.
+&gt;&gt;&gt; 4 + '3'
+Traceback (most recent call last):
+  File &quot;&lt;stdin&gt;&quot;, line 1, in &lt;module&gt;
+TypeError: unsupported operand type(s) for +: 'int' and 'str'
+&gt;&gt;&gt;
+</code></pre>
+<p>In the example above, a TypeError is raised because we cannot add a number to a string. First solution would be to convert the string to int or float. Another solution would be converting the number to a string (the result then would be '43'). Let us follow the first fix.</p>
+<pre><code class="language-py">Python 3.9.6
+[Clang 11.0.0 (clang-1100.0.33.8)] on darwin
+Type &quot;help&quot;, &quot;copyright&quot;, &quot;credits&quot; or &quot;license&quot; for more information.
+&gt;&gt;&gt; 4 + '3'
+Traceback (most recent call last):
+  File &quot;&lt;stdin&gt;&quot;, line 1, in &lt;module&gt;
+TypeError: unsupported operand type(s) for +: 'int' and 'str'
+&gt;&gt;&gt; 4 + int('3')
+7
+&gt;&gt;&gt; 4 + float('3')
+7.0
+&gt;&gt;&gt;
+</code></pre>
+<p>Error removed and we got the result we expected.</p>
+<h3 id="importerror">ImportError</h3>
+<p><strong>Example 1: TypeError</strong></p>
+<pre><code class="language-py">Python 3.9.6
+[Clang 11.0.0 (clang-1100.0.33.8)] on darwin
+Type &quot;help&quot;, &quot;copyright&quot;, &quot;credits&quot; or &quot;license&quot; for more information.
+&gt;&gt;&gt; from math import power
+Traceback (most recent call last):
+  File &quot;&lt;stdin&gt;&quot;, line 1, in &lt;module&gt;
+ImportError: cannot import name 'power' from 'math'
+&gt;&gt;&gt;
+</code></pre>
+<p>There is no function called power in the math module, it goes with a different name: <em>pow</em>. Let's correct it:</p>
+<pre><code class="language-py">Python 3.9.6
+[Clang 11.0.0 (clang-1100.0.33.8)] on darwin
+Type &quot;help&quot;, &quot;copyright&quot;, &quot;credits&quot; or &quot;license&quot; for more information.
+&gt;&gt;&gt; from math import power
+Traceback (most recent call last):
+  File &quot;&lt;stdin&gt;&quot;, line 1, in &lt;module&gt;
+ImportError: cannot import name 'power' from 'math'
+&gt;&gt;&gt; from math import pow
+&gt;&gt;&gt; pow(2,3)
+8.0
+&gt;&gt;&gt;
+</code></pre>
+<h3 id="valueerror">ValueError</h3>
+<pre><code class="language-py">Python 3.9.6
+[Clang 11.0.0 (clang-1100.0.33.8)] on darwin
+Type &quot;help&quot;, &quot;copyright&quot;, &quot;credits&quot; or &quot;license&quot; for more information.
+&gt;&gt;&gt; int('12a')
+Traceback (most recent call last):
+  File &quot;&lt;stdin&gt;&quot;, line 1, in &lt;module&gt;
+ValueError: invalid literal for int() with base 10: '12a'
+&gt;&gt;&gt;
+</code></pre>
+<p>In this case we cannot change the given string to a number, because of the 'a' letter in it.</p>
+<h3 id="zerodivisionerror">ZeroDivisionError</h3>
+<pre><code class="language-py">Python 3.9.6
+[Clang 11.0.0 (clang-1100.0.33.8)] on darwin
+Type &quot;help&quot;, &quot;copyright&quot;, &quot;credits&quot; or &quot;license&quot; for more information.
+&gt;&gt;&gt; 1/0
+Traceback (most recent call last):
+  File &quot;&lt;stdin&gt;&quot;, line 1, in &lt;module&gt;
+ZeroDivisionError: division by zero
+&gt;&gt;&gt;
+</code></pre>
+<p>We cannot divide a number by zero.</p>
+<p>We have covered some of the python error types, if you want to check more about it check the python documentation about python error types.
+If you are good at reading the error types then you will be able to fix your bugs fast and you will also become a better programmer.</p>
+<h2 id="exception-handling">Exception Handling</h2>
+<div align="center">
+    <img src="./assets/handling.gif">
+</div>
+<p></br>
+Stuck with an error? Python has got you covered! </p>
+<p>Python uses <em>try</em> and <em>except</em> to handle errors gracefully. Often the program prints a descriptive error message to a terminal or log as part of the graceful exit, this makes our application more robust. The cause of an exception is often external to the program itself. An example of exceptions could be an incorrect input, wrong file name, unable to find a file, a malfunctioning IO device. Graceful handling of errors prevents our applications from crashing.</p>
+<p>We have covered the different Python <em>error</em> types in the previous section. If we use <em>try</em> and <em>except</em> in our program, then it will not raise errors in those blocks.</p>
+<p><img alt="Try and Except" src="assets/try_except.png" /></p>
+<pre><code class="language-py">try:
+    code in this block if things go well
+except:
+    code in this block run if things go wrong
+</code></pre>
+<p><strong>Example:</strong></p>
+<pre><code class="language-py">try:
+    print(10 + '5')
+except:
+    print('Something went wrong')
+</code></pre>
+<p>In the example above the second operand is a string. We could change it to float or int to add it with the number to make it work. But without any changes, the second block, <em>except</em>, will be executed.</p>
+<p><strong>Example:</strong></p>
+<pre><code class="language-py">try:
+    name = input('Enter your name:')
+    year_born = input('Year you were born:')
+    age = 2019 - year_born
+    print(f'You are {name}. And your age is {age}.')
+except:
+    print('Something went wrong')
+</code></pre>
+<pre><code class="language-sh">Something went wrong
+</code></pre>
+<p>In the above example, the exception block will run and we do not know exactly the problem. To analyze the problem, we can use the different error types with except.</p>
+<p>In the following example, it will handle the error and will also tell us the kind of error raised.</p>
+<pre><code class="language-py">try:
+    name = input('Enter your name:')
+    year_born = input('Year you were born:')
+    age = 2019 - year_born
+    print(f'You are {name}. And your age is {age}.')
+except TypeError:
+    print('Type error occured')
+except ValueError:
+    print('Value error occured')
+except ZeroDivisionError:
+    print('zero division error occured')
+</code></pre>
+<pre><code class="language-sh">Enter your name:ACM
+Year you born:1920
+Type error occured
+</code></pre>
+<p>In the code above the output is going to be <em>TypeError</em>.
+Now, let's add an additional block:</p>
+<pre><code class="language-py">try:
+    name = input('Enter your name:')
+    year_born = input('Year you born:')
+    age = 2019 - int(year_born)
+    print('You are {name}. And your age is {age}.')
+except TypeError:
+    print('Type error occur')
+except ValueError:
+    print('Value error occur')
+except ZeroDivisionError:
+    print('zero division error occur')
+else:
+    print('I usually run with the try block')
+finally:
+    print('I alway run.')
+</code></pre>
+<pre><code class="language-sh">Enter your name:ACM
+Year you born:1920
+You are ACM. And your age is 99.
+I usually run with the try block
+I alway run.
+</code></pre>
+<p>It is also shorten the above code as follows:</p>
+<pre><code class="language-py">try:
+    name = input('Enter your name:')
+    year_born = input('Year you born:')
+    age = 2019 - int(year_born)
+    print('You are {name}. And your age is {age}.')
+except Exception as e:
+    print(e)
+</code></pre>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+      
+        <a href="../05-python-1/" class="btn btn-neutral" title="5: Python - 1"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../05-python-1/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+  </span>
+</div>
+    <script>var base_url = '..';</script>
+    <script src="../js/theme_extra.js" defer></script>
+    <script src="../js/theme.js" defer></script>
+      <script src="../search/main.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        };
+    </script>
+
+</body>
+</html>
