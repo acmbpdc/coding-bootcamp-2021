@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  
+  <link rel="shortcut icon" href="../img/favicon.ico">
+  <title>7: Git & GitHub - 1 - ACMBPDC</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700" />
+
+  <link rel="stylesheet" href="../css/theme.css" />
+  <link rel="stylesheet" href="../css/theme_extra.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css" />
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "7: Git & GitHub - 1";
+    var mkdocs_page_input_path = "07-git-and-github-1\\README.md";
+    var mkdocs_page_url = null;
+  </script>
+  
+  <script src="../js/jquery-2.1.1.min.js" defer></script>
+  <script src="../js/modernizr-2.8.3.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+        <a href=".." class="icon icon-home"> ACMBPDC</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="..">Home</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Sessions</span></p>
+                <ul class="current">
+                    <li class="toctree-l1"><a class="reference internal" href="../01-command-line-interface/">1: Command Line Interface</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../02-overview-of-programming-languages/">2: Overview of Programming Languages</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../03-data-structures/">3: Data Structures</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../04-algorithms/">4: Algorithms</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../05-python-1/">5: Python - 1</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../06-python-2/">6: Python - 2</a>
+                    </li>
+                    <li class="toctree-l1 current"><a class="reference internal current" href="./">7: Git & GitHub - 1</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#what-are-version-control-systems">What are Version Control Systems?</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#git">Git</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#setting-up-git">Setting up Git</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#git-commands">Git Commands</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#init">init</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#add">add</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#staging-area">Staging Area</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#restore">restore</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#status">status</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#commit">commit</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#diff">diff</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#log">log</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#show">show</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#git-workflow">Git Workflow</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#best-practices">Best Practices</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#gitignore">.gitignore</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#branches">Branches</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#merge">Merge</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#merge-conflicts">Merge Conflicts</a>
+    </li>
+        </ul>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#remotes">Remotes</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#adding-remotes-to-git-repo">Adding Remotes to Git Repo</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#push">push</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#clone">clone</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#fetch">fetch</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#pull">pull</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#best-practices-for-collaboration">Best Practices for Collaboration</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#contributions">Contributions</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#forking">Forking</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#pull-requests">Pull Requests</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#contribution-workflow">Contribution Workflow</a>
+    </li>
+        </ul>
+    </li>
+    </ul>
+                    </li>
+                </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="..">ACMBPDC</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="..">Docs</a> &raquo;</li>
+    
+      
+        
+          <li>Sessions &raquo;</li>
+        
+      
+    
+    <li>7: Git & GitHub - 1</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  
+  <hr/>
+</div>
+
+          <div role="main">
+            <div class="section">
+              
+                <h1 id="git-github-1">Git &amp; GitHub - 1</h1>
+<div align="center">
+    <img src="./assets/git-and-github.png">
+</div>
+<p></br></p>
+<h2 id="what-are-version-control-systems">What are Version Control Systems?</h2>
+<p>Let's say you are working on completing your <em>Math-II</em> Assignment, which requires you to write code to do some math stuff. As you keep writing your amazing code, you notice that you have to keep track of the code changes you write, so that you could come back to an old version if you mess up. As you might not be aware about <em>VCS</em> then, you decided to create multiple copies of your files (<em>as shown below</em>) to keep track of your changes.</p>
+<div align="center">
+    <img src="./assets/without-vcs.png">
+</div>
+<p></br></p>
+<p>What if you were working on a group project (<em>like that of OOPS</em>), were you work with multiple people, on the same codebase.</p>
+<div align="center">
+    <img src="./assets/without-vcs-2.png">
+</div>
+<p></br></p>
+<p>Aah! You might probably see a problem here <em>(the pain of managing the versions of files and working with alot of people at the same time!)</em>. That is where a Version Control System comes into play.</p>
+<p>Version Control Systems (or <em>VCS</em>) are systems that allow you to keep track of the changes you make in your files, which are stored insice a <strong>repository</strong> (<em>a folder</em>), including <strong>who</strong> made <strong>what</strong> changes and <strong>when</strong>. So if something screw up, you could always look up in your history of changes, and go back to a version where it was all okay (<em>phew</em>).</p>
+<p>There are two types of <em>VCS</em>:</p>
+<ul>
+<li>Centralized</li>
+<li>Distributed</li>
+</ul>
+<h2 id="git">Git</h2>
+<div align="center">
+    <img src="./assets/git.gif">
+</div>
+<p></br></p>
+<p><em>Git</em> is a free and open source distributed version control system designed to handle everything from small to very large projects with speed and efficiency. It is the most popular <em>VCS</em> used in the industry (<em>that is why you find "Git" in "Required Skills" in most of the Software related jobs</em>).</p>
+<h3 id="setting-up-git">Setting up Git</h3>
+<div align="center">
+    <img src="./assets/setup.gif">
+</div>
+<p></br></p>
+<ul>
+<li><strong>Installing Git</strong></li>
+</ul>
+<p><strong>MacOS/Linux</strong>:</p>
+<p>If you are using <em>MacOS</em>, you are in luck, as you (<em>probably</em> )already have <em>Git</em> installed on your system. </p>
+<p>To check if you have it installed, open <em>Terminal</em>, and enter the following command:</p>
+<pre><code class="language-sh">git --version
+</code></pre>
+<p><strong>Windows</strong></p>
+<p>Go to <em>Git's</em> <a href="https://git-scm.com/downloads">website</a>, and download Git installer. Open up downloaded installer, and follow the steps to install Git on your system.</p>
+<ul>
+<li><strong>Configuring Git</strong></li>
+</ul>
+<p>Before we get started using <em>Git</em>, we'll have to configure it (<em>only for the first time</em>). We will be configuring <em>Name</em>, <em>Email</em>, <em>Default Editor</em>, and <em>Line Ending</em>. For each of these enter the commands, as shown below.</p>
+<p><strong>Name</strong>:</p>
+<pre><code class="language-sh">git config --global user.name &quot;The Real Thanos&quot;
+</code></pre>
+<p><strong>Email</strong>:</p>
+<pre><code class="language-sh">git config --global user.email thanos.cool@email.com
+</code></pre>
+<p><strong>Default Editor</strong>:</p>
+<pre><code class="language-sh">git config --global core.editor &quot;code --wait&quot;
+</code></pre>
+<p><strong>Line Endings</strong>:</p>
+<pre><code class="language-sh">git config --global core.autocrlf true      # MacOS
+</code></pre>
+<pre><code class="language-sh">git config --global core.autocrlf input     # Windows
+</code></pre>
+<h2 id="git-commands">Git Commands</h2>
+<p>Throughout the course of this documentation, we'll try to focus on maintaining a project that we are building, and use Git along with it, to see how it works. Let's jump right in! </p>
+<div align="center">
+    <img src="./assets/start.gif">
+</div>
+<p></br></p>
+<p>To start of, let's create a <em>directory</em> to store the files we use for the project. </p>
+<pre><code class="language-sh">mkdir my-amazing-project
+cd my-amazing-project
+</code></pre>
+<h3 id="init"><code>init</code></h3>
+<p>Although we have a directory created, this directory is not yet a <em>git</em> repository. </p>
+<p>To make any directory, a git repository, use the <code>init</code> command.</p>
+<pre><code class="language-sh">git init
+</code></pre>
+<p>Once you have <em>initialized</em> the git repository, you will see that you have new directory created called as <code>.git</code>. This is where git stores all the information that git needs to track your project (<em>you really don't have to know what any of the things inside this directory does, to use git</em>). </p>
+<p>As the repository is now a <code>git</code> repository, you can now start writing code! If you have <em>VS Code</em> installed in your system, you can use <code>code</code> command to open up the IDE.</p>
+<pre><code class="language-sh">code file1
+</code></pre>
+<h3 id="add"><code>add</code></h3>
+<p>Once you are done writing code, let's start the next step of tracking our repository. </p>
+<p>Git has this special place allocated to review the changes you have in the files you have added, changed or deleted, called as the <strong>Staging Area</strong>. </p>
+<p>To add files into the staging area, use the <code>add</code> command.</p>
+<pre><code class="language-sh">git add file1
+</code></pre>
+<p>To add all the files in your repository (<em>recursively</em>), use <code>.</code> to indicate all files. Be careful while using this, as you might not always want to add all the files to your staging area.</p>
+<pre><code class="language-sh">git add .
+</code></pre>
+<h4 id="staging-area">Staging Area</h4>
+<p>The staging area contains all of the information about what files and changes are going into the next snapshot of the repository.</p>
+<div align="center">
+    <img src="./assets/stage.gif">
+</div>
+<p></br></p>
+<p>Files inside a <code>git</code> repository are of two types:</p>
+<ul>
+<li><strong>Untracked</strong>: These files are the new files that you add into your repository, that git still haven't started tracking. </li>
+<li>
+<p><strong>Tracked</strong>: These files are the ones' that git is already keeping track of. These files could either be:</p>
+<ul>
+<li><strong>modified</strong>: This means that we have made changes into the tracked file, but it has not yet been staged or commited. Git won't notice these files until we <em>stage</em> these files.</li>
+<li><strong>staged</strong>: These are <em>modified</em> files which are ready to be commited (<em>added into the next snapshot of the repository</em>). </li>
+<li><strong>commited</strong>: The changes of these files are stored into the <code>git</code> repsoitory, after the snapshot is taken.</li>
+</ul>
+</li>
+</ul>
+<p>To list the files in the staging area use <code>ls-files</code> command.</p>
+<pre><code class="language-sh">git ls-files
+</code></pre>
+<h3 id="restore"><code>restore</code></h3>
+<p>To remove files or directories from the staging area, use the <code>restore</code> command.</p>
+<pre><code class="language-sh">git restore --staged file1
+</code></pre>
+<p>You can also <code>restore</code> command to discard all the local changes made to your files in your repository.</p>
+<pre><code class="language-sh">git restore .
+</code></pre>
+<p><code>restore</code> command is also used to restore a file to how it was in a previous commit.</p>
+<pre><code class="language-sh">git restore --source=HEAD file1
+</code></pre>
+<h3 id="status"><code>status</code></h3>
+<p>To see the <em>status</em> of your <code>git</code> directory and the <em>staging area</em>, use the <code>status</code> command.</p>
+<pre><code class="language-sh">git status
+</code></pre>
+<p>To get a shorted and concise, use the <code>-s</code> flag.</p>
+<pre><code class="language-sh">git status -s
+</code></pre>
+<h3 id="commit"><code>commit</code></h3>
+<p>Once you are done reviewing the changes you want in the next snapshot of your repository, you are now ready to click that snapshot. </p>
+<div align="center">
+    <img src="./assets/snapshot.gif">
+</div>
+<p></br></p>
+<p>To click a snapshot of the repository, use the <code>commit</code> command.</p>
+<pre><code class="language-sh">git commit
+</code></pre>
+<p>After entering this command, your default editor will open up, where you can type in your <strong>commit message</strong>. Once you are done entering the message, save the file, and exit the editor. This will complete the process of making a commit in your git repository!</p>
+<ul>
+<li>Alternatively, you can also type a short commit message directly from a command, by using the <code>-m</code> flag.</li>
+</ul>
+<pre><code class="language-sh">git commit -m &quot;My first commit!&quot;
+</code></pre>
+<h3 id="diff"><code>diff</code></h3>
+<p>Sometimes, before you stage your code, you would want to inspect the changed code. To see the <em>difference</em> between the old and new versions of your file, use the <em>diff</em> command.</p>
+<pre><code class="language-sh">git diff
+</code></pre>
+<p>This command will only show you the changes made to unstaged files.</p>
+<p>To see the changes made in staged files, use <code>--staged</code> flag.</p>
+<pre><code class="language-sh">git diff --staged
+</code></pre>
+<h3 id="log"><code>log</code></h3>
+<p>To inspect the history of the commits made in a <code>git</code> repository, use the <code>log</code> command.</p>
+<pre><code class="language-sh">git log
+</code></pre>
+<p>You would be seeing an output as shown below</p>
+<pre><code class="language-sh">commit 227fbdb4ef3a05b2df0dfdc4fbea61e2d13af044 (HEAD -&gt; master)
+Author: The Real Thanos &lt;thanos.cool@email.com&gt;
+Date:   Thu Nov 25 00:11:14 2021 +0400
+
+    Collect Power Stone
+</code></pre>
+<p>The huge string that you see along with <code>commit</code> is a commit's number. It is a 40-character Hexadecimal strin, which uniquely identifies a commit.</p>
+<p><strong>master</strong>: This refers to the final <em>branch</em> in your git repository (<em>More about branches discussed later in this documentation</em>). </p>
+<p><strong>HEAD</strong>: This refers to the current branch pointed by git.</p>
+<p>To see the <code>log</code> in a concise manner, use the <code>--oneline</code> flag.</p>
+<pre><code class="language-sh">git log --oneline
+</code></pre>
+<h3 id="show"><code>show</code></h3>
+<p>To see the changes that were made in a particular, use the <code>show</code> command, along with the commit number of the commit you want to see.</p>
+<pre><code class="language-sh">git show 227fbd
+</code></pre>
+<p>To see the last commit you made, use <code>HEAD</code>.</p>
+<pre><code class="language-sh">git show HEAD
+</code></pre>
+<p>To see the second last commit you made, use <code>~</code>.</p>
+<pre><code class="language-sh">git show HEAD~`
+</code></pre>
+<p>To see the full file of a previous commit (<em>rather than just the changes made</em>), use the <code>show</code> command along with the full path of the file you want to see.</p>
+<pre><code class="language-sh">git show HEAD:file1
+</code></pre>
+<p>To see all the files and directories in a commit, use <code>ls-tree</code> command.</p>
+<pre><code class="language-sh">git ls-tree HEAD
+</code></pre>
+<h2 id="git-workflow">Git Workflow</h2>
+<p><strong>Step 1</strong>: You start off by creating a git repository (<code>init</code>).</p>
+<p><strong>Step 2</strong>: Write all the code you need into this repository (<code>code</code>).</p>
+<p><strong>Step 3</strong>: Once you are done writing/editing code, we add the new/changed files into a special place called as the <em>staging area</em> (<code>add</code>).</p>
+<p><strong>Step 4</strong>: Once you review your changes, you will now take a snapshot of the repository (<code>commit</code>).</p>
+<p><strong>Step 5</strong>: If you have new changes to make into your repository, continue the workflow from <em>step 2</em>.</p>
+<h2 id="best-practices">Best Practices</h2>
+<ul>
+<li><strong>Don't make small commits</strong>: You really don't have to make a commit every time you make a change in a file. </li>
+<li><strong>Don't make huge commits</strong>: Rather than commiting the entire project at once, it's the best to commit every time you hit a checkpoint (<strong>eg:</strong> <em>Implements a function for your OOPs Project</em>)</li>
+<li><strong>Write Proper Commit Messages</strong>: When writing a commit message, make sure to write meaningful commit messages (<em>rather than just</em> "Update file1")</li>
+</ul>
+<h2 id="gitignore"><code>.gitignore</code></h2>
+<p>To hide files from tracking, there is a special file used for it called as <code>.gitignore</code>. The file (<em>or directory</em>) names stored inside this file, won't be tracked by git, and will be ignored.</p>
+<p><strong>Example:</strong></p>
+<p>If there was text file called <code>ignoreme.txt</code> in a repository, it could be ignored by adding the following text in <code>.gitignore</code> file.</p>
+<pre><code class="language-txt">ignoreme.txt
+</code></pre>
+<h2 id="branches">Branches</h2>
+<p>What if you are working as a Software Development Engineer at Google, on their Maps Application, and you had to develop a feature to find the time taken by a kite to follow the directions to a location? Would you directly make changes to the deployed application, to implement your feature? Or would you try to play it safe and make sure your feature is all good, before you add it to the deployed application?</p>
+<p>You might probably choose the second option. That is where <em>branches</em> come in!</p>
+<p><strong>Branching</strong> allows you to create a copy (<em>branch</em>) of your current working directory, and make changes (<em>commits</em>) to this copy, without disturbing anything else.</p>
+<div align="center">
+    <img src="./assets/git-branch.png">
+</div>
+<p></br></p>
+<p>The <em>default</em> branch that git creates for you, when a new repository is created (<code>init</code>) is called <strong>master</strong>.</p>
+<p>To <strong>see all the branches</strong> in your repository, use the <code>branch</code> command</p>
+<pre><code class="language-sh">git branch
+</code></pre>
+<p>To <strong>create a new branch</strong>, add the new branch name along with <code>branch</code> command.</p>
+<pre><code class="language-sh">git branch kite-feature
+</code></pre>
+<p>To <strong>switch to different branch</strong>, use the <code>checkout</code> command.</p>
+<pre><code class="language-sh">git checkout kite-feature
+</code></pre>
+<p>To <strong>create a branch and switch the branch at the same time</strong>, use the <code>-b</code> flag along with <code>checkout</code> command.</p>
+<pre><code class="language-sh">git checkout -b kite-feature
+</code></pre>
+<p>To <strong>delete a branch</strong>, use the <code>-d</code> flag along with <code>branch</code> command.</p>
+<pre><code class="language-sh">git branch -d kite-feature
+</code></pre>
+<h3 id="merge">Merge</h3>
+<p>To <strong>merge</strong> the changes between branches, use the <code>merge</code> command.</p>
+<pre><code class="language-sh">git merge from_which_branch_to_merge_from
+</code></pre>
+<div align="center">
+    <img src="./assets/git-merge.png">
+</div>
+<p></br></p>
+<h4 id="merge-conflicts">Merge Conflicts</h4>
+<div align="center">
+    <img src="./assets/no-no.gif">
+</div>
+<p></br>
+Merge Conflict is the problem that occur when Git is unable to automatically merge branches (<em>or commits</em>).</p>
+<p>When merging a branch, where all changes occur on different lines or in different files, Git will automatically be able to merge them.</p>
+<p>A conflict occurs when the changes made occur on the same line, as Git won't be able to figure out which change to keep, and which change to discard.</p>
+<h2 id="remotes">Remotes</h2>
+<div align="center">
+    <img src="./assets/github.gif">
+</div>
+<p></br></p>
+<p>A remote repository in Git, also called a remote, is a Git repository that’s hosted on the Internet or another network. (<em>It's basically like how you could host your pictures or folders on Google Drive</em>)</p>
+<p>This is where <strong>GitHub</strong> comes into picture! Few other popular examples of remotes are <strong>BitBucket</strong> and <strong>GitLab</strong>.</p>
+<p><a href="https://github.com/"><strong>GitHub</strong></a> is a cloud-based platform, that allows you to host your <code>git</code> repositories, and collaborate with others, </p>
+<p>Before we move ahead, <a href="https://github.com/signup">create an account</a> on GitHub, and <a href="https://github.com/login">sign in</a> to it.</p>
+<p>To set up your GitHub user with your <code>git</code>, add your GitHub username to <code>config</code>.</p>
+<pre><code class="language-sh">git config --global user.name &quot;HalfTheWorldSlayer&quot;
+</code></pre>
+<p>To save your password for later, enter the following command</p>
+<pre><code class="language-sh">git config --global credential.helper store
+</code></pre>
+<h3 id="adding-remotes-to-git-repo">Adding Remotes to Git Repo</h3>
+<p>To add a remote to repository you have in your local system, use the <code>remote</code> command.</p>
+<pre><code class="language-sh">git remote add origin https://github.com/HalfTheWorldSlayer/my-first-repo.git
+</code></pre>
+<p><code>origin</code> as mentioned in the command, is the name we are calling for the remote we just added.</p>
+<h3 id="push"><code>push</code></h3>
+<p>To update the commits you made on your local system, to your remote (<em>GitHub</em>), use the <code>push</code> command.</p>
+<pre><code class="language-sh">git push origin master
+</code></pre>
+<p>While pushing a new <code>feature</code> branch onto remote, <code>-u</code> should be used.</p>
+<pre><code class="language-sh">git push -u origin kite-feature
+</code></pre>
+<p>To delete a branch from the remote, use the <code>--delete</code> flag.</p>
+<pre><code class="language-sh">git push --delete origin kite-feature
+</code></pre>
+<h3 id="clone"><code>clone</code></h3>
+<p>To <em>clone</em> a repository which is hosted on a remote, use the <code>clone</code> command.</p>
+<pre><code class="language-sh">git clone https://github.com/HalfTheWorldSlayer/my-first-repo.git
+</code></pre>
+<h3 id="fetch"><code>fetch</code></h3>
+<p>To update all the remote tracking branches in the local repository, use the <code>fetch</code> command.</p>
+<pre><code class="language-sh">git fetch origin master
+</code></pre>
+<p><strong>NOTE:</strong> The changes are fetched from the remote only, and are <strong>not</strong> merged into the local. The changes will have to then be merged into the local using the <code>merge</code> command.</p>
+<pre><code class="language-sh">git merge origin/master
+</code></pre>
+<h3 id="pull"><code>pull</code></h3>
+<p>To retrieve the changes made in the remote, but not in the local, use the <code>pull</code> command.</p>
+<pre><code class="language-sh">git pull origin master
+</code></pre>
+<p>(<em>This command is used instead of using <code>fetch</code> and <code>merge</code>, as it fetches the changes and updates the local as well.</em>)</p>
+<h2 id="best-practices-for-collaboration">Best Practices for Collaboration</h2>
+<ul>
+<li>Always synchronize your branches before starting any work on your own.</li>
+<li>Avoid having very large changes that modify a lot of different things.</li>
+<li>When working on a big change, it makes sense to have a seperate feature branch.</li>
+<li>Regularly merge changes made on the master branch back onto the feature branch.</li>
+<li>Have the latest version of the project in the main branch, and the stable version of the project on a seperate branch.</li>
+<li>Having good commit message is important.</li>
+</ul>
+<h2 id="contributions">Contributions</h2>
+<h3 id="forking">Forking</h3>
+<p>A way of creating a copy of a given repository, so that it belongs to our user. This let's you work on a copy of any code that you see on <em>GitHub</em> (<em>including GitHub itself!</em>). </p>
+<div align="center">
+    <img src="./assets/fork.png">
+</div>
+<p></br></p>
+<h3 id="pull-requests">Pull Requests</h3>
+<p>A commit or series of commits that you send to the owner of a repository, so that they incorporate your code commits into their actual tree.</p>
+<h3 id="contribution-workflow">Contribution Workflow</h3>
+<p><strong>Step 1</strong>: Create a fork of the repository that you want to work on.</p>
+<p><strong>Step 2</strong>: Clone the fork into your local system.</p>
+<p><strong>Step 3:</strong> You could create a new branch in your clone to start working on the code you want to add.</p>
+<p><strong>Step 4:</strong> Make all the changes you want into that branch.</p>
+<p><strong>Step 5:</strong> Once done making changes, commit the changes.</p>
+<p><strong>Step 6:</strong> Once all the commits are made, you can now <code>push</code> the changes into your fork, in the remote.</p>
+<p><strong>Step 7:</strong> You can now create a pull request from your fork, on your remote (<em>GitHub</em>), onto the actual repository.</p>
+<p>Test out the workflow by making your first contribution on GitHub:</p>
+<ul>
+<li>Go to the <a href="https://github.com/acmbpdc/my-first-contribution"><code>my-first-contribution</code></a> repository of <em>ACMBPDC</em>. </li>
+<li>Fork this repository into your user. </li>
+<li>Clone this fork into your local system.</li>
+<li>Create a branch called with your name (<strong>eg:</strong> <code>Thanos</code>).</li>
+<li>Create a text file into this branch, with your name, and something really cool about yourself. </li>
+<li>Save this text file, and commit the changes.</li>
+<li>Push the changes from this branch, into remote (<em>GitHub</em>).</li>
+<li>Go to your GitHub Fork. You'll see an option as shown below.</li>
+</ul>
+<div align="center">
+    <img src="./assets/pull-request.png">
+</div>
+<p></br></p>
+<ul>
+<li>Click on <code>Compare &amp; pull request</code>.</li>
+<li>Create a pull request.</li>
+<li>Once the maintainer of the repository reviews your code, they'll merge your code into their repository.</li>
+</ul>
+<p><strong>YAY!</strong> <em>You just made your first contribution!</em> 🎉</p>
+<div align="center">
+    <img src="./assets/done.gif">
+</div>
+<p></br></p>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+      
+        <a href="../06-python-2/" class="btn btn-neutral" title="6: Python - 2"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../06-python-2/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+  </span>
+</div>
+    <script>var base_url = '..';</script>
+    <script src="../js/theme_extra.js" defer></script>
+    <script src="../js/theme.js" defer></script>
+      <script src="../search/main.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        };
+    </script>
+
+</body>
+</html>
