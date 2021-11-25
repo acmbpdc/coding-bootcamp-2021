@@ -25,5 +25,6 @@ This workshop is conducted by:
 
 * [Abshar Mohammed Aslam](https://github.com/abxhr)
 * [Ashish Kumar Jha](https://github.com/Ashish-BITS)
+* [Vignesh Bhat](https://github.com/Viggyz)
 * [Areeb Pasha](https://github.com/areeb1501)
-* [Samuel David](https://github.com/samueldavid1994)
+* [Aditya Saxena](https://github.com/aditya-saxena-7)

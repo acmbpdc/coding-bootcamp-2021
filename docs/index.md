@@ -15,8 +15,8 @@ This bootcamp will provide its audience the core foundation in this amazing fiel
 | 3 | [**Data Structures**](03-data-structures/README.md) |
 | 4 | [**Algorithms**](04-algorithms/README.md) |
 | 5 | [**Python - 1**](05-python-1/README.md)|
-| 6 | **Python - 2** |
-| 7 | **Git & GitHub - 1** |
+| 6 | [**Python - 2**](06-python-2/README.md) |
+| 7 | [**Git & GitHub - 1**](07-git-and-github-1/README.md) |
 | 8 | **Git & GitHub - 2** |
 
 ## Instructors
