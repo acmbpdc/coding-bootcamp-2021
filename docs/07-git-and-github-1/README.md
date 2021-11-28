@@ -86,11 +86,11 @@ git config --global core.editor "code --wait"
 **Line Endings**:
 
 ```sh
-git config --global core.autocrlf true      # MacOS
+git config --global core.autocrlf true      # Windows
 ```
 
 ```sh
-git config --global core.autocrlf input     # Windows
+git config --global core.autocrlf input     # MacOS
 ```
 
 ## Git Commands

@@ -38,11 +38,7 @@
     <div class="wy-side-scroll">
       <div class="wy-side-nav-search">
         <a href=".." class="icon icon-home"> ACMBPDC</a>
-        <div role="search">
-  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
-      <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
-  </form>
-</div>
+        
       </div>
 
       <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
@@ -142,6 +138,8 @@
     </li>
     </ul>
                     </li>
+                    <li class="toctree-l1"><a class="" href="https://colab.research.google.com/drive/1DIr-XSptcOiVk23SjrVd081oiz-ASjVO">8: Git & GitHub - 2</a>
+                    </li>
                 </ul>
       </div>
     </div>
@@ -238,9 +236,9 @@
 <pre><code class="language-sh">git config --global core.editor &quot;code --wait&quot;
 </code></pre>
 <p><strong>Line Endings</strong>:</p>
-<pre><code class="language-sh">git config --global core.autocrlf true      # MacOS
+<pre><code class="language-sh">git config --global core.autocrlf true      # Windows
 </code></pre>
-<pre><code class="language-sh">git config --global core.autocrlf input     # Windows
+<pre><code class="language-sh">git config --global core.autocrlf input     # MacOS
 </code></pre>
 <h2 id="git-commands">Git Commands</h2>
 <p>Throughout the course of this documentation, we'll try to focus on maintaining a project that we are building, and use Git along with it, to see how it works. Let's jump right in! </p>
@@ -561,7 +559,6 @@ Merge Conflict is the problem that occur when Git is unable to automatically mer
     <script>var base_url = '..';</script>
     <script src="../js/theme_extra.js" defer></script>
     <script src="../js/theme.js" defer></script>
-      <script src="../search/main.js" defer></script>
     <script defer>
         window.onload = function () {
             SphinxRtdTheme.Navigation.enable(true);

@@ -17,7 +17,7 @@ This bootcamp will provide its audience the core foundation in this amazing fiel
 | 5 | [**Python - 1**](05-python-1/README.md)|
 | 6 | [**Python - 2**](06-python-2/README.md) |
 | 7 | [**Git & GitHub - 1**](07-git-and-github-1/README.md) |
-| 8 | **Git & GitHub - 2** |
+| 8 | [**Git & GitHub - 2**](https://colab.research.google.com/drive/1DIr-XSptcOiVk23SjrVd081oiz-ASjVO) |
 
 ## Instructors
 
