@@ -188,16 +188,16 @@
 <h2 id="what-are-version-control-systems">What are Version Control Systems?</h2>
 <p>Let's say you are working on completing your <em>Math-II</em> Assignment, which requires you to write code to do some math stuff. As you keep writing your amazing code, you notice that you have to keep track of the code changes you write, so that you could come back to an old version if you mess up. As you might not be aware about <em>VCS</em> then, you decided to create multiple copies of your files (<em>as shown below</em>) to keep track of your changes.</p>
 <div align="center">
-    <img src="./assets/without-vcs.png">
+    <img src="./assets/without-vcs.PNG">
 </div>
 <p></br></p>
-<p>What if you were working on a group project (<em>like that of OOPS</em>), were you work with multiple people, on the same codebase.</p>
+<p>What if you were working on a group project (<em>like that of OOPS</em>), where you work with multiple people, on the same codebase.</p>
 <div align="center">
-    <img src="./assets/without-vcs-2.png">
+    <img src="./assets/without-vcs-2.PNG">
 </div>
 <p></br></p>
 <p>Aah! You might probably see a problem here <em>(the pain of managing the versions of files and working with alot of people at the same time!)</em>. That is where a Version Control System comes into play.</p>
-<p>Version Control Systems (or <em>VCS</em>) are systems that allow you to keep track of the changes you make in your files, which are stored insice a <strong>repository</strong> (<em>a folder</em>), including <strong>who</strong> made <strong>what</strong> changes and <strong>when</strong>. So if something screw up, you could always look up in your history of changes, and go back to a version where it was all okay (<em>phew</em>).</p>
+<p>Version Control Systems (or <em>VCS</em>) are systems that allow you to keep track of the changes you make in your files, which are stored insice a <strong>repository</strong> (<em>a folder</em>), including <strong>who</strong> made <strong>what</strong> changes and <strong>when</strong>. So if something screws up, you could always look up in your history of changes, and go back to a version where it was all okay (<em>phew</em>).</p>
 <p>There are two types of <em>VCS</em>:</p>
 <ul>
 <li>Centralized</li>
@@ -305,7 +305,7 @@ cd my-amazing-project
 <p>To see the <em>status</em> of your <code>git</code> directory and the <em>staging area</em>, use the <code>status</code> command.</p>
 <pre><code class="language-sh">git status
 </code></pre>
-<p>To get a shorted and concise, use the <code>-s</code> flag.</p>
+<p>To get a short and concise status, use the <code>-s</code> flag.</p>
 <pre><code class="language-sh">git status -s
 </code></pre>
 <h3 id="commit"><code>commit</code></h3>
@@ -342,7 +342,7 @@ Date:   Thu Nov 25 00:11:14 2021 +0400
 
     Collect Power Stone
 </code></pre>
-<p>The huge string that you see along with <code>commit</code> is a commit's number. It is a 40-character Hexadecimal strin, which uniquely identifies a commit.</p>
+<p>The huge string that you see along with <code>commit</code> is a commit's number. It is a 40-character hexadecimal string, which uniquely identifies a commit.</p>
 <p><strong>master</strong>: This refers to the final <em>branch</em> in your git repository (<em>More about branches discussed later in this documentation</em>). </p>
 <p><strong>HEAD</strong>: This refers to the current branch pointed by git.</p>
 <p>To see the <code>log</code> in a concise manner, use the <code>--oneline</code> flag.</p>
@@ -356,7 +356,7 @@ Date:   Thu Nov 25 00:11:14 2021 +0400
 <pre><code class="language-sh">git show HEAD
 </code></pre>
 <p>To see the second last commit you made, use <code>~</code>.</p>
-<pre><code class="language-sh">git show HEAD~`
+<pre><code class="language-sh">git show HEAD~1
 </code></pre>
 <p>To see the full file of a previous commit (<em>rather than just the changes made</em>), use the <code>show</code> command along with the full path of the file you want to see.</p>
 <pre><code class="language-sh">git show HEAD:file1
@@ -387,7 +387,7 @@ Date:   Thu Nov 25 00:11:14 2021 +0400
 <p>You might probably choose the second option. That is where <em>branches</em> come in!</p>
 <p><strong>Branching</strong> allows you to create a copy (<em>branch</em>) of your current working directory, and make changes (<em>commits</em>) to this copy, without disturbing anything else.</p>
 <div align="center">
-    <img src="./assets/git-branch.png">
+    <img src="./assets/git-branch.PNG">
 </div>
 <p></br></p>
 <p>The <em>default</em> branch that git creates for you, when a new repository is created (<code>init</code>) is called <strong>master</strong>.</p>
@@ -411,7 +411,7 @@ Date:   Thu Nov 25 00:11:14 2021 +0400
 <pre><code class="language-sh">git merge from_which_branch_to_merge_from
 </code></pre>
 <div align="center">
-    <img src="./assets/git-merge.png">
+    <img src="./assets/git-merge.PNG">
 </div>
 <p></br></p>
 <h4 id="merge-conflicts">Merge Conflicts</h4>
@@ -481,7 +481,7 @@ Merge Conflict is the problem that occur when Git is unable to automatically mer
 <h3 id="forking">Forking</h3>
 <p>A way of creating a copy of a given repository, so that it belongs to our user. This let's you work on a copy of any code that you see on <em>GitHub</em> (<em>including GitHub itself!</em>). </p>
 <div align="center">
-    <img src="./assets/fork.png">
+    <img src="./assets/fork.PNG">
 </div>
 <p></br></p>
 <h3 id="pull-requests">Pull Requests</h3>
@@ -506,7 +506,7 @@ Merge Conflict is the problem that occur when Git is unable to automatically mer
 <li>Go to your GitHub Fork. You'll see an option as shown below.</li>
 </ul>
 <div align="center">
-    <img src="./assets/pull-request.png">
+    <img src="./assets/pull-request.PNG">
 </div>
 <p></br></p>
 <ul>

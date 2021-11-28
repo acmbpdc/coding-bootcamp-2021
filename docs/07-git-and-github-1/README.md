@@ -10,19 +10,19 @@
 Let's say you are working on completing your *Math-II* Assignment, which requires you to write code to do some math stuff. As you keep writing your amazing code, you notice that you have to keep track of the code changes you write, so that you could come back to an old version if you mess up. As you might not be aware about *VCS* then, you decided to create multiple copies of your files (*as shown below*) to keep track of your changes.
 
 <div align="center">
-    <img src="./assets/without-vcs.png">
+    <img src="./assets/without-vcs.PNG">
 </div>
 </br>
 
-What if you were working on a group project (*like that of OOPS*), were you work with multiple people, on the same codebase.
+What if you were working on a group project (*like that of OOPS*), where you work with multiple people, on the same codebase.
 <div align="center">
-    <img src="./assets/without-vcs-2.png">
+    <img src="./assets/without-vcs-2.PNG">
 </div>
 </br>
 
 Aah! You might probably see a problem here *(the pain of managing the versions of files and working with alot of people at the same time!)*. That is where a Version Control System comes into play.
 
-Version Control Systems (or *VCS*) are systems that allow you to keep track of the changes you make in your files, which are stored insice a **repository** (*a folder*), including **who** made **what** changes and **when**. So if something screw up, you could always look up in your history of changes, and go back to a version where it was all okay (*phew*).
+Version Control Systems (or *VCS*) are systems that allow you to keep track of the changes you make in your files, which are stored insice a **repository** (*a folder*), including **who** made **what** changes and **when**. So if something screws up, you could always look up in your history of changes, and go back to a version where it was all okay (*phew*).
 
 There are two types of *VCS*:
 
@@ -196,7 +196,7 @@ To see the *status* of your `git` directory and the *staging area*, use the `sta
 git status
 ```
 
-To get a shorted and concise, use the `-s` flag.
+To get a short and concise status, use the `-s` flag.
 
 ```sh
 git status -s
@@ -260,7 +260,7 @@ Date:   Thu Nov 25 00:11:14 2021 +0400
     Collect Power Stone
 ```
 
-The huge string that you see along with `commit` is a commit's number. It is a 40-character Hexadecimal strin, which uniquely identifies a commit.
+The huge string that you see along with `commit` is a commit's number. It is a 40-character hexadecimal string, which uniquely identifies a commit.
 
 **master**: This refers to the final *branch* in your git repository (*More about branches discussed later in this documentation*). 
 
@@ -289,7 +289,7 @@ git show HEAD
 To see the second last commit you made, use `~`.
 
 ```sh
-git show HEAD~`
+git show HEAD~1
 ```
 
 To see the full file of a previous commit (*rather than just the changes made*), use the `show` command along with the full path of the file you want to see.
@@ -343,7 +343,7 @@ You might probably choose the second option. That is where *branches* come in!
 **Branching** allows you to create a copy (*branch*) of your current working directory, and make changes (*commits*) to this copy, without disturbing anything else.
 
 <div align="center">
-    <img src="./assets/git-branch.png">
+    <img src="./assets/git-branch.PNG">
 </div>
 </br>
 
@@ -388,7 +388,7 @@ git merge from_which_branch_to_merge_from
 ```
 
 <div align="center">
-    <img src="./assets/git-merge.png">
+    <img src="./assets/git-merge.PNG">
 </div>
 </br>
 
@@ -509,7 +509,7 @@ git pull origin master
 A way of creating a copy of a given repository, so that it belongs to our user. This let's you work on a copy of any code that you see on *GitHub* (*including GitHub itself!*). 
 
 <div align="center">
-    <img src="./assets/fork.png">
+    <img src="./assets/fork.PNG">
 </div>
 </br>
 
@@ -545,7 +545,7 @@ Test out the workflow by making your first contribution on GitHub:
 - Go to your GitHub Fork. You'll see an option as shown below.
 
 <div align="center">
-    <img src="./assets/pull-request.png">
+    <img src="./assets/pull-request.PNG">
 </div>
 </br>
 
