@@ -191,13 +191,13 @@
     <img src="./assets/without-vcs.PNG">
 </div>
 <p></br></p>
-<p>What if you were working on a group project (<em>like that of OOPS</em>), were you work with multiple people, on the same codebase.</p>
+<p>What if you were working on a group project (<em>like that of OOPS</em>), where you work with multiple people, on the same codebase.</p>
 <div align="center">
     <img src="./assets/without-vcs-2.PNG">
 </div>
 <p></br></p>
 <p>Aah! You might probably see a problem here <em>(the pain of managing the versions of files and working with alot of people at the same time!)</em>. That is where a Version Control System comes into play.</p>
-<p>Version Control Systems (or <em>VCS</em>) are systems that allow you to keep track of the changes you make in your files, which are stored insice a <strong>repository</strong> (<em>a folder</em>), including <strong>who</strong> made <strong>what</strong> changes and <strong>when</strong>. So if something screw up, you could always look up in your history of changes, and go back to a version where it was all okay (<em>phew</em>).</p>
+<p>Version Control Systems (or <em>VCS</em>) are systems that allow you to keep track of the changes you make in your files, which are stored insice a <strong>repository</strong> (<em>a folder</em>), including <strong>who</strong> made <strong>what</strong> changes and <strong>when</strong>. So if something screws up, you could always look up in your history of changes, and go back to a version where it was all okay (<em>phew</em>).</p>
 <p>There are two types of <em>VCS</em>:</p>
 <ul>
 <li>Centralized</li>
@@ -305,7 +305,7 @@ cd my-amazing-project
 <p>To see the <em>status</em> of your <code>git</code> directory and the <em>staging area</em>, use the <code>status</code> command.</p>
 <pre><code class="language-sh">git status
 </code></pre>
-<p>To get a shorted and concise, use the <code>-s</code> flag.</p>
+<p>To get a short and concise status, use the <code>-s</code> flag.</p>
 <pre><code class="language-sh">git status -s
 </code></pre>
 <h3 id="commit"><code>commit</code></h3>
@@ -342,7 +342,7 @@ Date:   Thu Nov 25 00:11:14 2021 +0400
 
     Collect Power Stone
 </code></pre>
-<p>The huge string that you see along with <code>commit</code> is a commit's number. It is a 40-character Hexadecimal strin, which uniquely identifies a commit.</p>
+<p>The huge string that you see along with <code>commit</code> is a commit's number. It is a 40-character hexadecimal string, which uniquely identifies a commit.</p>
 <p><strong>master</strong>: This refers to the final <em>branch</em> in your git repository (<em>More about branches discussed later in this documentation</em>). </p>
 <p><strong>HEAD</strong>: This refers to the current branch pointed by git.</p>
 <p>To see the <code>log</code> in a concise manner, use the <code>--oneline</code> flag.</p>
@@ -356,7 +356,7 @@ Date:   Thu Nov 25 00:11:14 2021 +0400
 <pre><code class="language-sh">git show HEAD
 </code></pre>
 <p>To see the second last commit you made, use <code>~</code>.</p>
-<pre><code class="language-sh">git show HEAD~`
+<pre><code class="language-sh">git show HEAD~1
 </code></pre>
 <p>To see the full file of a previous commit (<em>rather than just the changes made</em>), use the <code>show</code> command along with the full path of the file you want to see.</p>
 <pre><code class="language-sh">git show HEAD:file1
