@@ -17,9 +17,7 @@ This bootcamp will provide its audience the core foundation in this amazing fiel
 | 5 | [**Python - 1**](docs/05-python-1) |
 | 6 | [**Python - 2**](docs/06-python-2) |
 | 7 | [**Git & GitHub - 1**](docs/07-git-and-github-1) |
-| 8 | [**Git & GitHub - 2**](https://colab.research.google.com/drive/1DIr-XSptcOiVk23SjrVd081oiz-ASjVO) |
-| 9 | [**Project**](https://github.com/acmbpdc/coding-bootcamp-2021/blob/main/Project/ACM_WebScrape_Project.ipynb) |
-
+| 8 | [**Git & GitHub - 2**](https://github.com/acmbpdc/coding-bootcamp-2021/blob/main/Project/ACM_WebScrape_Project.ipynb) |
 
 ## Instructors
 
